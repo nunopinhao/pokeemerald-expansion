@@ -1160,3 +1160,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/Amoreira/scripts.inc"
+
+	.include "data/maps/Amoreira_Room/scripts.inc"
+
+	.include "data/maps/Amoreira_Floor1/scripts.inc"
+
+	.include "data/maps/Amoreira_Backyard/scripts.inc"

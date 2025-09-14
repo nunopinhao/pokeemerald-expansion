@@ -1,13 +1,13 @@
 {
-  "id": "MAP_AMOREIRA",
-  "name": "Amoreira",
-  "layout": "LAYOUT_AMOREIRA",
+  "id": "MAP_AMOREIRA_ROOM",
+  "name": "Amoreira_Room",
+  "layout": "LAYOUT_AMOREIRA_ROOM",
   "music": "MUS_LITTLEROOT",
   "region_map_section": "MAPSEC_AMOREIRA",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_TOWN",
-  "allow_cycling": true,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
@@ -16,11 +16,11 @@
   "object_events": [],
   "warp_events": [
     {
-      "x": 15,
-      "y": 13,
+      "x": 7,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_AMOREIRA_FLOOR1",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],
