@@ -1,0 +1,144 @@
+mapscripts Amoreira_Backyard_MapScripts {}
+ 
+script Amoreira_EventScript_ChooseFroakie{
+    lockall
+    call(CheckStarterObtained)
+    showmonpic(SPECIES_FROAKIE, 10,3)
+    msgbox("Do you want to choose Froakie?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_FROAKIE, 5, ITEM_MYSTIC_WATER)
+        setflag(FLAG_SYS_POKEMON_GET)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Froakie")
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x020)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Froakie")
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x020)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(Amoreira_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script Amoreira_EventScript_ChooseRowlet{
+    lockall
+    call(CheckStarterObtained)
+    showmonpic(SPECIES_ROWLET, 10,3)
+    msgbox("Do you want to choose Rowlet?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_ROWLET, 5, ITEM_MIRACLE_SEED)
+        setflag(FLAG_SYS_POKEMON_GET)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Rowlet")
+            removeobject(2)
+            setflag(FLAG_UNUSED_0x021)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Rowlet")
+            removeobject(2)
+            setflag(FLAG_UNUSED_0x021)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(Amoreira_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script Amoreira_EventScript_ChooseTorchic{
+    lockall
+    call(CheckStarterObtained)
+    showmonpic(SPECIES_TORCHIC, 10,3)
+    msgbox("Do you want to choose Torchic?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_TORCHIC, 5, ITEM_CHARCOAL)
+        setflag(FLAG_SYS_POKEMON_GET)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Torchic")
+            removeobject(3)
+            setflag(FLAG_UNUSED_0x022)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Torchic")
+            removeobject(3)
+            setflag(FLAG_UNUSED_0x022)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(Amoreira_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script NicknamePartyMon{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+ 
+ 
+}
+ 
+script NicknameBoxMon{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+ 
+}
+script CheckStarterObtained{
+    if(flag(FLAG_UNUSED_0x020) || flag(FLAG_UNUSED_0x021) || flag(FLAG_UNUSED_0x022)){
+        msgbox("You already have a starter Pokemon")
+        waitmessage
+        releaseall
+        end
+    }
+}
+ 
+text Amoreira_NotChosen{
+    "You did not choose the Pokemon"
+}

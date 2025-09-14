@@ -4445,9 +4445,9 @@
       "id": "LAYOUT_AMOREIRA_BACKYARD",
       "name": "Amoreira_Backyard_Layout",
       "width": 14,
-      "height": 14,
+      "height": 16,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Amoreira_Backyard/border.bin",
       "blockdata_filepath": "data/layouts/Amoreira_Backyard/map.bin"
     }
