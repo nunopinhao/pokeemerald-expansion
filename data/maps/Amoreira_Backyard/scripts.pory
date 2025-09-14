@@ -14,6 +14,7 @@ script Amoreira_EventScript_ChooseFroakie{
             removeobject(1)
             setflag(FLAG_UNUSED_0x020)
             call(NicknamePartyMon)
+            callnative(UpdateFollowingPokemon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
@@ -50,6 +51,7 @@ script Amoreira_EventScript_ChooseRowlet{
             removeobject(2)
             setflag(FLAG_UNUSED_0x021)
             call(NicknamePartyMon)
+            callnative(UpdateFollowingPokemon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
@@ -86,6 +88,7 @@ script Amoreira_EventScript_ChooseTorchic{
             removeobject(3)
             setflag(FLAG_UNUSED_0x022)
             call(NicknamePartyMon)
+            callnative(UpdateFollowingPokemon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
