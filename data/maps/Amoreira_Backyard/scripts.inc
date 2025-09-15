@@ -50,7 +50,7 @@ Amoreira_EventScript_ChooseFroakie_5:
 # 14 "data/maps/Amoreira_Backyard/scripts.pory"
 	removeobject 1
 # 15 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FLAG_UNUSED_0x020
+	setflag FROAKIE_STARTER_FLAG
 # 16 "data/maps/Amoreira_Backyard/scripts.pory"
 	call NicknamePartyMon
 # 17 "data/maps/Amoreira_Backyard/scripts.pory"
@@ -65,7 +65,7 @@ Amoreira_EventScript_ChooseFroakie_6:
 # 22 "data/maps/Amoreira_Backyard/scripts.pory"
 	removeobject 1
 # 23 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FLAG_UNUSED_0x020
+	setflag FROAKIE_STARTER_FLAG
 # 24 "data/maps/Amoreira_Backyard/scripts.pory"
 	call NicknameBoxMon
 	goto Amoreira_EventScript_ChooseFroakie_1
@@ -119,7 +119,7 @@ Amoreira_EventScript_ChooseRowlet_5:
 # 51 "data/maps/Amoreira_Backyard/scripts.pory"
 	removeobject 2
 # 52 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FLAG_UNUSED_0x021
+	setflag ROWLET_STARTER_FLAG
 # 53 "data/maps/Amoreira_Backyard/scripts.pory"
 	call NicknamePartyMon
 # 54 "data/maps/Amoreira_Backyard/scripts.pory"
@@ -134,7 +134,7 @@ Amoreira_EventScript_ChooseRowlet_6:
 # 59 "data/maps/Amoreira_Backyard/scripts.pory"
 	removeobject 2
 # 60 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FLAG_UNUSED_0x021
+	setflag ROWLET_STARTER_FLAG
 # 61 "data/maps/Amoreira_Backyard/scripts.pory"
 	call NicknameBoxMon
 	goto Amoreira_EventScript_ChooseRowlet_1
@@ -188,7 +188,7 @@ Amoreira_EventScript_ChooseTorchic_5:
 # 88 "data/maps/Amoreira_Backyard/scripts.pory"
 	removeobject 3
 # 89 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FLAG_UNUSED_0x022
+	setflag TORCHIC_STARTER_FLAG
 # 90 "data/maps/Amoreira_Backyard/scripts.pory"
 	call NicknamePartyMon
 # 91 "data/maps/Amoreira_Backyard/scripts.pory"
@@ -203,7 +203,7 @@ Amoreira_EventScript_ChooseTorchic_6:
 # 96 "data/maps/Amoreira_Backyard/scripts.pory"
 	removeobject 3
 # 97 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FLAG_UNUSED_0x022
+	setflag TORCHIC_STARTER_FLAG
 # 98 "data/maps/Amoreira_Backyard/scripts.pory"
 	call NicknameBoxMon
 	goto Amoreira_EventScript_ChooseTorchic_1
@@ -248,11 +248,11 @@ NicknameBoxMon_2:
 
 CheckStarterObtained::
 # 137 "data/maps/Amoreira_Backyard/scripts.pory"
-	goto_if_set FLAG_UNUSED_0x020, CheckStarterObtained_1
+	goto_if_set FROAKIE_STARTER_FLAG, CheckStarterObtained_1
 # 137 "data/maps/Amoreira_Backyard/scripts.pory"
-	goto_if_set FLAG_UNUSED_0x021, CheckStarterObtained_1
+	goto_if_set ROWLET_STARTER_FLAG, CheckStarterObtained_1
 # 137 "data/maps/Amoreira_Backyard/scripts.pory"
-	goto_if_set FLAG_UNUSED_0x022, CheckStarterObtained_1
+	goto_if_set TORCHIC_STARTER_FLAG, CheckStarterObtained_1
 	return
 
 CheckStarterObtained_1:

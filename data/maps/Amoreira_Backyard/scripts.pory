@@ -12,7 +12,7 @@ script Amoreira_EventScript_ChooseFroakie{
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("Recieved Froakie")
             removeobject(1)
-            setflag(FLAG_UNUSED_0x020)
+            setflag(FROAKIE_STARTER_FLAG)
             call(NicknamePartyMon)
             callnative(UpdateFollowingPokemon)
         }
@@ -20,7 +20,7 @@ script Amoreira_EventScript_ChooseFroakie{
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("Recieved Froakie")
             removeobject(1)
-            setflag(FLAG_UNUSED_0x020)
+            setflag(FROAKIE_STARTER_FLAG)
             call(NicknameBoxMon)
         }
         else{
@@ -49,7 +49,7 @@ script Amoreira_EventScript_ChooseRowlet{
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("Recieved Rowlet")
             removeobject(2)
-            setflag(FLAG_UNUSED_0x021)
+            setflag(ROWLET_STARTER_FLAG)
             call(NicknamePartyMon)
             callnative(UpdateFollowingPokemon)
         }
@@ -57,7 +57,7 @@ script Amoreira_EventScript_ChooseRowlet{
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("Recieved Rowlet")
             removeobject(2)
-            setflag(FLAG_UNUSED_0x021)
+            setflag(ROWLET_STARTER_FLAG)
             call(NicknameBoxMon)
         }
         else{
@@ -86,7 +86,7 @@ script Amoreira_EventScript_ChooseTorchic{
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("Recieved Torchic")
             removeobject(3)
-            setflag(FLAG_UNUSED_0x022)
+            setflag(TORCHIC_STARTER_FLAG)
             call(NicknamePartyMon)
             callnative(UpdateFollowingPokemon)
         }
@@ -94,7 +94,7 @@ script Amoreira_EventScript_ChooseTorchic{
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("Recieved Torchic")
             removeobject(3)
-            setflag(FLAG_UNUSED_0x022)
+            setflag(TORCHIC_STARTER_FLAG)
             call(NicknameBoxMon)
         }
         else{
@@ -134,7 +134,7 @@ script NicknameBoxMon{
  
 }
 script CheckStarterObtained{
-    if(flag(FLAG_UNUSED_0x020) || flag(FLAG_UNUSED_0x021) || flag(FLAG_UNUSED_0x022)){
+    if(flag(FROAKIE_STARTER_FLAG) || flag(ROWLET_STARTER_FLAG) || flag(TORCHIC_STARTER_FLAG)){
         msgbox("You already have a starter Pokemon")
         waitmessage
         releaseall
