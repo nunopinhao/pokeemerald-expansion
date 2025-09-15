@@ -1,0 +1,135 @@
+mapscripts Amoreira_Floor1_MapScripts {}
+
+script Amoreira_Floor1_EventScript_StartScene1{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma1)
+    waitmovement(0)
+    applymovement(1, Common_Movement_FaceRight)
+	waitmovement(0)
+    msgbox(StartSceneText1)
+    waitmessage
+    applymovement(1, Common_Movement_FaceLeft)
+	waitmovement(0)
+    msgbox(StartSceneText2)
+    waitmessage
+    applymovement(1, Common_Movement_FaceRight)
+	waitmovement(0)
+    msgbox(StartSceneText3)
+    waitmessage
+    setvar(VAR_AMOREIRA_START, 1)
+    setflag(FLAG_SYS_B_DASH)
+    releaseall
+}
+
+script Amoreira_Floor1_EventScript_StartScene2{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma2)
+    waitmovement(0)
+    applymovement(1, Common_Movement_FaceRight)
+	waitmovement(0)
+    msgbox(StartSceneText1)
+    waitmessage
+    applymovement(1, Common_Movement_FaceLeft)
+	waitmovement(0)
+    msgbox(StartSceneText2)
+    waitmessage
+    applymovement(1, Common_Movement_FaceRight)
+	waitmovement(0)
+    msgbox(StartSceneText3)
+    waitmessage
+    setvar(VAR_AMOREIRA_START, 1)
+    setflag(FLAG_SYS_B_DASH)
+    releaseall
+}
+
+script Amoreira_Floor1_EventScript_StartScene3{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma3)
+    waitmovement(0)
+    applymovement(1, Common_Movement_FaceRight)
+	waitmovement(0)
+    msgbox(StartSceneText1)
+    waitmessage
+    applymovement(1, Common_Movement_FaceLeft)
+	waitmovement(0)
+    msgbox(StartSceneText2)
+    waitmessage
+    applymovement(1, Common_Movement_FaceRight)
+	waitmovement(0)
+    msgbox(StartSceneText3)
+    waitmessage
+    setvar(VAR_AMOREIRA_START, 1)
+    setflag(FLAG_SYS_B_DASH)
+    releaseall
+}
+
+movement PlayerMoveNearGrandma1 {
+    walk_down *3 
+}
+
+movement PlayerMoveNearGrandma2 {
+	walk_left
+    walk_down *2 
+}
+
+movement PlayerMoveNearGrandma3 {
+    walk_down *2
+    walk_left *2
+    walk_down
+}
+
+text StartSceneText1{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Ah, there you are {PLAYER}!\p"
+    "About time you crawl out of bed,\n"
+    "you lazy bum.\p"
+    "I have been up since the crack of dawn\n"
+    "doing chores.\p"
+    "Your cousins are already here having\n"
+    "lunch!\p"
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Come on Grandma, {PLAYER} has\n"
+    "just got out of bed and you are already\l"
+    "nagging him.\p" 
+    "Can you pass me the fries, Adrian?\p"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER} was probably up all\n"
+    "night playing Crash Royale.\p"
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} That was you, idiot.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Good thing I have a mission for\n"
+    "{PLAYER} today, that oughta teach you\l"
+    "some responsibility!\p"
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} It better not be moving new\n"
+    "stuff into the house. Speaking of which,\l"
+    "you know what this house really needs?\p"
+    "More furniture!\p"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Yeah, I was thinking it’s still\n"
+    "too easy to move around. It could really\l"
+    "get more claustrophobic in here.\n"
+}
+
+text StartSceneText2{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Yes boys, make fun of your\n"
+    "hoarding Grandma.\p"
+    "If there ever is a fire in your house,\n"
+    "don’t come crawling to me about\l"
+    "extra furniture.\p"
+    "Look at my new armoire, isn’t it a\n"
+    "beauty? Got it on the side of the road.\p"
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Getting a little off topic here.\n"
+    "So what do you need {PLAYER} to do\l"
+    "Grandma?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} A naughty pokemon has been\n"
+    "messing with my torchic, attacking them\l"
+    "and eating all my eggs!\p"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} That explains why there is so\n"
+    "little omelet for lunch today.\n"
+}
+
+text StartSceneText3{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER}, I want you to\n"
+    "investigate and chase off any egg-eating\l" 
+    "Pokemon off my darling eggs.\p" 
+    "Go to the backyard and take a look.\n" 
+    "You might find something there to help\l"
+    "you out.\p"
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Good luck playing detective,\n"
+    "{PLAYER}. The stakes are very high.\n"
+}
