@@ -1,5 +1,14 @@
 mapscripts Amoreira_Floor1_MapScripts {}
 
+script Amoreira_Floor1_EventScript_CantLeave1{
+    lock
+    msgbox(CantLeaveText)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    release
+    end
+}
+
 script Amoreira_Floor1_EventScript_GrandmaSpeech{
     lock
     faceplayer
@@ -159,4 +168,10 @@ text AndrewSpeechText{
 text AdrianSpeechText{
     "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Andrew and I got our own POKEMON\n"
     "this morning.\n"
+}
+
+text CantLeaveText{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER}, are you still asleep,\n"
+    "dummy? The backyard door is on the\l"
+    "right.\n"
 }

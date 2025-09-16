@@ -14,14 +14,14 @@ Amoreira_EventScript_ChooseFroakie::
 # 8 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Amoreira_EventScript_ChooseFroakie_2
-# 40 "data/maps/Amoreira_Backyard/scripts.pory"
-	hidemonpic
 # 41 "data/maps/Amoreira_Backyard/scripts.pory"
+	hidemonpic
+# 42 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox Amoreira_NotChosen
 Amoreira_EventScript_ChooseFroakie_1:
-# 43 "data/maps/Amoreira_Backyard/scripts.pory"
-	waitmessage
 # 44 "data/maps/Amoreira_Backyard/scripts.pory"
+	waitmessage
+# 45 "data/maps/Amoreira_Backyard/scripts.pory"
 	releaseall
 	end
 
@@ -33,12 +33,12 @@ Amoreira_EventScript_ChooseFroakie_2:
 # 11 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Amoreira_EventScript_ChooseFroakie_5
-# 27 "data/maps/Amoreira_Backyard/scripts.pory"
+# 28 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Amoreira_EventScript_ChooseFroakie_6
-# 35 "data/maps/Amoreira_Backyard/scripts.pory"
-	hidemonpic
 # 36 "data/maps/Amoreira_Backyard/scripts.pory"
+	hidemonpic
+# 37 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox Amoreira_EventScript_ChooseFroakie_Text_3
 	goto Amoreira_EventScript_ChooseFroakie_1
 
@@ -56,259 +56,265 @@ Amoreira_EventScript_ChooseFroakie_5:
 # 17 "data/maps/Amoreira_Backyard/scripts.pory"
 	callnative UpdateFollowingPokemon
 # 18 "data/maps/Amoreira_Backyard/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	setflag VAR_AMOREIRA_CANT_LEAVE
 # 19 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 2
+	fadescreen FADE_TO_BLACK
 # 20 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag ROWLET_STARTER_FLAG
+	removeobject 2
 # 21 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 3
+	setflag ROWLET_STARTER_FLAG
 # 22 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag TORCHIC_STARTER_FLAG
+	removeobject 3
 # 23 "data/maps/Amoreira_Backyard/scripts.pory"
-	delay 20
+	setflag TORCHIC_STARTER_FLAG
 # 24 "data/maps/Amoreira_Backyard/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	delay 20
 # 25 "data/maps/Amoreira_Backyard/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 26 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox Amoreira_EventScript_ChooseFroakie_Text_2
 	goto Amoreira_EventScript_ChooseFroakie_1
 
 Amoreira_EventScript_ChooseFroakie_6:
-# 28 "data/maps/Amoreira_Backyard/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 29 "data/maps/Amoreira_Backyard/scripts.pory"
-	msgbox Amoreira_EventScript_ChooseFroakie_Text_1
+	playfanfare MUS_OBTAIN_ITEM
 # 30 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 1
+	msgbox Amoreira_EventScript_ChooseFroakie_Text_1
 # 31 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FROAKIE_STARTER_FLAG
+	removeobject 1
 # 32 "data/maps/Amoreira_Backyard/scripts.pory"
+	setflag FROAKIE_STARTER_FLAG
+# 33 "data/maps/Amoreira_Backyard/scripts.pory"
 	call NicknameBoxMon
 	goto Amoreira_EventScript_ChooseFroakie_1
 
 
 Amoreira_EventScript_ChooseRowlet::
-# 49 "data/maps/Amoreira_Backyard/scripts.pory"
-	lockall
 # 50 "data/maps/Amoreira_Backyard/scripts.pory"
-	call CheckStarterObtained
+	lockall
 # 51 "data/maps/Amoreira_Backyard/scripts.pory"
-	showmonpic SPECIES_ROWLET, 10, 3
+	call CheckStarterObtained
 # 52 "data/maps/Amoreira_Backyard/scripts.pory"
-	msgbox Amoreira_EventScript_ChooseRowlet_Text_0, MSGBOX_YESNO
+	showmonpic SPECIES_ROWLET, 10, 3
 # 53 "data/maps/Amoreira_Backyard/scripts.pory"
+	msgbox Amoreira_EventScript_ChooseRowlet_Text_0, MSGBOX_YESNO
+# 54 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Amoreira_EventScript_ChooseRowlet_2
-# 85 "data/maps/Amoreira_Backyard/scripts.pory"
+# 87 "data/maps/Amoreira_Backyard/scripts.pory"
 	hidemonpic
-# 86 "data/maps/Amoreira_Backyard/scripts.pory"
+# 88 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox Amoreira_NotChosen
 Amoreira_EventScript_ChooseRowlet_1:
-# 88 "data/maps/Amoreira_Backyard/scripts.pory"
+# 90 "data/maps/Amoreira_Backyard/scripts.pory"
 	waitmessage
-# 89 "data/maps/Amoreira_Backyard/scripts.pory"
+# 91 "data/maps/Amoreira_Backyard/scripts.pory"
 	releaseall
 	end
 
 Amoreira_EventScript_ChooseRowlet_2:
-# 54 "data/maps/Amoreira_Backyard/scripts.pory"
-	givemon SPECIES_ROWLET, 5, ITEM_MIRACLE_SEED
 # 55 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	givemon SPECIES_ROWLET, 5, ITEM_MIRACLE_SEED
 # 56 "data/maps/Amoreira_Backyard/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 57 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Amoreira_EventScript_ChooseRowlet_5
-# 72 "data/maps/Amoreira_Backyard/scripts.pory"
+# 74 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Amoreira_EventScript_ChooseRowlet_6
-# 80 "data/maps/Amoreira_Backyard/scripts.pory"
+# 82 "data/maps/Amoreira_Backyard/scripts.pory"
 	hidemonpic
-# 81 "data/maps/Amoreira_Backyard/scripts.pory"
+# 83 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox Amoreira_EventScript_ChooseFroakie_Text_3
 	goto Amoreira_EventScript_ChooseRowlet_1
 
 Amoreira_EventScript_ChooseRowlet_5:
-# 57 "data/maps/Amoreira_Backyard/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 58 "data/maps/Amoreira_Backyard/scripts.pory"
-	msgbox Amoreira_EventScript_ChooseRowlet_Text_1
+	playfanfare MUS_OBTAIN_ITEM
 # 59 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 2
+	msgbox Amoreira_EventScript_ChooseRowlet_Text_1
 # 60 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag ROWLET_STARTER_FLAG
+	removeobject 2
 # 61 "data/maps/Amoreira_Backyard/scripts.pory"
-	call NicknamePartyMon
+	setflag ROWLET_STARTER_FLAG
 # 62 "data/maps/Amoreira_Backyard/scripts.pory"
-	callnative UpdateFollowingPokemon
+	call NicknamePartyMon
 # 63 "data/maps/Amoreira_Backyard/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	callnative UpdateFollowingPokemon
 # 64 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 1
+	setflag VAR_AMOREIRA_CANT_LEAVE
 # 65 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FROAKIE_STARTER_FLAG
+	fadescreen FADE_TO_BLACK
 # 66 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 3
+	removeobject 1
 # 67 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag TORCHIC_STARTER_FLAG
+	setflag FROAKIE_STARTER_FLAG
 # 68 "data/maps/Amoreira_Backyard/scripts.pory"
-	delay 20
+	removeobject 3
 # 69 "data/maps/Amoreira_Backyard/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	setflag TORCHIC_STARTER_FLAG
 # 70 "data/maps/Amoreira_Backyard/scripts.pory"
+	delay 20
+# 71 "data/maps/Amoreira_Backyard/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 72 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox Amoreira_EventScript_ChooseFroakie_Text_2
 	goto Amoreira_EventScript_ChooseRowlet_1
 
 Amoreira_EventScript_ChooseRowlet_6:
-# 73 "data/maps/Amoreira_Backyard/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 74 "data/maps/Amoreira_Backyard/scripts.pory"
-	msgbox Amoreira_EventScript_ChooseRowlet_Text_1
 # 75 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 2
+	playfanfare MUS_OBTAIN_ITEM
 # 76 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag ROWLET_STARTER_FLAG
+	msgbox Amoreira_EventScript_ChooseRowlet_Text_1
 # 77 "data/maps/Amoreira_Backyard/scripts.pory"
+	removeobject 2
+# 78 "data/maps/Amoreira_Backyard/scripts.pory"
+	setflag ROWLET_STARTER_FLAG
+# 79 "data/maps/Amoreira_Backyard/scripts.pory"
 	call NicknameBoxMon
 	goto Amoreira_EventScript_ChooseRowlet_1
 
 
 Amoreira_EventScript_ChooseTorchic::
-# 94 "data/maps/Amoreira_Backyard/scripts.pory"
-	lockall
-# 95 "data/maps/Amoreira_Backyard/scripts.pory"
-	call CheckStarterObtained
 # 96 "data/maps/Amoreira_Backyard/scripts.pory"
-	showmonpic SPECIES_TORCHIC, 10, 3
+	lockall
 # 97 "data/maps/Amoreira_Backyard/scripts.pory"
-	msgbox Amoreira_EventScript_ChooseTorchic_Text_0, MSGBOX_YESNO
+	call CheckStarterObtained
 # 98 "data/maps/Amoreira_Backyard/scripts.pory"
+	showmonpic SPECIES_TORCHIC, 10, 3
+# 99 "data/maps/Amoreira_Backyard/scripts.pory"
+	msgbox Amoreira_EventScript_ChooseTorchic_Text_0, MSGBOX_YESNO
+# 100 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Amoreira_EventScript_ChooseTorchic_2
-# 130 "data/maps/Amoreira_Backyard/scripts.pory"
+# 133 "data/maps/Amoreira_Backyard/scripts.pory"
 	hidemonpic
-# 131 "data/maps/Amoreira_Backyard/scripts.pory"
+# 134 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox Amoreira_NotChosen
 Amoreira_EventScript_ChooseTorchic_1:
-# 133 "data/maps/Amoreira_Backyard/scripts.pory"
+# 136 "data/maps/Amoreira_Backyard/scripts.pory"
 	waitmessage
-# 134 "data/maps/Amoreira_Backyard/scripts.pory"
+# 137 "data/maps/Amoreira_Backyard/scripts.pory"
 	releaseall
 	end
 
 Amoreira_EventScript_ChooseTorchic_2:
-# 99 "data/maps/Amoreira_Backyard/scripts.pory"
-	givemon SPECIES_TORCHIC, 5, ITEM_CHARCOAL
-# 100 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
 # 101 "data/maps/Amoreira_Backyard/scripts.pory"
+	givemon SPECIES_TORCHIC, 5, ITEM_CHARCOAL
+# 102 "data/maps/Amoreira_Backyard/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 103 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Amoreira_EventScript_ChooseTorchic_5
-# 117 "data/maps/Amoreira_Backyard/scripts.pory"
+# 120 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq Amoreira_EventScript_ChooseTorchic_6
-# 125 "data/maps/Amoreira_Backyard/scripts.pory"
+# 128 "data/maps/Amoreira_Backyard/scripts.pory"
 	hidemonpic
-# 126 "data/maps/Amoreira_Backyard/scripts.pory"
+# 129 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox Amoreira_EventScript_ChooseFroakie_Text_3
 	goto Amoreira_EventScript_ChooseTorchic_1
 
 Amoreira_EventScript_ChooseTorchic_5:
-# 102 "data/maps/Amoreira_Backyard/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 103 "data/maps/Amoreira_Backyard/scripts.pory"
-	msgbox Amoreira_EventScript_ChooseTorchic_Text_1
 # 104 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 3
+	playfanfare MUS_OBTAIN_ITEM
 # 105 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag TORCHIC_STARTER_FLAG
+	msgbox Amoreira_EventScript_ChooseTorchic_Text_1
 # 106 "data/maps/Amoreira_Backyard/scripts.pory"
-	call NicknamePartyMon
+	removeobject 3
 # 107 "data/maps/Amoreira_Backyard/scripts.pory"
-	callnative UpdateFollowingPokemon
+	setflag TORCHIC_STARTER_FLAG
 # 108 "data/maps/Amoreira_Backyard/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	call NicknamePartyMon
 # 109 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 1
+	callnative UpdateFollowingPokemon
 # 110 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag FROAKIE_STARTER_FLAG
+	setflag VAR_AMOREIRA_CANT_LEAVE
 # 111 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 2
+	fadescreen FADE_TO_BLACK
 # 112 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag ROWLET_STARTER_FLAG
+	removeobject 1
 # 113 "data/maps/Amoreira_Backyard/scripts.pory"
-	delay 20
+	setflag FROAKIE_STARTER_FLAG
 # 114 "data/maps/Amoreira_Backyard/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	removeobject 2
 # 115 "data/maps/Amoreira_Backyard/scripts.pory"
+	setflag ROWLET_STARTER_FLAG
+# 116 "data/maps/Amoreira_Backyard/scripts.pory"
+	delay 20
+# 117 "data/maps/Amoreira_Backyard/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 118 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox Amoreira_EventScript_ChooseFroakie_Text_2
 	goto Amoreira_EventScript_ChooseTorchic_1
 
 Amoreira_EventScript_ChooseTorchic_6:
-# 118 "data/maps/Amoreira_Backyard/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 119 "data/maps/Amoreira_Backyard/scripts.pory"
-	msgbox Amoreira_EventScript_ChooseTorchic_Text_1
-# 120 "data/maps/Amoreira_Backyard/scripts.pory"
-	removeobject 3
 # 121 "data/maps/Amoreira_Backyard/scripts.pory"
-	setflag TORCHIC_STARTER_FLAG
+	playfanfare MUS_OBTAIN_ITEM
 # 122 "data/maps/Amoreira_Backyard/scripts.pory"
+	msgbox Amoreira_EventScript_ChooseTorchic_Text_1
+# 123 "data/maps/Amoreira_Backyard/scripts.pory"
+	removeobject 3
+# 124 "data/maps/Amoreira_Backyard/scripts.pory"
+	setflag TORCHIC_STARTER_FLAG
+# 125 "data/maps/Amoreira_Backyard/scripts.pory"
 	call NicknameBoxMon
 	goto Amoreira_EventScript_ChooseTorchic_1
 
 
 NicknamePartyMon::
-# 139 "data/maps/Amoreira_Backyard/scripts.pory"
+# 142 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 140 "data/maps/Amoreira_Backyard/scripts.pory"
+# 143 "data/maps/Amoreira_Backyard/scripts.pory"
 	hidemonpic
-# 141 "data/maps/Amoreira_Backyard/scripts.pory"
+# 144 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyMon_1
 	return
 
 NicknamePartyMon_1:
-# 142 "data/maps/Amoreira_Backyard/scripts.pory"
+# 145 "data/maps/Amoreira_Backyard/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 143 "data/maps/Amoreira_Backyard/scripts.pory"
+# 146 "data/maps/Amoreira_Backyard/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	return
 
 
 NicknameBoxMon::
-# 148 "data/maps/Amoreira_Backyard/scripts.pory"
+# 151 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 149 "data/maps/Amoreira_Backyard/scripts.pory"
+# 152 "data/maps/Amoreira_Backyard/scripts.pory"
 	hidemonpic
-# 150 "data/maps/Amoreira_Backyard/scripts.pory"
+# 153 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknameBoxMon_2
 NicknameBoxMon_1:
-# 153 "data/maps/Amoreira_Backyard/scripts.pory"
+# 156 "data/maps/Amoreira_Backyard/scripts.pory"
 	call Common_EventScript_TransferredToPC
 	return
 
 NicknameBoxMon_2:
-# 151 "data/maps/Amoreira_Backyard/scripts.pory"
+# 154 "data/maps/Amoreira_Backyard/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NicknameBoxMon_1
 
 
 CheckStarterObtained::
-# 157 "data/maps/Amoreira_Backyard/scripts.pory"
+# 160 "data/maps/Amoreira_Backyard/scripts.pory"
 	goto_if_set FROAKIE_STARTER_FLAG, CheckStarterObtained_1
-# 157 "data/maps/Amoreira_Backyard/scripts.pory"
+# 160 "data/maps/Amoreira_Backyard/scripts.pory"
 	goto_if_set ROWLET_STARTER_FLAG, CheckStarterObtained_1
-# 157 "data/maps/Amoreira_Backyard/scripts.pory"
+# 160 "data/maps/Amoreira_Backyard/scripts.pory"
 	goto_if_set TORCHIC_STARTER_FLAG, CheckStarterObtained_1
 	return
 
 CheckStarterObtained_1:
-# 158 "data/maps/Amoreira_Backyard/scripts.pory"
+# 161 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox CheckStarterObtained_Text_0
-# 159 "data/maps/Amoreira_Backyard/scripts.pory"
+# 162 "data/maps/Amoreira_Backyard/scripts.pory"
 	waitmessage
-# 160 "data/maps/Amoreira_Backyard/scripts.pory"
+# 163 "data/maps/Amoreira_Backyard/scripts.pory"
 	releaseall
 	end
 
@@ -322,37 +328,37 @@ Amoreira_EventScript_ChooseFroakie_Text_1:
 	.string "Recieved Froakie$"
 
 Amoreira_EventScript_ChooseFroakie_Text_2:
-# 25 "data/maps/Amoreira_Backyard/scripts.pory"
+# 26 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "The other Pokemon have left.$"
 
 Amoreira_EventScript_ChooseFroakie_Text_3:
-# 36 "data/maps/Amoreira_Backyard/scripts.pory"
+# 37 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "No More Room$"
 
 Amoreira_EventScript_ChooseRowlet_Text_0:
-# 52 "data/maps/Amoreira_Backyard/scripts.pory"
+# 53 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "Do you want to choose Rowlet?$"
 
 Amoreira_EventScript_ChooseRowlet_Text_1:
-# 58 "data/maps/Amoreira_Backyard/scripts.pory"
+# 59 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "Recieved Rowlet$"
 
 Amoreira_EventScript_ChooseTorchic_Text_0:
-# 97 "data/maps/Amoreira_Backyard/scripts.pory"
+# 99 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "Do you want to choose Torchic?$"
 
 Amoreira_EventScript_ChooseTorchic_Text_1:
-# 103 "data/maps/Amoreira_Backyard/scripts.pory"
+# 105 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "Recieved Torchic$"
 
 NicknamePartyMon_Text_0:
-# 139 "data/maps/Amoreira_Backyard/scripts.pory"
+# 142 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "Give it a nickname?$"
 
 CheckStarterObtained_Text_0:
-# 158 "data/maps/Amoreira_Backyard/scripts.pory"
+# 161 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "You already have a starter Pokemon$"
 
 Amoreira_NotChosen::
-# 165 "data/maps/Amoreira_Backyard/scripts.pory"
+# 168 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "You did not choose the Pokemon$"
