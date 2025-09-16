@@ -1,51 +1,60 @@
 mapscripts Amoreira_Floor1_MapScripts {}
 
+script Amoreira_Floor1_EventScript_GrandmaSpeech{
+    lock
+    faceplayer
+    msgbox(GrandmaSpeechText)
+    waitmessage
+    release
+    end
+}
+
+script Amoreira_Floor1_EventScript_AndrewSpeech{
+    lock
+    faceplayer
+    msgbox(AndrewSpeechText)
+    waitmessage
+    release
+    end
+}
+
+script Amoreira_Floor1_EventScript_AdrianSpeech{
+    lock
+    faceplayer
+    msgbox(AdrianSpeechText)
+    waitmessage
+    release
+    end
+}
+
 script Amoreira_Floor1_EventScript_StartScene1{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma1)
     waitmovement(0)
-    applymovement(1, Common_Movement_FaceRight)
-	waitmovement(0)
-    msgbox(StartSceneText1)
-    waitmessage
-    applymovement(1, Common_Movement_FaceLeft)
-	waitmovement(0)
-    msgbox(StartSceneText2)
-    waitmessage
-    applymovement(1, Common_Movement_FaceRight)
-	waitmovement(0)
-    msgbox(StartSceneText3)
-    waitmessage
-    setvar(VAR_AMOREIRA_START, 1)
-    setflag(FLAG_SYS_B_DASH)
+    call(Amoreira_Floor1_EventScript_StartSpeech)
     releaseall
+    end
 }
 
 script Amoreira_Floor1_EventScript_StartScene2{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma2)
     waitmovement(0)
-    applymovement(1, Common_Movement_FaceRight)
-	waitmovement(0)
-    msgbox(StartSceneText1)
-    waitmessage
-    applymovement(1, Common_Movement_FaceLeft)
-	waitmovement(0)
-    msgbox(StartSceneText2)
-    waitmessage
-    applymovement(1, Common_Movement_FaceRight)
-	waitmovement(0)
-    msgbox(StartSceneText3)
-    waitmessage
-    setvar(VAR_AMOREIRA_START, 1)
-    setflag(FLAG_SYS_B_DASH)
+    call(Amoreira_Floor1_EventScript_StartSpeech)
     releaseall
+    end
 }
 
 script Amoreira_Floor1_EventScript_StartScene3{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma3)
     waitmovement(0)
+    call(Amoreira_Floor1_EventScript_StartSpeech)
+    releaseall
+    end
+}
+
+script Amoreira_Floor1_EventScript_StartSpeech{
     applymovement(1, Common_Movement_FaceRight)
 	waitmovement(0)
     msgbox(StartSceneText1)
@@ -60,7 +69,6 @@ script Amoreira_Floor1_EventScript_StartScene3{
     waitmessage
     setvar(VAR_AMOREIRA_START, 1)
     setflag(FLAG_SYS_B_DASH)
-    releaseall
 }
 
 movement PlayerMoveNearGrandma1 {
@@ -132,4 +140,23 @@ text StartSceneText3{
     "you out.\p"
     "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Good luck playing detective,\n"
     "{PLAYER}. The stakes are very high.\n"
+}
+
+text GrandmaSpeechText{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} The backyard is through the door\n"
+    "on the right, but it’s not like you need\l"
+    "directions in your own home, right?\n"   
+}
+
+text AndrewSpeechText{
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Our Mom sent us on a weird\n"
+    "errand this morning as well.\p"
+    "I wonder if it’s related to your own\n"
+    "errand? Those two ladies are both acting\l"
+    "suspiciously.\n"
+}
+
+text AdrianSpeechText{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Andrew and I got our own POKEMON\n"
+    "this morning.\n"
 }

@@ -2,162 +2,158 @@ Amoreira_Floor1_MapScripts::
 	.byte 0
 
 
-Amoreira_Floor1_EventScript_StartScene1::
+Amoreira_Floor1_EventScript_GrandmaSpeech::
 # 4 "data/maps/Amoreira_Floor1/scripts.pory"
-	lockall
+	lock
 # 5 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma1
+	faceplayer
 # 6 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
+	msgbox GrandmaSpeechText
 # 7 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement 1, Common_Movement_FaceRight
+	waitmessage
 # 8 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
-# 9 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox StartSceneText1
-# 10 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
-# 11 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement 1, Common_Movement_FaceLeft
-# 12 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
+	release
+	end
+
+
+Amoreira_Floor1_EventScript_AndrewSpeech::
 # 13 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox StartSceneText2
+	lock
 # 14 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
+	faceplayer
 # 15 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement 1, Common_Movement_FaceRight
+	msgbox AndrewSpeechText
 # 16 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 17 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox StartSceneText3
-# 18 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
-# 19 "data/maps/Amoreira_Floor1/scripts.pory"
-	setvar VAR_AMOREIRA_START, 1
-# 20 "data/maps/Amoreira_Floor1/scripts.pory"
-	setflag FLAG_SYS_B_DASH
-# 21 "data/maps/Amoreira_Floor1/scripts.pory"
-	releaseall
-	return
+	release
+	end
 
 
-Amoreira_Floor1_EventScript_StartScene2::
+Amoreira_Floor1_EventScript_AdrianSpeech::
+# 22 "data/maps/Amoreira_Floor1/scripts.pory"
+	lock
+# 23 "data/maps/Amoreira_Floor1/scripts.pory"
+	faceplayer
+# 24 "data/maps/Amoreira_Floor1/scripts.pory"
+	msgbox AdrianSpeechText
 # 25 "data/maps/Amoreira_Floor1/scripts.pory"
-	lockall
-# 26 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma2
-# 27 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
-# 28 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement 1, Common_Movement_FaceRight
-# 29 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
-# 30 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox StartSceneText1
-# 31 "data/maps/Amoreira_Floor1/scripts.pory"
 	waitmessage
+# 26 "data/maps/Amoreira_Floor1/scripts.pory"
+	release
+	end
+
+
+Amoreira_Floor1_EventScript_StartScene1::
+# 31 "data/maps/Amoreira_Floor1/scripts.pory"
+	lockall
 # 32 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement 1, Common_Movement_FaceLeft
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma1
 # 33 "data/maps/Amoreira_Floor1/scripts.pory"
 	waitmovement 0
 # 34 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox StartSceneText2
+	call Amoreira_Floor1_EventScript_StartSpeech
 # 35 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
-# 36 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement 1, Common_Movement_FaceRight
-# 37 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
-# 38 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox StartSceneText3
-# 39 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
-# 40 "data/maps/Amoreira_Floor1/scripts.pory"
-	setvar VAR_AMOREIRA_START, 1
-# 41 "data/maps/Amoreira_Floor1/scripts.pory"
-	setflag FLAG_SYS_B_DASH
-# 42 "data/maps/Amoreira_Floor1/scripts.pory"
 	releaseall
-	return
+	end
+
+
+Amoreira_Floor1_EventScript_StartScene2::
+# 40 "data/maps/Amoreira_Floor1/scripts.pory"
+	lockall
+# 41 "data/maps/Amoreira_Floor1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma2
+# 42 "data/maps/Amoreira_Floor1/scripts.pory"
+	waitmovement 0
+# 43 "data/maps/Amoreira_Floor1/scripts.pory"
+	call Amoreira_Floor1_EventScript_StartSpeech
+# 44 "data/maps/Amoreira_Floor1/scripts.pory"
+	releaseall
+	end
 
 
 Amoreira_Floor1_EventScript_StartScene3::
-# 46 "data/maps/Amoreira_Floor1/scripts.pory"
-	lockall
-# 47 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma3
-# 48 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
 # 49 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement 1, Common_Movement_FaceRight
+	lockall
 # 50 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma3
 # 51 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox StartSceneText1
+	waitmovement 0
 # 52 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
+	call Amoreira_Floor1_EventScript_StartSpeech
 # 53 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement 1, Common_Movement_FaceLeft
-# 54 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
-# 55 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox StartSceneText2
-# 56 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
-# 57 "data/maps/Amoreira_Floor1/scripts.pory"
-	applymovement 1, Common_Movement_FaceRight
-# 58 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmovement 0
-# 59 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox StartSceneText3
-# 60 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
-# 61 "data/maps/Amoreira_Floor1/scripts.pory"
-	setvar VAR_AMOREIRA_START, 1
-# 62 "data/maps/Amoreira_Floor1/scripts.pory"
-	setflag FLAG_SYS_B_DASH
-# 63 "data/maps/Amoreira_Floor1/scripts.pory"
 	releaseall
+	end
+
+
+Amoreira_Floor1_EventScript_StartSpeech::
+# 58 "data/maps/Amoreira_Floor1/scripts.pory"
+	applymovement 1, Common_Movement_FaceRight
+# 59 "data/maps/Amoreira_Floor1/scripts.pory"
+	waitmovement 0
+# 60 "data/maps/Amoreira_Floor1/scripts.pory"
+	msgbox StartSceneText1
+# 61 "data/maps/Amoreira_Floor1/scripts.pory"
+	waitmessage
+# 62 "data/maps/Amoreira_Floor1/scripts.pory"
+	applymovement 1, Common_Movement_FaceLeft
+# 63 "data/maps/Amoreira_Floor1/scripts.pory"
+	waitmovement 0
+# 64 "data/maps/Amoreira_Floor1/scripts.pory"
+	msgbox StartSceneText2
+# 65 "data/maps/Amoreira_Floor1/scripts.pory"
+	waitmessage
+# 66 "data/maps/Amoreira_Floor1/scripts.pory"
+	applymovement 1, Common_Movement_FaceRight
+# 67 "data/maps/Amoreira_Floor1/scripts.pory"
+	waitmovement 0
+# 68 "data/maps/Amoreira_Floor1/scripts.pory"
+	msgbox StartSceneText3
+# 69 "data/maps/Amoreira_Floor1/scripts.pory"
+	waitmessage
+# 70 "data/maps/Amoreira_Floor1/scripts.pory"
+	setvar VAR_AMOREIRA_START, 1
+# 71 "data/maps/Amoreira_Floor1/scripts.pory"
+	setflag FLAG_SYS_B_DASH
 	return
 
 
-# 66 "data/maps/Amoreira_Floor1/scripts.pory"
+# 74 "data/maps/Amoreira_Floor1/scripts.pory"
 PlayerMoveNearGrandma1:
-# 67 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_down
-# 67 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_down
-# 67 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_down
-	step_end
-
-# 70 "data/maps/Amoreira_Floor1/scripts.pory"
-PlayerMoveNearGrandma2:
-# 71 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 72 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_down
-# 72 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_down
-	step_end
-
 # 75 "data/maps/Amoreira_Floor1/scripts.pory"
-PlayerMoveNearGrandma3:
-# 76 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 76 "data/maps/Amoreira_Floor1/scripts.pory"
+# 75 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 77 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 77 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
+# 75 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_down
+	step_end
+
 # 78 "data/maps/Amoreira_Floor1/scripts.pory"
+PlayerMoveNearGrandma2:
+# 79 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 80 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_down
+# 80 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_down
+	step_end
+
+# 83 "data/maps/Amoreira_Floor1/scripts.pory"
+PlayerMoveNearGrandma3:
+# 84 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_down
+# 84 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_down
+# 85 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 85 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 86 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
 StartSceneText1::
-# 81 "data/maps/Amoreira_Floor1/scripts.pory"
+# 89 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Ah, there you are {PLAYER}!\p"
 	.string "About time you crawl out of bed,\n"
 	.string "you lazy bum.\p"
@@ -184,7 +180,7 @@ StartSceneText1::
 	.string "get more claustrophobic in here.\n$"
 
 StartSceneText2::
-# 108 "data/maps/Amoreira_Floor1/scripts.pory"
+# 116 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Yes boys, make fun of your\n"
 	.string "hoarding Grandma.\p"
 	.string "If there ever is a fire in your house,\n"
@@ -202,7 +198,7 @@ StartSceneText2::
 	.string "little omelet for lunch today.\n$"
 
 StartSceneText3::
-# 126 "data/maps/Amoreira_Floor1/scripts.pory"
+# 134 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER}, I want you to\n"
 	.string "investigate and chase off any egg-eating\l"
 	.string "Pokemon off my darling eggs.\p"
@@ -211,3 +207,22 @@ StartSceneText3::
 	.string "you out.\p"
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Good luck playing detective,\n"
 	.string "{PLAYER}. The stakes are very high.\n$"
+
+GrandmaSpeechText::
+# 145 "data/maps/Amoreira_Floor1/scripts.pory"
+	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} The backyard is through the door\n"
+	.string "on the right, but it’s not like you need\l"
+	.string "directions in your own home, right?\n$"
+
+AndrewSpeechText::
+# 151 "data/maps/Amoreira_Floor1/scripts.pory"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Our Mom sent us on a weird\n"
+	.string "errand this morning as well.\p"
+	.string "I wonder if it’s related to your own\n"
+	.string "errand? Those two ladies are both acting\l"
+	.string "suspiciously.\n$"
+
+AdrianSpeechText::
+# 159 "data/maps/Amoreira_Floor1/scripts.pory"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Andrew and I got our own POKEMON\n"
+	.string "this morning.\n$"

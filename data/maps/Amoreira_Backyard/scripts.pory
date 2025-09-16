@@ -15,6 +15,14 @@ script Amoreira_EventScript_ChooseFroakie{
             setflag(FROAKIE_STARTER_FLAG)
             call(NicknamePartyMon)
             callnative(UpdateFollowingPokemon)
+            fadescreen(FADE_TO_BLACK)
+            removeobject(2)
+            setflag(ROWLET_STARTER_FLAG)
+            removeobject(3)
+            setflag(TORCHIC_STARTER_FLAG)
+            delay(20)
+            fadescreen(FADE_FROM_BLACK)
+            msgbox("The other Pokemon have left.")
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
@@ -52,6 +60,14 @@ script Amoreira_EventScript_ChooseRowlet{
             setflag(ROWLET_STARTER_FLAG)
             call(NicknamePartyMon)
             callnative(UpdateFollowingPokemon)
+            fadescreen(FADE_TO_BLACK)
+            removeobject(1)
+            setflag(FROAKIE_STARTER_FLAG)
+            removeobject(3)
+            setflag(TORCHIC_STARTER_FLAG)
+            delay(20)
+            fadescreen(FADE_FROM_BLACK)
+            msgbox("The other Pokemon have left.")
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
@@ -89,6 +105,14 @@ script Amoreira_EventScript_ChooseTorchic{
             setflag(TORCHIC_STARTER_FLAG)
             call(NicknamePartyMon)
             callnative(UpdateFollowingPokemon)
+            fadescreen(FADE_TO_BLACK)
+            removeobject(1)
+            setflag(FROAKIE_STARTER_FLAG)
+            removeobject(2)
+            setflag(ROWLET_STARTER_FLAG)
+            delay(20)
+            fadescreen(FADE_FROM_BLACK)
+            msgbox("The other Pokemon have left.")
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
