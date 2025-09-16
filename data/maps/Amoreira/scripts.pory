@@ -1,0 +1,15 @@
+mapscripts Amoreira_MapScripts {}
+
+script Amoreira_EventScript_MrFallsmellSpeech{
+    lock
+    faceplayer
+    msgbox(MrFallsmellSpeechText)
+    waitmessage
+    release
+    end
+}
+
+
+text MrFallsmellSpeechText{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Mr. Fallsmell:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Let's drink a fine?\n"
+}

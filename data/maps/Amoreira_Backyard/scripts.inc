@@ -258,57 +258,57 @@ Amoreira_EventScript_ChooseTorchic_6:
 
 
 NicknamePartyMon::
-# 140 "data/maps/Amoreira_Backyard/scripts.pory"
+# 139 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 141 "data/maps/Amoreira_Backyard/scripts.pory"
+# 140 "data/maps/Amoreira_Backyard/scripts.pory"
 	hidemonpic
-# 142 "data/maps/Amoreira_Backyard/scripts.pory"
+# 141 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyMon_1
 	return
 
 NicknamePartyMon_1:
-# 143 "data/maps/Amoreira_Backyard/scripts.pory"
+# 142 "data/maps/Amoreira_Backyard/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 144 "data/maps/Amoreira_Backyard/scripts.pory"
+# 143 "data/maps/Amoreira_Backyard/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	return
 
 
 NicknameBoxMon::
-# 152 "data/maps/Amoreira_Backyard/scripts.pory"
+# 148 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 153 "data/maps/Amoreira_Backyard/scripts.pory"
+# 149 "data/maps/Amoreira_Backyard/scripts.pory"
 	hidemonpic
-# 154 "data/maps/Amoreira_Backyard/scripts.pory"
+# 150 "data/maps/Amoreira_Backyard/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknameBoxMon_2
 NicknameBoxMon_1:
-# 157 "data/maps/Amoreira_Backyard/scripts.pory"
+# 153 "data/maps/Amoreira_Backyard/scripts.pory"
 	call Common_EventScript_TransferredToPC
 	return
 
 NicknameBoxMon_2:
-# 155 "data/maps/Amoreira_Backyard/scripts.pory"
+# 151 "data/maps/Amoreira_Backyard/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NicknameBoxMon_1
 
 
 CheckStarterObtained::
-# 161 "data/maps/Amoreira_Backyard/scripts.pory"
+# 157 "data/maps/Amoreira_Backyard/scripts.pory"
 	goto_if_set FROAKIE_STARTER_FLAG, CheckStarterObtained_1
-# 161 "data/maps/Amoreira_Backyard/scripts.pory"
+# 157 "data/maps/Amoreira_Backyard/scripts.pory"
 	goto_if_set ROWLET_STARTER_FLAG, CheckStarterObtained_1
-# 161 "data/maps/Amoreira_Backyard/scripts.pory"
+# 157 "data/maps/Amoreira_Backyard/scripts.pory"
 	goto_if_set TORCHIC_STARTER_FLAG, CheckStarterObtained_1
 	return
 
 CheckStarterObtained_1:
-# 162 "data/maps/Amoreira_Backyard/scripts.pory"
+# 158 "data/maps/Amoreira_Backyard/scripts.pory"
 	msgbox CheckStarterObtained_Text_0
-# 163 "data/maps/Amoreira_Backyard/scripts.pory"
+# 159 "data/maps/Amoreira_Backyard/scripts.pory"
 	waitmessage
-# 164 "data/maps/Amoreira_Backyard/scripts.pory"
+# 160 "data/maps/Amoreira_Backyard/scripts.pory"
 	releaseall
 	end
 
@@ -346,13 +346,13 @@ Amoreira_EventScript_ChooseTorchic_Text_1:
 	.string "Recieved Torchic$"
 
 NicknamePartyMon_Text_0:
-# 140 "data/maps/Amoreira_Backyard/scripts.pory"
+# 139 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "Give it a nickname?$"
 
 CheckStarterObtained_Text_0:
-# 162 "data/maps/Amoreira_Backyard/scripts.pory"
+# 158 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "You already have a starter Pokemon$"
 
 Amoreira_NotChosen::
-# 169 "data/maps/Amoreira_Backyard/scripts.pory"
+# 165 "data/maps/Amoreira_Backyard/scripts.pory"
 	.string "You did not choose the Pokemon$"

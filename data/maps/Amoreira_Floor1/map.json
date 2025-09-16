@@ -68,6 +68,20 @@
       "elevation": 0,
       "dest_map": "MAP_AMOREIRA_BACKYARD",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_AMOREIRA",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_AMOREIRA",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -136,27 +136,23 @@ script Amoreira_EventScript_ChooseTorchic{
 }
 
 script NicknamePartyMon{
- 
     msgbox("Give it a nickname?", MSGBOX_YESNO)
     hidemonpic
     if(var(VAR_RESULT) == YES){
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
- 
- 
 }
  
 script NicknameBoxMon{
- 
     msgbox("Give it a nickname?", MSGBOX_YESNO)
     hidemonpic
     if(var(VAR_RESULT) == YES){
         call(Common_EventScript_NameReceivedBoxMon)
     }
     call(Common_EventScript_TransferredToPC)
- 
 }
+
 script CheckStarterObtained{
     if(flag(FROAKIE_STARTER_FLAG) || flag(ROWLET_STARTER_FLAG) || flag(TORCHIC_STARTER_FLAG)){
         msgbox("You already have a starter Pokemon")
