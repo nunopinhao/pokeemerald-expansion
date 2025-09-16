@@ -1166,3 +1166,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Amoreira_Floor1/scripts.inc"
 
 	.include "data/maps/Amoreira_Backyard/scripts.inc"
+
+	.include "data/maps/Alqueidaozinho/scripts.inc"
