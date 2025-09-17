@@ -1,5 +1,106 @@
 mapscripts Amoreira_Floor1_MapScripts {}
 
+script Amoreira_Floor1_EventScript_RivalBattle1{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveRivalBattle1)
+    waitmovement(0)
+    call(Amoreira_Floor1_EventScript_RivalBattleSpeech)
+    releaseall
+    end
+}
+
+script Amoreira_Floor1_EventScript_RivalBattle2{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveRivalBattle2)
+    waitmovement(0)
+    call(Amoreira_Floor1_EventScript_RivalBattleSpeech)
+    releaseall
+    end
+}
+
+script Amoreira_Floor1_EventScript_RivalBattle3{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveRivalBattle3)
+    waitmovement(0)
+    call(Amoreira_Floor1_EventScript_RivalBattleSpeech)
+    releaseall
+    end
+}
+
+script Amoreira_Floor1_EventScript_RivalBattleSpeech{
+    lock
+    call(Amoreira_Floor1_EventScript_SetUpAndrewBattle)
+    call(Amoreira_Floor1_EventScript_AndrewBattle)
+    call(EventScript_FirstBattleOver)
+    call(Amoreira_Floor1_EventScript_AdrianBattle)
+    msgbox(RivalBattlesOver)
+    waitmessage
+    release
+}
+
+script Amoreira_Floor1_EventScript_SetUpAndrewBattle {
+    applymovement(1, Common_Movement_FaceRight)
+    waitmovement(0)
+    switch (var(VAR_STARTER_MON)) {
+        case 0:
+            msgbox(GrandmaStarterSpeechRowlet)
+        case 1:
+            msgbox(GrandmaStarterSpeechTorchic)
+        case 2:
+            msgbox(GrandmaStarterSpeechFroakie)
+    }
+    waitmessage
+    applymovement(1, Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox(RivalBattleSpeechText)
+    waitmessage
+    applymovement(4, AndrewMoveBattle)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox(Andrew_Intro)
+    waitmessage
+}
+
+script Amoreira_Floor1_EventScript_AndrewBattle{
+   switch (var(VAR_STARTER_MON)) {
+        case 0:
+            trainerbattle_no_intro(TRAINER_ANDREW_AMOREIRA_FLOOR1_FROAKIE, Andrew_Outro)
+        case 1:
+            trainerbattle_no_intro(TRAINER_ANDREW_AMOREIRA_FLOOR1_ROWLET, Andrew_Outro)
+        case 2:
+            trainerbattle_no_intro(TRAINER_ANDREW_AMOREIRA_FLOOR1_TORCHIC, Andrew_Outro)
+    }
+}
+
+script EventScript_FirstBattleOver{
+    msgbox(FirstBattleOver)
+    applyMovement(4, AndrewLeave)
+    msgbox(SecondBattleSetUp)
+    applyMovement(1, GrandmaMoveHeal)
+    waitmovement(0)
+    playfanfare(MUS_HEAL)
+    waitfanfare
+    special(HealPlayerParty)
+    applyMovement(1, GrandmaReturnAfterHeal)
+    waitmovement(0)
+    applymovement(5, AdrianMoveBattle)
+    waitmovement(0)
+    msgbox(Adrian_Intro)
+    waitmessage
+}
+
+script Amoreira_Floor1_EventScript_AdrianBattle{
+   switch (var(VAR_STARTER_MON)) {
+        case 0:
+            trainerbattle_no_intro(TRAINER_ADRIAN_AMOREIRA_FLOOR1_TORCHIC, Adrian_Outro)
+        case 1:
+            trainerbattle_no_intro(TRAINER_ADRIAN_AMOREIRA_FLOOR1_FROAKIE, Adrian_Outro)
+        case 2:
+            trainerbattle_no_intro(TRAINER_ADRIAN_AMOREIRA_FLOOR1_ROWLET, Adrian_Outro)
+    }
+}
+
 script Amoreira_Floor1_EventScript_CantLeave1{
     lock
     msgbox(CantLeaveText)
@@ -95,6 +196,64 @@ movement PlayerMoveNearGrandma3 {
     walk_down
 }
 
+movement PlayerMoveRivalBattle1 {
+    walk_left *3
+    walk_down *2
+}
+movement PlayerMoveRivalBattle2 {
+    walk_left *4
+    walk_down 
+}
+movement PlayerMoveRivalBattle3 {
+    walk_left *5
+    walk_down *2
+}
+movement AndrewMoveBattle {
+    walk_up 
+    walk_right *4
+}
+movement AdrianMoveBattle {
+    walk_left
+    walk_up *2
+    walk_right *5
+}
+
+movement AndrewLeave {
+    walk_left *4
+    walk_down
+    face_right
+}
+
+movement GrandmaMoveHeal {
+    walk_right *2
+    face_up
+}
+
+movement GrandmaReturnAfterHeal {
+    walk_left *2
+    face_right
+}
+
+text FirstBattleOver{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} And the winner of the first\n"
+    "round is {PLAYER}!\p"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} What are you, a sports\n"
+    "announcer?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} If you don’t take this\n"
+    "championship seriously, you won’t get\l"
+    "the prize!\p"
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} No carrot cake for me then. But\n"
+    "the fight was still cool, I guess.\n"
+}
+
+text SecondBattleSetUp{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} You are too nonchalant\n"
+    "sometimes Andrew. Where is your fiery\l"
+    "spirit?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Here {PLAYER}, let me heal your\n"
+    "pokemon.\n"
+}
+
 text StartSceneText1{
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Ah, there you are {PLAYER}!\p"
     "About time you crawl out of bed,\n"
@@ -175,3 +334,69 @@ text CantLeaveText{
     "dummy? The backyard door is on the\l"
     "right.\n"
 }
+
+text GrandmaStarterSpeechFroakie{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Froakie?\n"
+    "Of course you did! A grandson of mine\l"
+    "could only have good taste.\p"
+}
+
+text GrandmaStarterSpeechRowlet{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Rowlet?\n"
+    "Of course you did! A grandson of mine\l"
+    "could only have good taste.\p"
+}
+
+text GrandmaStarterSpeechTorchic{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Torchic?\n"
+    "Of course you did! A grandson of mine\l"
+    "could only have good taste.\n"
+}
+
+text RivalBattleSpeechText{
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Except you don’t have good taste.\n"
+    "You go shopping at the junkyard.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Zip it now, other grandson!\n"
+    "Don’t bite the hand that feeds you\l"
+    "schmucks every day.\p"
+    "Now, the second part of the errand is\n"
+    "here. A very exciting one!\p"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Which is?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Duke it out, fellas. Granny\n"
+    "wants to see some action! Winner gets a\l"
+    "slice of carrot cake.\n"
+}
+
+text Andrew_Intro{
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Well, you heard the old lady.\n"
+    "I’m first!\n"
+}
+ 
+text Andrew_Outro{
+    "Like they say, hard situations aren’t\n"
+    "easy.\n"
+}
+
+text Adrian_Intro{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Speaking of cake, battling\n"
+    "against a type you are strong against is\l" 
+    "a cakewalk.\p"
+    "I’m next little cousin, and you can bet\n"
+    "I won’t hold back.\n"
+}
+ 
+text Adrian_Outro{
+    "Doesn't count"
+}
+
+text RivalBattlesOver{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Power to the new gen of POKEMON\n"
+    "TRAINERS!\p"
+    "Seems like your little cousin has won by\n"
+    "a landslide.\p"
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER} is not younger by that\n"
+    "much.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Here is your reward, hon.\n"
+    "To the first champion of Mulbery Town!\p"
+}
+

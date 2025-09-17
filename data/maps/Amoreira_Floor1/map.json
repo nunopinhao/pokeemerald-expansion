@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Amoreira_Floor1_EventScript_AndrewSpeech",
-      "flag": "0"
+      "flag": "FLAG_ANDREW_SPEAK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
@@ -51,7 +51,33 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Amoreira_Floor1_EventScript_AdrianSpeech",
-      "flag": "0"
+      "flag": "FLAG_ADRIAN_SPEAK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ANDREW_BATTLE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ADRIAN_BATTLE"
     }
   ],
   "warp_events": [
@@ -129,6 +155,33 @@
       "var": "VAR_AMOREIRA_CANT_LEAVE",
       "var_value": "0",
       "script": "Amoreira_Floor1_EventScript_CantLeave1"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_AMOREIRA_READY_FOR_RIVAL_BATTLE",
+      "var_value": "1",
+      "script": "Amoreira_Floor1_EventScript_RivalBattle1"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_AMOREIRA_READY_FOR_RIVAL_BATTLE",
+      "var_value": "1",
+      "script": "Amoreira_Floor1_EventScript_RivalBattle2"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_AMOREIRA_READY_FOR_RIVAL_BATTLE",
+      "var_value": "1",
+      "script": "Amoreira_Floor1_EventScript_RivalBattle3"
     }
   ],
   "bg_events": []
