@@ -33,9 +33,18 @@ script Amoreira_Floor1_EventScript_RivalBattleSpeech{
     call(Amoreira_Floor1_EventScript_AndrewBattle)
     call(EventScript_FirstBattleOver)
     call(Amoreira_Floor1_EventScript_AdrianBattle)
+    call(EventScript_AfterRivalBattles)
+    release
+}
+
+script EventScript_AfterRivalBattles {
     msgbox(RivalBattlesOver)
     waitmessage
-    release
+    applymovement(1, GrandmaMoveHeal)
+    waitmovement(0)
+    giveitem(ITEM_OLD_GATEAU)
+    msgbox(Grandma_GiveGateau)
+    waitmessage
 }
 
 script Amoreira_Floor1_EventScript_SetUpAndrewBattle {
@@ -54,6 +63,7 @@ script Amoreira_Floor1_EventScript_SetUpAndrewBattle {
     waitmovement(0)
     msgbox(RivalBattleSpeechText)
     waitmessage
+    applymovement(1, Common_Movement_FaceRight)
     applymovement(4, AndrewMoveBattle)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
@@ -82,6 +92,7 @@ script EventScript_FirstBattleOver{
     playfanfare(MUS_HEAL)
     waitfanfare
     special(HealPlayerParty)
+    waitmessage
     applyMovement(1, GrandmaReturnAfterHeal)
     waitmovement(0)
     applymovement(5, AdrianMoveBattle)
@@ -397,6 +408,11 @@ text RivalBattlesOver{
     "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER} is not younger by that\n"
     "much.\p"
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Here is your reward, hon.\n"
-    "To the first champion of Mulbery Town!\p"
+    "To the first champion of Mulbery Town!\n"
 }
 
+text Grandma_GiveGateau{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} What is that look? I didn’t lie,\n"
+    "it IS carrot cake. It’s just a bit old,\l"
+    "is all. Don’t be petty.\n"
+}
