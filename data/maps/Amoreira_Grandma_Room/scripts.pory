@@ -1,0 +1,15 @@
+
+mapscripts Amoreira_Grandma_Room_MapScripts {}
+
+script Amoreira_Grandma_Room_MasterBall{
+    lockall
+    msgbox(masterBallText)
+    waitmessage
+    releaseall
+    end
+}
+
+text masterBallText{
+    "It's Grandma's Pokemon. Better not mess\n"
+    "with it.\n"
+}

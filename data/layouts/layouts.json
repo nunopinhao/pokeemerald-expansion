@@ -4460,6 +4460,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Alqueidaozinho/border.bin",
       "blockdata_filepath": "data/layouts/Alqueidaozinho/map.bin"
+    },
+    {
+      "id": "LAYOUT_AMOREIRA_GRANDMA_ROOM",
+      "name": "Amoreira_Grandma_Room_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Amoreira_Grandma_Room/border.bin",
+      "blockdata_filepath": "data/layouts/Amoreira_Grandma_Room/map.bin"
     }
   ]
 }

@@ -27,6 +27,34 @@ script Amoreira_Floor1_EventScript_RivalBattle3{
     end
 }
 
+script Amoreira_Floor1_EventScript_RivalBattle4{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveRivalBattle4)
+    waitmovement(0)
+    call(Amoreira_Floor1_EventScript_RivalBattleSpeech)
+    releaseall
+    end
+}
+
+script Amoreira_Floor1_EventScript_RivalBattle5{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveRivalBattle5)
+    waitmovement(0)
+    call(Amoreira_Floor1_EventScript_RivalBattleSpeech)
+    releaseall
+    end
+}
+
+script Amoreira_Floor1_EventScript_RivalBattle6{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveRivalBattle6)
+    waitmovement(0)
+    call(Amoreira_Floor1_EventScript_RivalBattleSpeech)
+    releaseall
+    end
+}
+
+
 script Amoreira_Floor1_EventScript_RivalBattleSpeech{
     lock
     call(Amoreira_Floor1_EventScript_SetUpAndrewBattle)
@@ -42,9 +70,12 @@ script EventScript_AfterRivalBattles {
     waitmessage
     applymovement(6, GrandmaMoveHeal)
     waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
     giveitem(ITEM_OLD_GATEAU)
     msgbox(Grandma_GiveGateau)
     waitmessage
+    special(HealPlayerParty)
     setvar(VAR_AMOREIRA_READY_FOR_RIVAL_BATTLE, 0)
 }
 
@@ -234,6 +265,18 @@ movement PlayerMoveRivalBattle3 {
     walk_left *5
     walk_down *2
 }
+movement PlayerMoveRivalBattle4 {
+    walk_down *3
+}
+movement PlayerMoveRivalBattle5 {
+    walk_left 
+    walk_down *3
+}
+movement PlayerMoveRivalBattle6 {
+    walk_left *2
+    walk_down *3
+}
+
 movement AndrewMoveBattle {
     walk_up 
     walk_right *4
@@ -368,13 +411,13 @@ text CantLeaveText{
 text GrandmaStarterSpeechFroakie{
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Froakie?\n"
     "Of course you did! A grandson of mine\l"
-    "could only have good taste.\p"
+    "could only have good taste.\n"
 }
 
 text GrandmaStarterSpeechRowlet{
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Rowlet?\n"
     "Of course you did! A grandson of mine\l"
-    "could only have good taste.\p"
+    "could only have good taste.\n"
 }
 
 text GrandmaStarterSpeechTorchic{
