@@ -45,6 +45,7 @@ script EventScript_AfterRivalBattles {
     giveitem(ITEM_OLD_GATEAU)
     msgbox(Grandma_GiveGateau)
     waitmessage
+    setvar(VAR_AMOREIRA_READY_FOR_RIVAL_BATTLE, 0)
 }
 
 script Amoreira_Floor1_EventScript_SetUpAndrewBattle {

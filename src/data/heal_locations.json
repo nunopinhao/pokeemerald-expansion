@@ -186,6 +186,15 @@
       "y": 52,
       "respawn_map": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_FRONTIER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_AMOREIRA_ROOM",
+      "map": "MAP_AMOREIRA_ROOM",
+      "x": 4,
+      "y": 2,
+      "respawn_map": "MAP_AMOREIRA",
+      "respawn_x": 12,
+      "respawn_y": 17
     }
   ]
 }

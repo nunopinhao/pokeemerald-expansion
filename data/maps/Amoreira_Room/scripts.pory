@@ -1,0 +1,9 @@
+mapscripts Amoreira_Room_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Amoreira_HealLocation_OnTransition
+	MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+ 
+script Amoreira_HealLocation_OnTransition {
+   	setrespawn(HEAL_LOCATION_AMOREIRA_ROOM)
+	end 
+}
