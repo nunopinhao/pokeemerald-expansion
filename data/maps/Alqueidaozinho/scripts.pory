@@ -1,0 +1,45 @@
+mapscripts Alqueidaozinho_MapScripts {}
+ 
+script Alqueidaozinho_NpcWoman{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_NpcWomanText)
+    waitmessage
+    release
+    end
+}
+
+ script Alqueidaozinho_NpcLittleBoy{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_NpcLittleBoyText)
+    waitmessage
+    release
+    end
+}
+
+ script Alqueidaozinho_NpcOldMan{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_NpcOldManText)
+    waitmessage
+    release
+    end
+}
+text Alqueidaozinho_NpcWomanText{
+    "Did you get a Pokemon? Your mom must be\n"
+    "proud!\p"
+    "Oh, you don't have a mom?\n"
+    "Oops, my bad...\n"
+}
+
+text Alqueidaozinho_NpcLittleBoyText{
+    "My mom is a bit rude sometimes.\n"
+}
+
+text Alqueidaozinho_NpcOldManText{
+    "There's an Arceus damned Zorua messing\n"
+    "up our crops every now and then.\p"
+    "I wish someone dealt with that pesky\n"
+    "thing before I turn it into a fur coat.\n"
+}

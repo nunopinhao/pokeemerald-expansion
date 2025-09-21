@@ -1,0 +1,30 @@
+mapscripts Alqueidaozinho_House1_MapScripts {}
+ 
+script Alqueidaozinho_House1_NpcOldMan{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_House1_NpcOldManText)
+    waitmessage
+    release
+    end
+}
+
+ script Alqueidaozinho_House1_NpcOldLady{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_House1_NpcOldLadyText)
+    waitmessage
+    release
+    end
+}
+
+text  Alqueidaozinho_House1_NpcOldManText{
+    "It's almost time for Grepa berry harvest\n"
+    "season. But you young folk don't give a\l"
+    "Rattata's ass. You should help out more!\n"
+}
+
+text  Alqueidaozinho_House1_NpcOldLadyText{
+    "There honey, don't get so riled up.\n"
+    "I will make you some ginger tea.\n"
+}

@@ -34,7 +34,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_IndoorAmoreira"
+    "gMapGroup_IndoorAmoreira",
+    "gMapGroup_IndoorAlqueidaozinho"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -95,7 +96,8 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "Amoreira",
-    "Alqueidaozinho"
+    "Alqueidaozinho",
+    "Route02"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -629,5 +631,9 @@
     "Amoreira_Floor1",
     "Amoreira_Backyard",
     "Amoreira_Grandma_Room"
+  ],
+  "gMapGroup_IndoorAlqueidaozinho": [
+    "Alqueidaozinho_House1",
+    "Alqueidaozinho_House2"
   ]
 }

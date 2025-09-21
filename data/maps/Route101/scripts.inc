@@ -25,16 +25,15 @@ Route101_EventScript_RouteSign::
 	end
 
 Route101_Text_TakeTiredPokemonToPokeCenter:
-	.string "If POKéMON get tired, take them to\n"
-	.string "a POKéMON CENTER.\p"
-	.string "There's a POKéMON CENTER in SMALTENT\n"
-	.string "VILLAGE right close by.$"
+	.string "When trainers cross paths they must.\n"
+	.string "fight\p"
+	.string "It's stated in law, I heard.$"
 
 Route101_Text_WildPokemonInTallGrass:
-	.string "Wild POKéMON will jump out at you in\n"
-	.string "tall grass.\p"
-	.string "If you want to catch POKéMON, you have\n"
-	.string "to go into the tall grass and search.$"
+	.string "I don't have a Pokemon so I can't walk\n"
+	.string "in the tall grass.\p"
+	.string "Wild Pokemon can beat you up real bad.\n"
+	.string "Just like my dad does.$"
 
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"

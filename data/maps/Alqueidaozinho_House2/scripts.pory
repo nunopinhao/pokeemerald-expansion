@@ -1,0 +1,41 @@
+mapscripts Alqueidaozinho_House2_MapScripts {}
+ 
+script Alqueidaozinho_House2_NpcOldLady{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_House2_NpcOldLadyText1)
+    waitmessage
+    giveitem(ITEM_POKE_BALL, 1)
+    msgbox(Alqueidaozinho_House2_NpcOldLadyText2)
+    waitmessage
+    release
+    end
+}
+
+ script Alqueidaozinho_House2_NpcLittleGirl{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_House2_NpcLittleGirlText)
+    waitmessage
+    release
+    end
+}
+
+text  Alqueidaozinho_House2_NpcOldLadyText1{
+    "I am friends with your Grandma. We\n"
+    "once went on an epic journey when\l"
+    "we were your age!\p"
+    "Did she never tell you the story?\n"
+    "Here take this gift.\n"
+}
+
+text  Alqueidaozinho_House2_NpcOldLadyText2{
+    "You can catch Pokemon with that. Or use\n"
+    "it as a jewelry box like I do! Ha-ha!\n" 
+}
+
+text  Alqueidaozinho_House2_NpcLittleGirlText{
+    "Granny keeps telling the same stories\n"
+    "over and over.\p"
+    "Maybe she got sick in the head.\n"
+}

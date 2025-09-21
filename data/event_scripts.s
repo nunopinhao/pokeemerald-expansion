@@ -1170,3 +1170,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Alqueidaozinho/scripts.inc"
 
 	.include "data/maps/Amoreira_Grandma_Room/scripts.inc"
+
+	.include "data/maps/Route02/scripts.inc"
+
+	.include "data/maps/Alqueidaozinho_House1/scripts.inc"
+
+	.include "data/maps/Alqueidaozinho_House2/scripts.inc"

@@ -641,7 +641,7 @@ StartSceneText1::
 	.string "lunch!\p"
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Come on Grandma, {PLAYER} has\n"
 	.string "just got out of bed and you are already\l"
-	.string "nagging him.\p"
+	.string "nagging them.\p"
 	.string "Can you pass me the fries, Adrian?\p"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER} was probably up all\n"
 	.string "night playing Crash Royale.\p"

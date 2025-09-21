@@ -165,7 +165,7 @@
       "id": "LAYOUT_ROUTE101",
       "name": "Route101_Layout",
       "width": 20,
-      "height": 23,
+      "height": 22,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route101/border.bin",
@@ -4470,6 +4470,36 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Amoreira_Grandma_Room/border.bin",
       "blockdata_filepath": "data/layouts/Amoreira_Grandma_Room/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE02",
+      "name": "Route02_Layout",
+      "width": 20,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route02/border.bin",
+      "blockdata_filepath": "data/layouts/Route02/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALQUEIDAOZINHO_HOUSE1",
+      "name": "Alqueidaozinho_House1_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Alqueidaozinho_House1/border.bin",
+      "blockdata_filepath": "data/layouts/Alqueidaozinho_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALQUEIDAOZINHO_HOUSE2",
+      "name": "Alqueidaozinho_House2_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Alqueidaozinho_House2/border.bin",
+      "blockdata_filepath": "data/layouts/Alqueidaozinho_House2/map.bin"
     }
   ]
 }

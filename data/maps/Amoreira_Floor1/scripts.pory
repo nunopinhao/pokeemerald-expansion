@@ -337,7 +337,7 @@ text StartSceneText1{
     "lunch!\p"
     "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Come on Grandma, {PLAYER} has\n"
     "just got out of bed and you are already\l"
-    "nagging him.\p" 
+    "nagging them.\p" 
     "Can you pass me the fries, Adrian?\p"
     "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER} was probably up all\n"
     "night playing Crash Royale.\p"
