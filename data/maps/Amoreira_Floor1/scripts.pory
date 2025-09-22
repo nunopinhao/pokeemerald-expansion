@@ -76,6 +76,11 @@ script EventScript_AfterRivalBattles {
     msgbox(Grandma_GiveGateau)
     waitmessage
     special(HealPlayerParty)
+    msgbox(Grandma_GivePokeBalls)
+    waitmessage
+    giveitem(ITEM_POKE_BALL, 5)
+    msgbox(Grandma_ExplainPokeBalls)
+    waitmessage
     setvar(VAR_AMOREIRA_READY_FOR_RIVAL_BATTLE, 0)
 }
 
@@ -180,6 +185,25 @@ script Amoreira_Floor1_EventScript_AdrianSpeech{
     end
 }
 
+script Amoreira_Floor1_EventScript_AndrewSpeech_AfterBattle{
+    lock
+    faceplayer
+    msgbox(AndrewSpeechAfterBattleText)
+    waitmessage
+    release
+    end
+}
+
+script Amoreira_Floor1_EventScript_AdrianSpeech_AfterBattle{
+    lock
+    faceplayer
+    msgbox(AdrianSpeechAfterBattleText)
+    waitmessage
+    release
+    end
+}
+
+
 script Amoreira_Floor1_EventScript_StartScene1{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearGrandma1)
@@ -225,6 +249,9 @@ script Amoreira_Floor1_EventScript_StartSpeech{
 }
 
 script Amoreira_Floor1_Grandma_HealSpot{
+    if(flag(FLAG_DEFEATED_ZORUA)){
+
+    }
     lock
     faceplayer
     msgbox(GrandmaHealSpotText)
@@ -459,12 +486,12 @@ text Adrian_Intro{
 }
  
 text Adrian_Outro{
-    "Doesn't count"
+    "Didn't see this coming..."
 }
 
 text RivalBattlesOver{
-    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Power to the new gen of POKEMON\n"
-    "TRAINERS!\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Power to the new gen of Pokemon\n"
+    "trainers!\p"
     "Seems like your little cousin has won by\n"
     "a landslide.\p"
     "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER} is not younger by that\n"
@@ -481,5 +508,38 @@ text Grandma_GiveGateau{
 
 text GrandmaHealSpotText{
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Here {PLAYER}, let me heal your\n"
-    "pokemon.\n"
+    "Pokemon. Now buzz off!\n"
+}
+
+text Grandma_GivePokeBalls{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} And here is the rest of your\n"
+    "prize.\n"
+}
+
+text Grandma_ExplainPokeBalls{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Anyhow, your new partner can\n"
+    "help you find who has been intruding in\l"
+    "my garden.\p"
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} It's your turn to go on a weird\n"
+    "errand, it seems.\p"
+    "We can play Crash Royale later when\n"
+    "you're done!\p"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Don’t encourage him to waste away\n"
+    "on mobile games. Besides, we all know\l"
+    "who is the real pro at that game.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} And this is my legacy, three\n"
+    "little gamers. I’m writing you all out\l"
+    "of my will.\n"
+}
+
+text AndrewSpeechAfterBattleText{
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Grandma is being unfair.\n"
+    "We don’t JUST play mobile games.\l"
+    "We also play on PC!\n"
+}
+
+text AdrianSpeechAfterBattleText{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Why do I get the sneaking\n"
+    "suspicion there’s more to these errands\l"
+    "than meets the eye.\n"
 }

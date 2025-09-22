@@ -4520,6 +4520,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/Alqueidaozinho_Mart/border.bin",
       "blockdata_filepath": "data/layouts/Alqueidaozinho_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE03",
+      "name": "Route03_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route03/border.bin",
+      "blockdata_filepath": "data/layouts/Route03/map.bin"
     }
   ]
 }

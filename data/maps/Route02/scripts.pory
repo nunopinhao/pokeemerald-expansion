@@ -2,6 +2,8 @@ mapscripts Route02_MapScripts {}
  
 script Route02_EventScript_Zorua {
 	lockall
+    msgbox("You found the pesky Zorua!")
+    waitmessage
 	playmoncry(SPECIES_ZORUA, CRY_MODE_ENCOUNTER)
 	delay(40)
 	waitmoncry

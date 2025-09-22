@@ -9,7 +9,34 @@ script Amoreira_EventScript_MrFallsmellSpeech{
     end
 }
 
+script Amoreira_EventScript_FlowerLadySpeech{
+    lock
+    faceplayer
+    msgbox(Amoreira_FlowerLady_SpeechText)
+    waitmessage
+    release
+    end
+}
+
+script Amoreira_EventScript_Sign{
+    lock
+    faceplayer
+    msgbox(Amoreira_SignText)
+    waitmessage
+    release
+    end
+}
 
 text MrFallsmellSpeechText{
     "{COLOR BLUE}{SHADOW LIGHT_BLUE}Mr. Fallsmell:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Let's drink a fine?\n"
+}
+
+text Amoreira_FlowerLady_SpeechText{
+    "Wild Pokémon attack our crops sometimes.\n"
+    "I think I saw one fleeing your Granny’s\l"
+    "garden.\n"
+}
+
+text Amoreira_SignText{
+    "Community Garden.\n""
 }

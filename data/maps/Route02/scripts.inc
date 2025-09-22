@@ -38,18 +38,24 @@ Won_or_Caught::
 # 18 "data/maps/Route02/scripts.pory"
 	setflag FLAG_ZORUA
 # 19 "data/maps/Route02/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	setflag FLAG_DEFEATED_ZORUA
 # 20 "data/maps/Route02/scripts.pory"
-	removeobject 1
+	setflag FLAG_ANDREW_BATTLE
 # 21 "data/maps/Route02/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	setflag FLAG_ADRIAN_BATTLE
 # 22 "data/maps/Route02/scripts.pory"
-	msgbox Won_or_Caught_Text_0
+	fadescreen FADE_TO_BLACK
 # 23 "data/maps/Route02/scripts.pory"
+	removeobject 1
+# 24 "data/maps/Route02/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 25 "data/maps/Route02/scripts.pory"
+	msgbox Won_or_Caught_Text_0
+# 26 "data/maps/Route02/scripts.pory"
 	waitmessage
 	return
 
 
 Won_or_Caught_Text_0:
-# 22 "data/maps/Route02/scripts.pory"
+# 25 "data/maps/Route02/scripts.pory"
 	.string "Better return to Grandma now.$"
