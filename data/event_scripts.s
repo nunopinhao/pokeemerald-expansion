@@ -1176,3 +1176,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Alqueidaozinho_House1/scripts.inc"
 
 	.include "data/maps/Alqueidaozinho_House2/scripts.inc"
+
+	.include "data/maps/Alqueidaozinho_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/Alqueidaozinho_Mart/scripts.inc"

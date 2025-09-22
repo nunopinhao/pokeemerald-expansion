@@ -79,6 +79,20 @@
       "elevation": 0,
       "dest_map": "MAP_ALQUEIDAOZINHO_HOUSE1",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 6,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_ALQUEIDAOZINHO_POKEMON_CENTER_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ALQUEIDAOZINHO_MART",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],
