@@ -6,56 +6,64 @@ Route02_EventScript_Zorua::
 # 4 "data/maps/Route02/scripts.pory"
 	lockall
 # 5 "data/maps/Route02/scripts.pory"
-	playmoncry SPECIES_ZORUA, CRY_MODE_ENCOUNTER
+	msgbox Route02_EventScript_Zorua_Text_0
 # 6 "data/maps/Route02/scripts.pory"
-	delay 40
+	waitmessage
 # 7 "data/maps/Route02/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_ZORUA, CRY_MODE_ENCOUNTER
 # 8 "data/maps/Route02/scripts.pory"
-	setwildbattle SPECIES_ZORUA, 5, ITEM_LUCKY_EGG
+	delay 40
 # 9 "data/maps/Route02/scripts.pory"
-	dowildbattle
+	waitmoncry
 # 10 "data/maps/Route02/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	setwildbattle SPECIES_ZORUA, 5, ITEM_LUCKY_EGG
 # 11 "data/maps/Route02/scripts.pory"
+	dowildbattle
+# 12 "data/maps/Route02/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 13 "data/maps/Route02/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route02_EventScript_Zorua_2
-# 11 "data/maps/Route02/scripts.pory"
+# 13 "data/maps/Route02/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route02_EventScript_Zorua_2
 Route02_EventScript_Zorua_1:
-# 14 "data/maps/Route02/scripts.pory"
+# 16 "data/maps/Route02/scripts.pory"
 	releaseall
 	return
 
 Route02_EventScript_Zorua_2:
-# 12 "data/maps/Route02/scripts.pory"
+# 14 "data/maps/Route02/scripts.pory"
 	call Won_or_Caught
 	goto Route02_EventScript_Zorua_1
 
 
 Won_or_Caught::
-# 18 "data/maps/Route02/scripts.pory"
-	setflag FLAG_ZORUA
-# 19 "data/maps/Route02/scripts.pory"
-	setflag FLAG_DEFEATED_ZORUA
 # 20 "data/maps/Route02/scripts.pory"
-	setflag FLAG_ANDREW_BATTLE
+	setflag FLAG_ZORUA
 # 21 "data/maps/Route02/scripts.pory"
-	setflag FLAG_ADRIAN_BATTLE
+	setflag FLAG_DEFEATED_ZORUA
 # 22 "data/maps/Route02/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	setflag FLAG_ANDREW_BATTLE
 # 23 "data/maps/Route02/scripts.pory"
-	removeobject 1
+	setflag FLAG_ADRIAN_BATTLE
 # 24 "data/maps/Route02/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreen FADE_TO_BLACK
 # 25 "data/maps/Route02/scripts.pory"
-	msgbox Won_or_Caught_Text_0
+	removeobject 1
 # 26 "data/maps/Route02/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 27 "data/maps/Route02/scripts.pory"
+	msgbox Won_or_Caught_Text_0
+# 28 "data/maps/Route02/scripts.pory"
 	waitmessage
 	return
 
 
+Route02_EventScript_Zorua_Text_0:
+# 5 "data/maps/Route02/scripts.pory"
+	.string "You found the pesky Zorua!$"
+
 Won_or_Caught_Text_0:
-# 25 "data/maps/Route02/scripts.pory"
+# 27 "data/maps/Route02/scripts.pory"
 	.string "Better return to Grandma now.$"

@@ -55,8 +55,8 @@
 #define FLAG_ZORUA           0x29 // Unused Flag
 #define FLAG_ALQUEIDAOZINHO_HOUSE2_POKEBALL    0x2A // Unused Flag
 #define FLAG_DEFEATED_ZORUA  0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
+#define FLAG_TRUCK_AMOREIRA  0x2C // Unused Flag
+#define FLAG_MR_FALLSMELL    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag

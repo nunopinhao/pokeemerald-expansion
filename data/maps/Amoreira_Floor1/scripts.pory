@@ -249,18 +249,43 @@ script Amoreira_Floor1_EventScript_StartSpeech{
 }
 
 script Amoreira_Floor1_Grandma_HealSpot{
-    if(flag(FLAG_DEFEATED_ZORUA)){
-
+    if(flag(FLAG_ADVENTURE_STARTED)){
+        lock
+        faceplayer
+        msgbox(GrandmaDefeatedZoruaText2)
+        waitmessage
+        release
+        end
     }
-    lock
-    faceplayer
-    msgbox(GrandmaHealSpotText)
-    playfanfare(MUS_HEAL)
-    waitfanfare
-    special(HealPlayerParty)
-    waitmessage
-    release
-    end
+    elif(flag(FLAG_DEFEATED_ZORUA)){
+        lock
+        faceplayer
+        msgbox(GrandmaDefeatedZoruaText)
+        waitmessage
+        playfanfare(MUS_OBTAIN_ITEM)
+	    message("{PLAYER} received the POKéDEX!$")
+	    waitfanfare
+        closemessage
+	    setflag(FLAG_SYS_POKEDEX_GET)
+        setflag(FLAG_ADVENTURE_STARTED)
+	    special(SetUnlockedPokedexFlags)
+	    setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+	    setvar(VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
+        setflag(FLAG_TRUCK_AMOREIRA)
+        setflag(FLAG_MR_FALLSMELL)
+        msgbox(GrandmaDefeatedZoruaText2)
+        waitmessage
+        release
+        end
+    }
+    else{
+        lock
+        faceplayer
+        msgbox(GrandmaHealSpotText)
+        waitmessage
+        release
+        end
+    }
 }
 
 
@@ -507,8 +532,7 @@ text Grandma_GiveGateau{
 }
 
 text GrandmaHealSpotText{
-    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Here {PLAYER}, let me heal your\n"
-    "Pokemon. Now buzz off!\n"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Grandma is rooting for you!\n"
 }
 
 text Grandma_GivePokeBalls{
@@ -542,4 +566,27 @@ text AdrianSpeechAfterBattleText{
     "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Why do I get the sneaking\n"
     "suspicion there’s more to these errands\l"
     "than meets the eye.\n"
+}
+
+text GrandmaDefeatedZoruaText{
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Here is my little hero!\n"
+    "Your cousins already left.\p"
+    "My Torchic and eggs thank you, hon.\n"
+    "Well you’re no turnip, so you must know\l"
+    "there is something else going on.\p"
+    "My old friends and I decided to revive\n"
+    "the League System!\p"
+    "It was once abolished after a terrible\n"
+    "catastrophe. But we need it back pronto.\p"
+    "RAMTO’s first Gym Leaders in centuries\n"
+    "have been chosen already.\p"
+    "{PLAYER}, go out there and challenge\n"
+    "them! There is so much I need to tell\l"
+    "you, but it will come in due time.\p"
+    "Take this with you.\n"
+}
+
+text GrandmaDefeatedZoruaText2{
+    "RAMTO needs you youngsters. Make this\n"
+    "old lady proud!\n"
 }
