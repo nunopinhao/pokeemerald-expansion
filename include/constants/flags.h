@@ -52,9 +52,9 @@
 #define FLAG_ADRIAN_BATTLE    0x26 // Unused Flag
 #define FLAG_GRANDMA_HEALER    0x27 // Unused Flag
 #define FLAG_GRANDMA_SPEAKER    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
+#define FLAG_ZORUA           0x29 // Unused Flag
+#define FLAG_ALQUEIDAOZINHO_HOUSE2_POKEBALL    0x2A // Unused Flag
+#define FLAG_DEFEATED_ZORUA  0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
@@ -1222,7 +1222,7 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
+#define FLAG_ITEM_ROUTE_102_TM10                                    0x493 // Unused Flag
 #define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
 #define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
 #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag

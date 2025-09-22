@@ -1,0 +1,28 @@
+mapscripts Route02_MapScripts {}
+ 
+script Route02_EventScript_Zorua {
+	lockall
+	playmoncry(SPECIES_ZORUA, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_ZORUA, 5, ITEM_LUCKY_EGG)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT || var(VAR_RESULT) == B_OUTCOME_WON){
+		call(Won_or_Caught)
+	}
+	releaseall
+}
+ 
+script Won_or_Caught {
+    setflag(FLAG_ZORUA)
+    setflag(FLAG_DEFEATED_ZORUA)
+    setflag(FLAG_ANDREW_BATTLE)
+    setflag(FLAG_ADRIAN_BATTLE)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox("Better return to Grandma now.")
+    waitmessage
+	return
+}

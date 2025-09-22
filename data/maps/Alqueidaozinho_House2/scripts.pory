@@ -3,10 +3,16 @@ mapscripts Alqueidaozinho_House2_MapScripts {}
 script Alqueidaozinho_House2_NpcOldLady{
     lock
     faceplayer
-    msgbox(Alqueidaozinho_House2_NpcOldLadyText1)
-    waitmessage
-    giveitem(ITEM_POKE_BALL, 1)
-    msgbox(Alqueidaozinho_House2_NpcOldLadyText2)
+    if(flag(FLAG_ALQUEIDAOZINHO_HOUSE2_POKEBALL)){
+        msgbox(Alqueidaozinho_House2_NpcOldLadyText2)
+    }
+    else{
+        msgbox(Alqueidaozinho_House2_NpcOldLadyText1)
+        waitmessage
+        giveitem(ITEM_POKE_BALL, 1)
+        setflag(FLAG_ALQUEIDAOZINHO_HOUSE2_POKEBALL)
+        msgbox(Alqueidaozinho_House2_NpcOldLadyText2)
+    }
     waitmessage
     release
     end
