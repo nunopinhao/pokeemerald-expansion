@@ -26,6 +26,14 @@ script Alqueidaozinho_NpcWoman{
     release
     end
 }
+
+script Alqueidaozinho_Sign{
+    lock
+    msgbox(Alqueidaozinho_SignText)
+    waitmessage
+    release
+    end
+}
 text Alqueidaozinho_NpcWomanText{
     "Did you get a Pokemon? Your mom must be\n"
     "proud!\p"
@@ -42,4 +50,8 @@ text Alqueidaozinho_NpcOldManText{
     "up our crops every now and then.\p"
     "I wish someone dealt with that pesky\n"
     "thing before I turn it into a fur coat.\n"
+}
+
+text Alqueidaozinho_SignText{
+    "Grepa berry harvest season is here!\n"
 }

@@ -9,7 +9,39 @@ script Amoreira_Grandma_Room_MasterBall{
     end
 }
 
+script Amoreira_Grandma_Room_Notebook1{
+    lockall
+    msgbox(grandmaNotebookText1)
+    waitmessage
+    releaseall
+    end
+}
+
+script Amoreira_Grandma_Room_Notebook2{
+    lockall
+    msgbox(grandmaNotebookText2)
+    waitmessage
+    releaseall
+    end
+}
+
 text masterBallText{
     "It's Grandma's Pokemon. Better not mess\n"
     "with it.\n"
 }
+
+text grandmaNotebookText1{
+    "{FONT_NARROW}My friends and I made a terrible{FONT_NARROW}\n"
+    "{FONT_NARROW}discovery.{FONT_NARROW}\p"
+    "{FONT_NARROW}Shadowy forces in RAMTO threaten to{FONT_NARROW}\n"
+    "{FONT_NARROW}destroy us all.{FONT_NARROW}\p"
+}
+
+text grandmaNotebookText2{
+    "{FONT_NARROW}But we must plan and wait. In 50 years,{FONT_NARROW}\n"
+    "{FONT_NARROW}everything will be set in motion.{FONT_NARROW}\p"
+    "{FONT_NARROW}We won’t be the ones to save everyone,{FONT_NARROW}\n"
+    "{FONT_NARROW}but the ones reading this will.{FONT_NARROW}\p"
+}
+
+

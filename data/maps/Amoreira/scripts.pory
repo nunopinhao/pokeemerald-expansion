@@ -20,7 +20,6 @@ script Amoreira_EventScript_FlowerLadySpeech{
 
 script Amoreira_EventScript_Sign{
     lock
-    faceplayer
     msgbox(Amoreira_SignText)
     waitmessage
     release

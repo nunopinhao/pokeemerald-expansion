@@ -25,3 +25,4 @@ Alqueidaozinho_Mart_Pokemart_Basic:
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_ORANGE_MAIL
 	pokemartlistend
+	

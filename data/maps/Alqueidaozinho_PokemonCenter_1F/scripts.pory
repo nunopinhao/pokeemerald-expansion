@@ -1,0 +1,49 @@
+raw `
+Alqueidaozinho_PokemonCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Alqueidaozinho_PokemonCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+Alqueidaozinho_PokemonCenter_1F_OnTransition:
+	setrespawn HEAL_LOCATION_SMALTENT
+	end
+
+Alqueidaozinho_PokemonCenter_1F_EventScript_Nurse::
+	setvar VAR_0x800B, LOCALID_SMALTENT_NURSE
+	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
+`
+ 
+
+script Alqueidaozinho_PokemonCenter_1F_EventScript_Girl{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_PokemonCenter_1F_GirlText)
+    waitmessage
+    release
+    end
+}
+
+script Alqueidaozinho_PokemonCenter_1F_EventScript_Man{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_PokemonCenter_1F_ManText)
+    waitmessage
+    release
+    end
+}
+
+text Alqueidaozinho_PokemonCenter_1F_GirlText{
+    "RAMTO isn’t a very famous region. But\n"
+    "everyone who comes here wants to stay.\n"
+}
+
+text Alqueidaozinho_PokemonCenter_1F_ManText{
+    "Why do Pokemon get to have free\n"
+    "health care and I can’t?! So unfair!\n"
+}
+

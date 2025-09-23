@@ -60,6 +60,20 @@ Won_or_Caught::
 	return
 
 
+Route02_EventScript_Fisherman::
+# 33 "data/maps/Route02/scripts.pory"
+	lock
+# 34 "data/maps/Route02/scripts.pory"
+	faceplayer
+# 35 "data/maps/Route02/scripts.pory"
+	msgbox Route02_Fisherman_Text
+# 36 "data/maps/Route02/scripts.pory"
+	waitmessage
+# 37 "data/maps/Route02/scripts.pory"
+	release
+	end
+
+
 Route02_EventScript_Zorua_Text_0:
 # 5 "data/maps/Route02/scripts.pory"
 	.string "You found the pesky Zorua!$"
@@ -67,3 +81,14 @@ Route02_EventScript_Zorua_Text_0:
 Won_or_Caught_Text_0:
 # 27 "data/maps/Route02/scripts.pory"
 	.string "Better return to Grandma now.$"
+
+Route02_Fisherman_Text::
+# 41 "data/maps/Route02/scripts.pory"
+	.string "Hey kid, do you enjoy obscure adventures\n"
+	.string "like I do?\p"
+	.string "Through this spot you can access an\n"
+	.string "island that is said to bloom\l"
+	.string "so very beautifully.\p"
+	.string "It’s off-limits to the public, but\n"
+	.string "you strike me as someone who\l"
+	.string "wouldn’t care about that.\n$"

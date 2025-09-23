@@ -28,3 +28,23 @@ script Won_or_Caught {
     waitmessage
 	return
 }
+
+script Route02_EventScript_Fisherman{
+	lock
+	faceplayer
+	msgbox(Route02_Fisherman_Text)
+	waitmessage
+	release
+	end
+}
+
+text Route02_Fisherman_Text{
+	"Hey kid, do you enjoy obscure adventures\n"
+	"like I do?\p"
+	"Through this spot you can access an\n"
+	"island that is said to bloom\l"
+	"so very beautifully.\p"
+	"It’s off-limits to the public, but\n"
+	"you strike me as someone who\l"
+	"wouldn’t care about that.\n"
+}

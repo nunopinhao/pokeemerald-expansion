@@ -1,0 +1,60 @@
+raw`
+Alqueidaozinho_Mart_MapScripts::
+	.byte 0
+
+Alqueidaozinho_Mart_EventScript_Clerk::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart Alqueidaozinho_Mart_Pokemart_Basic
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+Alqueidaozinho_Mart_Pokemart_Basic:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_POTION
+	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_AWAKENING
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_X_SPEED
+	.2byte ITEM_X_ATTACK
+	.2byte ITEM_X_DEFENSE
+	.2byte ITEM_ORANGE_MAIL
+	pokemartlistend
+	
+`
+script Alqueidaozinho_Mart_EventScript_Boy{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_Mart_Text_Boy)
+    waitmessage
+    release
+    end
+}
+
+script Alqueidaozinho_Mart_EventScript_Woman{
+    lock
+    faceplayer
+    msgbox(Alqueidaozinho_Mart_Text_Woman)
+    waitmessage
+    release
+    end
+}
+
+text Alqueidaozinho_Mart_Text_Boy{
+    "You better stock up on Antidotes and\n"
+    "Repels. Wild Pokémon can get really\l"
+    "annoying when you travel long distances.\n"
+}
+
+text Alqueidaozinho_Mart_Text_Woman{
+    "My son started his journey. I’ll send\n"
+    "him some treats to help him along!\n"
+}
+
+
