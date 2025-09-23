@@ -1272,7 +1272,7 @@ enum HoennDexOrder
     HOENN_DEX_SHAYMIN,
 };
 
-#define HOENN_DEX_COUNT (HOENN_DEX_DEOXYS + 1)
+#define HOENN_DEX_COUNT (HOENN_DEX_SHAYMIN + 1)
 
 #define DECAGRAMS_IN_POUND             4536
 #define CM_PER_INCH                    2.54

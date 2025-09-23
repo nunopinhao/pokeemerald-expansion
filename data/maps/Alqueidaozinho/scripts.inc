@@ -44,20 +44,36 @@ Alqueidaozinho_NpcOldMan::
 	end
 
 
+Alqueidaozinho_Sign::
+# 31 "data/maps/Alqueidaozinho/scripts.pory"
+	lock
+# 32 "data/maps/Alqueidaozinho/scripts.pory"
+	msgbox Alqueidaozinho_SignText
+# 33 "data/maps/Alqueidaozinho/scripts.pory"
+	waitmessage
+# 34 "data/maps/Alqueidaozinho/scripts.pory"
+	release
+	end
+
+
 Alqueidaozinho_NpcWomanText::
-# 29 "data/maps/Alqueidaozinho/scripts.pory"
+# 37 "data/maps/Alqueidaozinho/scripts.pory"
 	.string "Did you get a Pokemon? Your mom must be\n"
 	.string "proud!\p"
 	.string "Oh, you don't have a mom?\n"
 	.string "Oops, my bad...\n$"
 
 Alqueidaozinho_NpcLittleBoyText::
-# 36 "data/maps/Alqueidaozinho/scripts.pory"
+# 44 "data/maps/Alqueidaozinho/scripts.pory"
 	.string "My mom is a bit rude sometimes.\n$"
 
 Alqueidaozinho_NpcOldManText::
-# 40 "data/maps/Alqueidaozinho/scripts.pory"
+# 48 "data/maps/Alqueidaozinho/scripts.pory"
 	.string "There's an Arceus damned Zorua messing\n"
 	.string "up our crops every now and then.\p"
 	.string "I wish someone dealt with that pesky\n"
 	.string "thing before I turn it into a fur coat.\n$"
+
+Alqueidaozinho_SignText::
+# 55 "data/maps/Alqueidaozinho/scripts.pory"
+	.string "Grepa berry harvest season is here!\n$"
