@@ -418,7 +418,7 @@ text StartSceneText2{
     "So what do you need {PLAYER} to do\l"
     "Grandma?\p"
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} A naughty pokemon has been\n"
-    "messing with my torchic, attacking them\l"
+    "messing with my Torchic, attacking them\l"
     "and eating all my eggs!\p"
     "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} That explains why there is so\n"
     "little omelet for lunch today.\n"
@@ -462,26 +462,26 @@ text CantLeaveText{
 
 text GrandmaStarterSpeechFroakie{
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Froakie?\n"
-    "Of course you did! A grandson of mine\l"
+    "Of course you did! A grandchild of mine\l"
     "could only have good taste.\n"
 }
 
 text GrandmaStarterSpeechRowlet{
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Rowlet?\n"
-    "Of course you did! A grandson of mine\l"
+    "Of course you did! A grandchild of mine\l"
     "could only have good taste.\n"
 }
 
 text GrandmaStarterSpeechTorchic{
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Torchic?\n"
-    "Of course you did! A grandson of mine\l"
+    "Of course you did! A grandchild of mine\l"
     "could only have good taste.\n"
 }
 
 text RivalBattleSpeechText{
     "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Except you don’t have good taste.\n"
     "You go shopping at the junkyard.\p"
-    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Zip it now, other grandson!\n"
+    "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Zip it now, other grandchild!\n"
     "Don’t bite the hand that feeds you\l"
     "schmucks every day.\p"
     "Now, the second part of the errand is\n"
@@ -548,9 +548,9 @@ text Grandma_ExplainPokeBalls{
     "errand, it seems.\p"
     "We can play Crash Royale later when\n"
     "you're done!\p"
-    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Don’t encourage him to waste away\n"
-    "on mobile games. Besides, we all know\l"
-    "who is the real pro at that game.\p"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Don’t encourage {PLAYER} to waste\n" 
+    "away on mobile games. Besides, we all\l"
+    "know who is the real pro at that game.\p"
     "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} And this is my legacy, three\n"
     "little gamers. I’m writing you all out\l"
     "of my will.\n"

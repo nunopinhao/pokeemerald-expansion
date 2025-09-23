@@ -762,7 +762,7 @@ StartSceneText2::
 	.string "So what do you need {PLAYER} to do\l"
 	.string "Grandma?\p"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} A naughty pokemon has been\n"
-	.string "messing with my torchic, attacking them\l"
+	.string "messing with my Torchic, attacking them\l"
 	.string "and eating all my eggs!\p"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} That explains why there is so\n"
 	.string "little omelet for lunch today.\n$"
@@ -806,26 +806,26 @@ CantLeaveText::
 GrandmaStarterSpeechFroakie::
 # 463 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Froakie?\n"
-	.string "Of course you did! A grandson of mine\l"
+	.string "Of course you did! A grandchild of mine\l"
 	.string "could only have good taste.\n$"
 
 GrandmaStarterSpeechRowlet::
 # 469 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Rowlet?\n"
-	.string "Of course you did! A grandson of mine\l"
+	.string "Of course you did! A grandchild of mine\l"
 	.string "could only have good taste.\n$"
 
 GrandmaStarterSpeechTorchic::
 # 475 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Torchic?\n"
-	.string "Of course you did! A grandson of mine\l"
+	.string "Of course you did! A grandchild of mine\l"
 	.string "could only have good taste.\n$"
 
 RivalBattleSpeechText::
 # 481 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Except you don’t have good taste.\n"
 	.string "You go shopping at the junkyard.\p"
-	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Zip it now, other grandson!\n"
+	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Zip it now, other grandchild!\n"
 	.string "Don’t bite the hand that feeds you\l"
 	.string "schmucks every day.\p"
 	.string "Now, the second part of the errand is\n"
@@ -892,9 +892,9 @@ Grandma_ExplainPokeBalls::
 	.string "errand, it seems.\p"
 	.string "We can play Crash Royale later when\n"
 	.string "you're done!\p"
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Don’t encourage him to waste away\n"
-	.string "on mobile games. Besides, we all know\l"
-	.string "who is the real pro at that game.\p"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Don’t encourage {PLAYER} to waste\n"
+	.string "away on mobile games. Besides, we all\l"
+	.string "know who is the real pro at that game.\p"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} And this is my legacy, three\n"
 	.string "little gamers. I’m writing you all out\l"
 	.string "of my will.\n$"
