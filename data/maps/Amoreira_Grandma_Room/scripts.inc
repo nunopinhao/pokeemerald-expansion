@@ -48,11 +48,11 @@ grandmaNotebookText1::
 	.string "{FONT_NARROW}My friends and I made a terrible{FONT_NARROW}\n"
 	.string "{FONT_NARROW}discovery.{FONT_NARROW}\p"
 	.string "{FONT_NARROW}Shadowy forces in RAMTO threaten to{FONT_NARROW}\n"
-	.string "{FONT_NARROW}destroy us all.{FONT_NARROW}\p$"
+	.string "{FONT_NARROW}destroy us all.{FONT_NARROW}\n$"
 
 grandmaNotebookText2::
 # 40 "data/maps/Amoreira_Grandma_Room/scripts.pory"
 	.string "{FONT_NARROW}But we must plan and wait. In 50 years,{FONT_NARROW}\n"
 	.string "{FONT_NARROW}everything will be set in motion.{FONT_NARROW}\p"
 	.string "{FONT_NARROW}We won’t be the ones to save everyone,{FONT_NARROW}\n"
-	.string "{FONT_NARROW}but the ones reading this will.{FONT_NARROW}\p$"
+	.string "{FONT_NARROW}but the ones reading this will.{FONT_NARROW}\n$"
