@@ -4530,6 +4530,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route03/border.bin",
       "blockdata_filepath": "data/layouts/Route03/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLINT_TOWN",
+      "name": "FlintTown_Layout",
+      "width": 30,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/FlintTown/border.bin",
+      "blockdata_filepath": "data/layouts/FlintTown/map.bin"
     }
   ]
 }

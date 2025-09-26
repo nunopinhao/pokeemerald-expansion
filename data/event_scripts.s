@@ -1182,3 +1182,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Alqueidaozinho_Mart/scripts.inc"
 
 	.include "data/maps/Route03/scripts.inc"
+
+	.include "data/maps/FlintTown/scripts.inc"

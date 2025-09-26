@@ -1241,6 +1241,10 @@
     {
       "id": "MAPSEC_ROUTE02",
       "name": "ROUTE 102"
+    },
+    {
+      "id": "MAPSEC_FLINT_TOWN",
+      "name": "FLINT TOWN"
     }
   ]
 }
