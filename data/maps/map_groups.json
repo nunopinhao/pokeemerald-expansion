@@ -35,7 +35,8 @@
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorAmoreira",
-    "gMapGroup_IndoorAlqueidaozinho"
+    "gMapGroup_IndoorAlqueidaozinho",
+    "gMapGroup_IndoorFlintTown"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -639,5 +640,8 @@
     "Alqueidaozinho_House2",
     "Alqueidaozinho_PokemonCenter_1F",
     "Alqueidaozinho_Mart"
+  ],
+  "gMapGroup_IndoorFlintTown": [
+    "FlintTown_PokeCenter"
   ]
 }

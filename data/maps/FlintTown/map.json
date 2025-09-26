@@ -34,7 +34,24 @@
       "flag": "FLAG_FLINT_TOWN_GYM_GUARD"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FLINT_TOWN_POKE_CENTER",
+      "dest_warp_id": "1"
+    }
+  ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 0,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_RARE_CANDY",
+      "flag": "FLAG_HIDDEN_ITEM_FLINT_TOWN_RARE_CANDY"
+    }
+  ]
 }
