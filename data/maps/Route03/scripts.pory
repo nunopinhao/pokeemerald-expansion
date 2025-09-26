@@ -20,3 +20,69 @@ text Ruy_PostBattle{
 	"Time to go back to waiting! I sure love\n"
     "how normal I am.\n"
 }
+
+script Route03_EventScript_MartinBattle{
+    trainerbattle_single(TRAINER_MARTIN, Martin_Intro, Martin_Outro)
+    msgbox(Martin_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+}
+
+text Martin_Intro{
+    "Did you fight that other weirdo? Dude\n"
+    "really needs a new hobby.\n"
+}
+text Martin_Outro{
+    "Am I the same as that weird guy?"
+}
+text Martin_PostBattle{
+    "I'll stay here and train more.\n"
+}
+
+script Route03_EventScript_Gonzalo{
+    trainerbattle_single(TRAINER_GONZALO, Gonzalo_Intro, Gonzalo_Outro)
+    msgbox(Gonzalo_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+}
+text Gonzalo_Intro{
+    "The League system is back, baby. You’re\n"
+    "going down, loser!\n"
+}
+text Gonzalo_Outro{
+    "My therapist will hear about this\n"
+    "humiliating defeat…"
+}
+text Gonzalo_PostBattle{
+    "Thank you for the fight, I needed to be\n"
+    "humbled a bit.\n"
+}
+
+script Route03_EventScript_Philippa{
+    trainerbattle_single(TRAINER_PHILIPPA, Philippa_Intro, Philippa_Outro)
+    msgbox(Philippa_PostBattle, MSGBOX_AUTOCLOSE)
+    end
+}
+text Philippa_Intro{
+    "One day, I’ll be strong enough to be a\n"
+    "Gym Leader!\n"
+}
+text Philippa_Outro{
+    "I did say one day, not now."
+}
+text Philippa_PostBattle{
+    "I want to be a Fairy-type Gym Leader!\n"
+}
+
+script Route03_EventScript_Boy{
+    lock
+    faceplayer
+    msgbox(Boy_Text, MSGBOX_NPC)
+    release
+    end
+}
+text Boy_Text{
+    "No, please don’t take my money!\p"
+    "Oh sorry, I mistook you for one of those\n"
+    "Team Blaze bozos.\n"
+}
+
+
