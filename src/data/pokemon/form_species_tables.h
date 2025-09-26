@@ -124,7 +124,7 @@ static const u16 sPikachuFormSpeciesIdTable[] = {
 };
 
 static const u16 sRaichuFormSpeciesIdTable[] = {
-    SPECIES_RAICHU,
+    SPECIES_RAICHU_ALOLA,
 #if P_ALOLAN_FORMS
     SPECIES_RAICHU_ALOLA,
 #endif
@@ -188,7 +188,7 @@ static const u16 sDugtrioFormSpeciesIdTable[] = {
 
 #if P_FAMILY_MEOWTH
 static const u16 sMeowthFormSpeciesIdTable[] = {
-    SPECIES_MEOWTH,
+    SPECIES_MEOWTH_ALOLA,
 #if P_ALOLAN_FORMS
     SPECIES_MEOWTH_ALOLA,
 #endif
@@ -202,7 +202,7 @@ static const u16 sMeowthFormSpeciesIdTable[] = {
 };
 
 static const u16 sPersianFormSpeciesIdTable[] = {
-    SPECIES_PERSIAN,
+    SPECIES_PERSIAN_ALOLA,
 #if P_ALOLAN_FORMS
     SPECIES_PERSIAN_ALOLA,
 #endif
@@ -212,7 +212,7 @@ static const u16 sPersianFormSpeciesIdTable[] = {
 
 #if P_FAMILY_GROWLITHE
 static const u16 sGrowlitheFormSpeciesIdTable[] = {
-    SPECIES_GROWLITHE,
+    SPECIES_GROWLITHE_HISUI,
 #if P_HISUIAN_FORMS
     SPECIES_GROWLITHE_HISUI,
 #endif
@@ -220,7 +220,7 @@ static const u16 sGrowlitheFormSpeciesIdTable[] = {
 };
 
 static const u16 sArcanineFormSpeciesIdTable[] = {
-    SPECIES_ARCANINE,
+    SPECIES_ARCANINE_HISUI,
 #if P_HISUIAN_FORMS
     SPECIES_ARCANINE_HISUI,
 #endif
@@ -479,7 +479,7 @@ static const u16 sPinsirFormSpeciesIdTable[] = {
 
 #if P_FAMILY_TAUROS
 static const u16 sTaurosFormSpeciesIdTable[] = {
-    SPECIES_TAUROS,
+    SPECIES_TAUROS_PALDEA_COMBAT,
 #if P_PALDEAN_FORMS
     SPECIES_TAUROS_PALDEA_COMBAT,
     SPECIES_TAUROS_PALDEA_BLAZE,

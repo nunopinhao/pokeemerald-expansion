@@ -1,0 +1,22 @@
+mapscripts Route03_MapScripts {}
+
+script Route03_EventScript_RuyBattle{
+	trainerbattle_single(TRAINER_RUY, Ruy_Intro, Ruy_Outro)
+    msgbox(Ruy_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+
+text Ruy_Intro{
+	"I like to stand here all day and wait\n"
+    "for people to walk by me. Now fight!\n"
+}
+
+text Ruy_Outro{
+	"My mom says I should get a new hobby."
+}
+
+text Ruy_PostBattle{
+	"Time to go back to waiting! I sure love\n"
+    "how normal I am.\n"
+}
