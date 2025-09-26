@@ -1,2 +1,24 @@
 FlintTown_MapScripts::
 	.byte 0
+
+
+FlintTown_EventScript_GymGuard::
+# 4 "data/maps/FlintTown/scripts.pory"
+	lock
+# 5 "data/maps/FlintTown/scripts.pory"
+	faceplayer
+# 6 "data/maps/FlintTown/scripts.pory"
+	msgbox FlintTown_GymGuardText
+# 7 "data/maps/FlintTown/scripts.pory"
+	waitmessage
+# 8 "data/maps/FlintTown/scripts.pory"
+	release
+	end
+
+
+FlintTown_GymGuardText::
+# 12 "data/maps/FlintTown/scripts.pory"
+	.string "Sorry, the Gym is closed for an auction\n"
+	.string "to fund the new League.\p"
+	.string "You look too broke to be able to\n"
+	.string "participate, anyway.\n$"

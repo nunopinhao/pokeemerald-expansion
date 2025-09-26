@@ -1,0 +1,56 @@
+raw `
+FlintTown_PokeCenter_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Flint_PokeCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+Flint_PokeCenter_1F_OnTransition:
+	setrespawn HEAL_LOCATION_SMALTENT
+	end
+
+Flint_PokeCenter_EventScript_Nurse::
+	setvar VAR_0x800B, LOCALID_FLINT_NURSE
+	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
+`
+
+
+script Flint_PokeCenter_EventScript_Man{
+    lock
+    faceplayer
+    msgbox(Flint_PokeCenter_ManText)
+    waitmessage
+    release
+    end
+}
+
+text Flint_PokeCenter_ManText{
+    "I scraped my knee, and Nurse Joy won’t\n"
+    "take care of me!\p"
+    "…What? N-No, I didn’t get hurt on\n"
+    "purpose!\n" 
+}
+
+script Flint_PokeCenter_EventScript_Boy{
+    lock
+    faceplayer
+    msgbox(Flint_PokeCenter_BoyText)
+    waitmessage
+    release
+    end
+}
+
+
+text Flint_PokeCenter_BoyText{
+    "I wonder how there are so many Nurse Joy\n"
+    "across the world.\p"
+    "Like, are they a Pokemon species?\n"
+    "Clones? Or do they just wear wigs?\n"
+}
+
+
+ 

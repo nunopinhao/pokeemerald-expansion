@@ -1,20 +1,17 @@
-raw `
-Flint_PokeCenter_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Flint_PokeCenter_1F_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
-	.byte 0
+mapscripts FlintTown_MapScripts {}
 
-Flint_PokeCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_SMALTENT
-	end
+script FlintTown_EventScript_GymGuard{
+    lock
+    faceplayer
+    msgbox(FlintTown_GymGuardText)
+    waitmessage
+    release
+    end
+}
 
-Flint_PokeCenter_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_FLINT_NURSE
-	call Common_EventScript_PkmnCenterNurse
-	waitmessage
-	waitbuttonpress
-	release
-	end
-
-`
- 
+text FlintTown_GymGuardText{
+    "Sorry, the Gym is closed for an auction\n"
+    "to fund the new League.\p"
+    "You look too broke to be able to\n"
+    "participate, anyway.\n"
+}
