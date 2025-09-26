@@ -4550,6 +4550,16 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/FlintTown_PokeCenter/border.bin",
       "blockdata_filepath": "data/layouts/FlintTown_PokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLINT_TOWN_MART",
+      "name": "FlintTownMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/FlintTownMart/border.bin",
+      "blockdata_filepath": "data/layouts/FlintTownMart/map.bin"
     }
   ]
 }
