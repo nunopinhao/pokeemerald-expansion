@@ -1,0 +1,45 @@
+mapscripts FlintTown_House1_MapScripts{}
+
+script FlintTown_House1_EventScript_Woman{
+    lock
+    faceplayer
+    msgbox(FlintTown_House1_WomanText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_House1_WomanText{
+    "Songs can be both beautiful and tragic.\n"
+}
+
+script FlintTown_House1_EventScript_Man{
+    lock
+    faceplayer
+    msgbox(FlintTown_House1_ManText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_House1_ManText{
+    "You must respect your elders. Bringing\n"
+    "back the League goes against every\l"
+    "lesson they passed on to us.\n"
+}
+
+script FlintTown_House1_EventScript_LittleGirl{
+    lock
+    faceplayer
+    msgbox(FlintTown_House1_LittleGirlText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_House1_LittleGirlText{
+    "I learned a new song at school.\n"
+    "Wanna hear?\p"
+    "{FONT_NARROW}Heatran’s flames made the sky turn grey,{FONT_NARROW}\n"
+    "{FONT_NARROW}and the Shaymin flew away, away{FONT_NARROW}\n"
+}

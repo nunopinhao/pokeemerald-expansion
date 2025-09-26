@@ -13,7 +13,7 @@ FlintTown_PokeCenter_MapScripts::
 # 7 "data/maps/FlintTown_PokeCenter/scripts.pory"
 Flint_PokeCenter_1F_OnTransition:
 # 8 "data/maps/FlintTown_PokeCenter/scripts.pory"
-	setrespawn HEAL_LOCATION_SMALTENT
+	setrespawn HEAL_LOCATION_FLINT
 # 9 "data/maps/FlintTown_PokeCenter/scripts.pory"
 	end
 # 10 "data/maps/FlintTown_PokeCenter/scripts.pory"

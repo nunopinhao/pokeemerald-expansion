@@ -1188,3 +1188,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FlintTown_PokeCenter/scripts.inc"
 
 	.include "data/maps/FlintTownMart/scripts.inc"
+
+	.include "data/maps/FlintTown_House1/scripts.inc"

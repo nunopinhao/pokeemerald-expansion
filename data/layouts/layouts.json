@@ -4560,6 +4560,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/FlintTownMart/border.bin",
       "blockdata_filepath": "data/layouts/FlintTownMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLINT_TOWN_HOUSE1",
+      "name": "FlintTown_House1_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FlintTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/FlintTown_House1/map.bin"
     }
   ]
 }
