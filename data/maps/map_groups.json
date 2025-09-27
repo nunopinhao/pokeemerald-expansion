@@ -644,6 +644,7 @@
   "gMapGroup_IndoorFlintTown": [
     "FlintTown_PokeCenter",
     "FlintTownMart",
-    "FlintTown_House1"
+    "FlintTown_House1",
+    "FlintTown_House2"
   ]
 }

@@ -200,13 +200,17 @@
       "id": "HEAL_LOCATION_SMALTENT",
       "map": "MAP_ALQUEIDAOZINHO",
       "x": 6,
-      "y": 17
+      "y": 17,
+      "respawn_map": "MAP_ALQUEIDAOZINHO_POKEMON_CENTER_1F",
+      "respawn_npc": "LOCALID_SMALTENT_NURSE"
     },
     {
       "id": "HEAL_LOCATION_FLINT",
       "map": "MAP_FLINT_TOWN",
       "x": 15,
-      "y": 7
+      "y": 7,
+      "respawn_map": "MAP_FLINT_TOWN_POKE_CENTER",
+      "respawn_npc": "LOCALID_FLINT_NURSE"
     }
   ]
 }

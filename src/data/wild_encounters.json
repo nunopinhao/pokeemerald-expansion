@@ -11629,6 +11629,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_FLINT_TOWN",
+          "base_label": "gFlintTown",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_MEWTWO"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_MEWTWO"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_GIRATINA"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_ARCEUS"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_ARCEUS"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_DRAGAPULT"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_CHARIZARD"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_ABSOL_MEGA"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_ZAMAZENTA"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_ZACIAN_CROWNED"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_AGGRON_MEGA"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_KYOGRE"
+              }
+            ]
+          }
         }
       ]
     },

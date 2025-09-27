@@ -1,0 +1,47 @@
+mapscripts FlintTown_House2_MapScripts{}
+
+script FlintTown_House2_EventScript_Woman{
+    lock
+    faceplayer
+    msgbox(FlintTown_House2_WomanText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_House2_WomanText{
+    "Long ago, RAMTO was protected by the\n"
+    "Order of the Hetra Knights, aided by the\l"
+    "Legendary Beast Warriors.\p"
+    "We were unstoppable back then! Until\n"
+    "Heatran went berserk and set fire to\l"
+    "everything…That was the Red Ages.\n"
+}
+
+script FlintTown_House2_EventScript_LittleGirl{
+    lock
+    faceplayer
+    msgbox(FlintTown_House2_LittleGirlText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_House2_LittleGirlText{
+    "Zamazenta is the one who looks like a\n"
+    "shield. It's the bravest!\n"
+}
+
+script FlintTown_House2_EventScript_LittleBoy{
+    lock
+    faceplayer
+    msgbox(FlintTown_House2_LittleBoyText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_House2_LittleBoyText{
+    "Zacian is the one who has a sword.\n"
+    "It’s the coolest!\n"
+}
