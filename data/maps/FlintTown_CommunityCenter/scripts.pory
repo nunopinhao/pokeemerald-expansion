@@ -1,0 +1,241 @@
+mapscripts FlintTown_CommunityCenter_MapScripts{}
+
+script FlintTown_CommunityCenter_EventScript_StartScene1{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearAuction1)
+    waitmovement(0)
+    call(FlintTown_CommunityCenter_EventScript_Speech)
+    release
+    end
+}
+
+script FlintTown_CommunityCenter_EventScript_StartScene2{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearAuction2)
+    waitmovement(0)
+    call(FlintTown_CommunityCenter_EventScript_Speech)
+    release
+    end
+}
+
+
+script FlintTown_CommunityCenter_EventScript_StartScene3{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearAuction3)
+    waitmovement(0)
+    call(FlintTown_CommunityCenter_EventScript_Speech)
+    release
+    end
+}
+script FlintTown_CommunityCenter_EventScript_StartScene4{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveNearAuction4)
+    waitmovement(0)
+    call(FlintTown_CommunityCenter_EventScript_Speech)
+    release
+    end
+}
+
+script FlintTown_CommunityCenter_EventScript_Speech{
+    msgbox(FlintTown_CommunityCenter_SpeechText1)
+    waitmessage
+    playbgm(MUS_ABANDONED_SHIP, FALSE)
+    applymovement(1, Common_Movement_WalkLeftSlow)
+    msgbox(FlintTown_CommunityCenter_SpeechText2)
+    waitmessage
+    applymovement(1, Common_Movement_WalkRightSlow)
+    msgbox(FlintTown_CommunityCenter_SpeechText3)
+    waitmessage
+    applymovement(1, Common_Movement_FaceDown)
+    msgbox(FlintTown_CommunityCenter_SpeechText4)
+    waitmessage
+    applymovement(5, Common_Movement_ExclamationMark)
+    applymovement(11, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applyMovement(5, Common_Movement_FaceRight)
+    applyMovement(3, Common_Movement_FaceLeft)
+    applyMovement(2, Common_Movement_FaceDown)
+    applyMovement(12, Common_Movement_FaceDown)
+    waitmovement(0)
+    delay(30)
+    applyMovement(5, Common_Movement_FaceUp)
+    applyMovement(3, Common_Movement_FaceUp)
+    applyMovement(2, Common_Movement_FaceLeft)
+    applyMovement(12, Common_Movement_FaceLeft)
+    msgbox(FlintTown_CommunityCenter_SpeechText5)
+    waitmessage
+    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+    msgbox(FlintTown_CommunityCenter_SpeechText6)
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    fadedefaultbgm
+    setvar(VAR_FLINT_COMMUNITY_CENTER_SCENE, 1)
+    setflag(FLAG_FLINT_COMMUNITY_CENTER_SPEECH_OVER)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    removeobject(4)
+    removeobject(6)
+    removeobject(7)
+    removeobject(8)
+    removeobject(10)
+    removeobject(12)
+    removeobject(13)
+    fadescreen(FADE_FROM_BLACK)
+    
+}
+
+movement PlayerMoveNearAuction1{
+    walk_left *7
+    walk_up *5
+}
+
+movement PlayerMoveNearAuction2{
+    walk_left *8
+    walk_up *5
+}
+
+movement PlayerMoveNearAuction3{
+    walk_left *6
+    walk_up *6
+}
+
+movement PlayerMoveNearAuction4{
+    walk_left *9
+    walk_up *6
+}
+
+text FlintTown_CommunityCenter_SpeechText1{
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Old Yeller:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Attention, people!\n"
+ }
+ 
+text FlintTown_CommunityCenter_SpeechText2{
+    "As you know, a Gym was built next to the\n"
+    "Community Centre.\n"
+}
+
+text FlintTown_CommunityCenter_SpeechText3{
+    "It’s true that centuries ago, after the\n"
+    "first League was established, Heatran\l"
+    "went berserk and set fire to the region.\n"
+}
+
+text FlintTown_CommunityCenter_SpeechText4{
+    "But there was never proof these events\n"
+    "were connected. We need the League back\l"
+    "for protection.\n"
+}
+
+text FlintTown_CommunityCenter_SpeechText5{
+    "{COLOR RED}{SHADOW LIGHT_RED}Random Woman:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Oh dear, this is a\n"
+    "terrible idea.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Old lady:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} There was a reason the League\n"
+    "was abolished in the first place!\p"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Random Man:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} That lava monster almost\n"
+    "brought the end of RAMTO.\p"
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Crazy Old Man:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} You are mocking the evil\n"
+    "force that will doom us all!\n"
+}
+text FlintTown_CommunityCenter_SpeechText6{
+    "{COLOR GREEN}{SHADOW LIGHT_GREEN}Old Yeller:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Good grief, you people are\n"
+    "too superstitious. Do ya also think salt\l"
+    "scares Ghost-type Pokemon?\p"
+    "The new age is here, and we can’t let\n"
+    "RAMTO fall behind every other region.\p"
+    "Zamazenta and Zacian will always keep us\n"
+    "safe. But we also need to learn to\l"
+    "protect ourselves without their help.\p"
+    "We will hold an auction now in the new\n"
+    "Gym to help fund the new League.\p"
+    "I, and the other chosen Gym Leaders,\n"
+    "hope to count on your support.\n"
+}
+
+script FlintTown_CommunityCenter_EventScript_Boy{
+    lock
+    faceplayer
+    msgbox(FlintTown_CommunityCenter_BoyText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_CommunityCenter_BoyText{
+    "RAMTO is full of backwards geezers.\n"
+    "All the other regions have Gyms!\l"
+    "Why should we be the exception?\n"
+}
+
+
+script FlintTown_CommunityCenter_EventScript_OldMan{
+    lock
+    faceplayer
+    msgbox(FlintTown_CommunityCenter_OldManText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_CommunityCenter_OldManText{
+    "Heatran grew jealous of the League’s\n"
+    "reverence for Zacian and Zamazenta\l"
+    "and engulfed our region in flames.\p"
+    "This cannot happen again!\n"
+}
+
+script FlintTown_CommunityCenter_EventScript_Woman{
+    lock
+    faceplayer
+    msgbox(FlintTown_CommunityCenter_WomanText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_CommunityCenter_WomanText{
+    "Maybe this is a good thing? RAMTO has\n"
+    "been stuck in the past for too long.\n"
+}
+
+script FlintTown_CommunityCenter_EventScript_Man{
+    lock
+    faceplayer
+    msgbox(FlintTown_CommunityCenter_ManText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_CommunityCenter_ManText{
+    "No child of mine is participating in\n"
+    "this Gym Leader challenge nonsense!\n"
+}
+
+script FlintTown_CommunityCenter_EventScript_Girl{
+    lock
+    faceplayer
+    if(flag(FLAG_FLINT_COMMUNITY_CENTER_QUICK_CLAW_GIVEN)){
+        msgbox(FlintTown_CommunityCenter_GirlText2)
+        waitmessage
+        release
+        end
+    }
+    msgbox(FlintTown_CommunityCenter_GirlText1)
+    waitmessage
+    giveitem(ITEM_QUICK_CLAW)
+    setflag(FLAG_FLINT_COMMUNITY_CENTER_QUICK_CLAW_GIVEN)
+    release
+    end
+}
+
+text FlintTown_CommunityCenter_GirlText1{
+    "You agree this is good news, right?\p"
+    "Cool! Take this as a gesture of goodwill\n"
+    "from me.\n"
+}
+
+text FlintTown_CommunityCenter_GirlText2{
+    "When activated, Quick Claw makes your\n"
+    "Pokemon go first, but only sometimes.\n"
+}

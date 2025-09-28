@@ -1192,3 +1192,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FlintTown_House1/scripts.inc"
 
 	.include "data/maps/FlintTown_House2/scripts.inc"
+
+	.include "data/maps/FlintTown_CommunityCenter/scripts.inc"
+
+	.include "data/maps/CousinsHouse/scripts.inc"

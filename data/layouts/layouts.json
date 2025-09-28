@@ -4535,7 +4535,7 @@
       "id": "LAYOUT_FLINT_TOWN",
       "name": "FlintTown_Layout",
       "width": 30,
-      "height": 26,
+      "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/FlintTown/border.bin",
@@ -4580,6 +4580,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/FlintTown_House2/border.bin",
       "blockdata_filepath": "data/layouts/FlintTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLINT_TOWN_COMMUNITY_CENTER",
+      "name": "FlintTown_CommunityCenter_Layout",
+      "width": 23,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FlintTown_CommunityCenter/border.bin",
+      "blockdata_filepath": "data/layouts/FlintTown_CommunityCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_COUSINS_HOUSE",
+      "name": "CousinsHouse_Layout",
+      "width": 32,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/CousinsHouse/border.bin",
+      "blockdata_filepath": "data/layouts/CousinsHouse/map.bin"
     }
   ]
 }

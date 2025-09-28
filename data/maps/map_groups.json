@@ -100,7 +100,8 @@
     "Alqueidaozinho",
     "Route02",
     "Route03",
-    "FlintTown"
+    "FlintTown",
+    "CousinsHouse"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -645,6 +646,7 @@
     "FlintTown_PokeCenter",
     "FlintTownMart",
     "FlintTown_House1",
-    "FlintTown_House2"
+    "FlintTown_House2",
+    "FlintTown_CommunityCenter"
   ]
 }

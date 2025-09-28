@@ -15,3 +15,18 @@ text FlintTown_GymGuardText{
     "You look too broke to be able to\n"
     "participate, anyway.\n"
 }
+
+script FlintTown_EventScript_Boy{
+    lock
+    faceplayer
+    msgbox(FlintTown_BoyText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_BoyText{
+    "I travelled all the way here and the\n"
+    "darn Gym is closed for an auction!\n"
+}
+

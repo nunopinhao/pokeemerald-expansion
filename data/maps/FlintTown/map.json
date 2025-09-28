@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE03",
       "offset": 4,
       "direction": "down"
+    },
+    {
+      "map": "MAP_COUSINS_HOUSE",
+      "offset": -22,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -32,6 +37,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "FlintTown_EventScript_GymGuard",
       "flag": "FLAG_FLINT_TOWN_GYM_GUARD"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "x": 22,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FlintTown_EventScript_Boy",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -61,6 +79,13 @@
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_FLINT_TOWN_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_FLINT_TOWN_COMMUNITY_CENTER",
       "dest_warp_id": "0"
     }
   ],
