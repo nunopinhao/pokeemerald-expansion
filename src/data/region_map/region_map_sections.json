@@ -744,71 +744,139 @@
     },
     {
       "id": "MAPSEC_ROUTE_1",
-      "name": "ROUTE 1"
+      "name": "ROUTE 1",
+      "x": 15,
+      "y": 11,
+      "width": 2,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_2",
-      "name": "ROUTE 2"
+      "name": "ROUTE 2",
+      "x": 15,
+      "y": 13,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_3",
-      "name": "ROUTE 3"
+      "name": "ROUTE 3",
+      "x": 17,
+      "y": 9,
+      "width": 1,
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_4",
-      "name": "ROUTE 4"
+      "name": "ROUTE 4",
+      "x": 18,
+      "y": 8,
+      "width": 8,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_5",
-      "name": "ROUTE 5"
+      "name": "ROUTE 5",
+      "x": 25,
+      "y": 8,
+      "width": 1,
+      "height": 5
     },
     {
       "id": "MAPSEC_ROUTE_6",
-      "name": "ROUTE 6"
+      "name": "ROUTE 6",
+      "x": 17,
+      "y": 5,
+      "width": 3,
+      "height": 3
     },
     {
       "id": "MAPSEC_ROUTE_7",
-      "name": "ROUTE 7"
+      "name": "ROUTE 7",
+      "x": 20,
+      "y": 4,
+      "width": 2,
+      "height": 4
     },
     {
       "id": "MAPSEC_ROUTE_8",
-      "name": "ROUTE 8"
+      "name": "ROUTE 8",
+      "x": 24,
+      "y": 5,
+      "width": 2,
+      "height": 3
     },
     {
       "id": "MAPSEC_ROUTE_9",
-      "name": "ROUTE 9"
+      "name": "ROUTE 9",
+      "x": 9,
+      "y": 8,
+      "width": 7,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_10",
-      "name": "ROUTE 10"
+      "name": "ROUTE 10",
+      "x": 13,
+      "y": 3,
+      "width": 2,
+      "height": 5
     },
     {
       "id": "MAPSEC_ROUTE_11",
-      "name": "ROUTE 11"
+      "name": "ROUTE 11",
+      "x": 11,
+      "y": 9,
+      "width": 1,
+      "height": 4
     },
     {
       "id": "MAPSEC_ROUTE_12",
-      "name": "ROUTE 12"
+      "name": "ROUTE 12",
+      "x": 5,
+      "y": 13,
+      "width": 5,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_13",
-      "name": "ROUTE 13"
+      "name": "ROUTE 13",
+      "x": 7,
+      "y": 9,
+      "width": 1,
+      "height": 4
     },
     {
       "id": "MAPSEC_ROUTE_14",
-      "name": "ROUTE 14"
+      "name": "ROUTE 14",
+      "x": 10,
+      "y": 0,
+      "width": 9,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_15",
-      "name": "ROUTE 15"
+      "name": "ROUTE 15",
+      "x": 7,
+      "y": 1,
+      "width": 3,
+      "height": 7
     },
     {
       "id": "MAPSEC_ROUTE_16",
-      "name": "ROUTE 16"
+      "name": "ROUTE 16",
+      "x": 4,
+      "y": 8,
+      "width": 3,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_17",
-      "name": "ROUTE 17"
+      "name": "ROUTE 17",
+      "x": 0,
+      "y": 5,
+      "width": 3,
+      "height": 4
     },
     {
       "id": "MAPSEC_ROUTE_18",
@@ -1232,11 +1300,19 @@
     },
     {
       "id": "MAPSEC_AMOREIRA",
-      "name": "MULBERY VILLAGE"
+      "name": "MULBERY VILLAGE",
+      "x": 17,
+      "y": 11,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ALQUEIDAOZINHO",
-      "name": "SMALTENT"
+      "name": "SMALTENT",
+      "x": 15,
+      "y": 12,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE02",
@@ -1244,7 +1320,91 @@
     },
     {
       "id": "MAPSEC_FLINT_TOWN",
-      "name": "FLINT TOWN"
+      "name": "FLINT TOWN",
+      "x": 16,
+      "y": 8,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_BIGTHORN_VILLAGE",
+      "name": "BIGTHORN_VILLAGE",
+      "x": 19,
+      "y": 4,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_NEWVILLA_TOWN",
+      "name": "NEWVILLA TOWN",
+      "x": 25,
+      "y": 13,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_WICKERVALLEY_TOWN",
+      "name": "WICKERVALLEY TOWN",
+      "x": 10,
+      "y": 13,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_LIGHTCATTLE_TOWN",
+      "name": "LIGHTCATTLE TOWN",
+      "x": 4,
+      "y": 13,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_MANYBARRIER_TOWN",
+      "name": "MANYBARRIER TOWN",
+      "x": 19,
+      "y": 4,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_SIERRA_CITY",
+      "name": "SIERRA_CITY",
+      "x": 7,
+      "y": 8,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_WHITEFOAM_VILLAGE",
+      "name": "WHITEFOAM_VILLAGE",
+      "x": 3,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_SIEZE_CITY",
+      "name": "SIEZE_CITY",
+      "x": 0,
+      "y": 3,
+      "width": 1,
+      "height": 2
+    },
+    {
+      "id": "MAPSEC_ALMOND_TOWN",
+      "name": "ALMOND TOWN",
+      "x": 9,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ENCAMPMENT_TOWN",
+      "name": "ENCAMPMENT TOWN",
+      "x": 19,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }
