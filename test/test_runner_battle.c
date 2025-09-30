@@ -265,12 +265,12 @@ static void BattleTest_Run(void *data)
         break;
     case BATTLE_TEST_AI_SINGLES:
         DATA.recordedBattle.battleFlags = BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_TRAINER;
-        DATA.recordedBattle.opponentA = TRAINER_LEAF;
+        DATA.recordedBattle.opponentA = TRAINER_ANDREW_AMOREIRA_FLOOR1_ROWLET;
         DATA.hasAI = TRUE;
         break;
     case BATTLE_TEST_AI_DOUBLES:
         DATA.recordedBattle.battleFlags = BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOUBLE;
-        DATA.recordedBattle.opponentA = TRAINER_LEAF;
+        DATA.recordedBattle.opponentA = TRAINER_ANDREW_AMOREIRA_FLOOR1_ROWLET;
         DATA.recordedBattle.opponentB = TRAINER_RED;
         DATA.hasAI = TRUE;
         break;

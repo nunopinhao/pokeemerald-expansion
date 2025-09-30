@@ -1,0 +1,124 @@
+mapscripts FlintTown_CousinsHouse_MapScripts{}
+
+
+script FlintTown_CousinsHouse_EventScript_Aunt{
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_POKENAV)){
+        msgbox(FlintTown_CousinsHouse_AuntText2)
+        release
+        end
+    }
+    msgbox(FlintTown_CousinsHouse_AuntText)
+    waitmessage
+    playfanfare(MUS_OBTAIN_ITEM)
+	msgbox(FlintTown_CousinsHouse_ReceivePokenavText)
+	waitfanfare
+	setflag(FLAG_SYS_POKENAV_GET)
+	setflag(FLAG_RECEIVED_POKENAV)
+    release
+    end
+}
+text FlintTown_CousinsHouse_AuntText{
+   "{COLOR RED}{SHADOW LIGHT_RED}Aunt:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Oh, hi, {PLAYER}! Are you looking\n"
+   "for your cousins? They left to look for\l"
+   "the First Gym on their bikes\p"
+   "Here, take this with you;\n"
+   "it may come in handy.\n"
+}
+text FlintTown_CousinsHouse_ReceivePokenavText{
+    "{PLAYER} received a POKéNAV.\n"
+}
+text FlintTown_CousinsHouse_AuntText2{
+    "{COLOR RED}{SHADOW LIGHT_RED}Aunt:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Enjoy your journey! Me? I am\n"
+    "enjoying my soap operas! AH-AH-AH!\n"
+}
+
+
+
+
+
+script FlintTown_CousinsHouse_EventScript_Madeleine{
+    lock
+    faceplayer
+    switch(var(VAR_MADELEINE_READY_FOR_BATTLE)){
+        case 0:
+            msgbox(FlintTown_CousinsHouse_MadeleineDefaultText)
+            break
+        case 1:
+            msgbox(FlintTown_CousinsHouse_MadeleineText)
+            waitmessage
+            trainerbattle_no_intro(TRAINER_MADELEINE_COUSINSHOUSE, Madeleine_OutroText)
+            msgbox(FlintTown_CousinsHouse_MadeleineAfterBattleText)
+            waitmessage
+            giveitem(ITEM_ORAN_BERRY, 3)
+            msgbox(FlintTown_CousinsHouse_MadeleineAfterBattleText2)
+            waitmessage
+            setvar(VAR_MADELEINE_READY_FOR_BATTLE, 0)
+            break
+        default:
+            msgbox(FlintTown_CousinsHouse_MadeleineDefaultText)
+            break
+    }
+    release
+    end
+}
+text FlintTown_CousinsHouse_MadeleineText{
+    "{COLOR RED}{SHADOW LIGHT_RED}Madeleine:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} What do you mean, you don’t\n"
+    "know who I am? Very funny, {PLAYER}.\p"
+    "You know very well I am Adrian’s\n"
+    "girlfriend! I’m taking care of the pets\l"
+    "while they are away.\p"
+    "Wanna battle? It will help you train!\n"
+}
+
+text Madeleine_OutroText{
+    "Impressive! You are as strong as your\n"
+    "cousins!"
+}
+
+text FlintTown_CousinsHouse_MadeleineAfterBattleText{
+    "You just started your journey, and I can\n"
+    "tell you’ll go far!\p"
+    "Take this, it’s a gift from me.\n"
+}
+
+text FlintTown_CousinsHouse_MadeleineAfterBattleText2 {
+    "{COLOR RED}{SHADOW LIGHT_RED}Madeleine:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Pokemon can hold items and\n"
+    "use them in battle!\n"
+}
+text FlintTown_CousinsHouse_MadeleineDefaultText {
+    "{COLOR RED}{SHADOW LIGHT_RED}Madeleine:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} The League challenge isn’t\n"
+    "for me. I prefer painting Pokemon over battling! 
+}
+
+
+
+
+script FlintTown_CousinsHouse_EventScript_Meowth{
+    lock
+    faceplayer
+    msgbox(FlintTown_CousinsHouse_MeowthText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_CousinsHouse_MeowthText{
+    "Meowwwww…\p"
+    "{FONT_NARROW}Old Meowth looks grumpy, or is it just hungry?\n"
+}
+
+script FlintTown_CousinsHouse_EventScript_Skitty{
+    lock
+    faceplayer
+    msgbox(FlintTown_CousinsHouse_SkittyText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_CousinsHouse_SkittyText{
+    "Nyaaaa! Nyaaaa!\p"
+    "{FONT_NARROW}Skitty headbutts your hand as you pet it.\n"
+}

@@ -271,6 +271,7 @@ script Amoreira_Floor1_Grandma_HealSpot{
 	    special(SetUnlockedPokedexFlags)
 	    setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
 	    setvar(VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
+        setvar(VAR_MADELEINE_READY_FOR_BATTLE, 1)
         setflag(FLAG_TRUCK_AMOREIRA)
         setflag(FLAG_MR_FALLSMELL)
         msgbox(GrandmaDefeatedZoruaText2)

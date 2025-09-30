@@ -130,7 +130,7 @@
     },
     {
       "id": "MAPSEC_ROUTE_101",
-      "name": "ROUTE 101",
+      "name": "ROUTE 1",
       "x": 4,
       "y": 10,
       "width": 1,
@@ -1316,7 +1316,7 @@
     },
     {
       "id": "MAPSEC_ROUTE02",
-      "name": "ROUTE 102"
+      "name": "ROUTE 2"
     },
     {
       "id": "MAPSEC_FLINT_TOWN",

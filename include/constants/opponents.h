@@ -855,7 +855,7 @@
 #define TRAINER_ALVARO                      849
 #define TRAINER_EVERETT                     850
 #define TRAINER_RED                         851
-#define TRAINER_LEAF                        852
+#define TRAINER_MADELEINE_COUSINSHOUSE      852
 #define TRAINER_GONZALO                     853
 #define TRAINER_MARTIN                      854
 #define TRAINER_ANDREW_AMOREIRA_FLOOR1_ROWLET 855

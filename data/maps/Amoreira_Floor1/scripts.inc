@@ -447,15 +447,15 @@ Amoreira_Floor1_Grandma_HealSpot::
 	goto_if_set FLAG_ADVENTURE_STARTED, Amoreira_Floor1_Grandma_HealSpot_1
 # 260 "data/maps/Amoreira_Floor1/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ZORUA, Amoreira_Floor1_Grandma_HealSpot_2
-# 282 "data/maps/Amoreira_Floor1/scripts.pory"
-	lock
 # 283 "data/maps/Amoreira_Floor1/scripts.pory"
-	faceplayer
+	lock
 # 284 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox GrandmaHealSpotText
+	faceplayer
 # 285 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
+	msgbox GrandmaHealSpotText
 # 286 "data/maps/Amoreira_Floor1/scripts.pory"
+	waitmessage
+# 287 "data/maps/Amoreira_Floor1/scripts.pory"
 	release
 	end
 
@@ -500,201 +500,203 @@ Amoreira_Floor1_Grandma_HealSpot_2:
 # 273 "data/maps/Amoreira_Floor1/scripts.pory"
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 # 274 "data/maps/Amoreira_Floor1/scripts.pory"
-	setflag FLAG_TRUCK_AMOREIRA
+	setvar VAR_MADELEINE_READY_FOR_BATTLE, 1
 # 275 "data/maps/Amoreira_Floor1/scripts.pory"
-	setflag FLAG_MR_FALLSMELL
+	setflag FLAG_TRUCK_AMOREIRA
 # 276 "data/maps/Amoreira_Floor1/scripts.pory"
-	msgbox GrandmaDefeatedZoruaText2
+	setflag FLAG_MR_FALLSMELL
 # 277 "data/maps/Amoreira_Floor1/scripts.pory"
-	waitmessage
+	msgbox GrandmaDefeatedZoruaText2
 # 278 "data/maps/Amoreira_Floor1/scripts.pory"
+	waitmessage
+# 279 "data/maps/Amoreira_Floor1/scripts.pory"
 	release
 	end
 
 
-# 293 "data/maps/Amoreira_Floor1/scripts.pory"
+# 294 "data/maps/Amoreira_Floor1/scripts.pory"
 PlayerMoveNearGrandma1:
-# 294 "data/maps/Amoreira_Floor1/scripts.pory"
+# 295 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 294 "data/maps/Amoreira_Floor1/scripts.pory"
+# 295 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 294 "data/maps/Amoreira_Floor1/scripts.pory"
+# 295 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
-# 297 "data/maps/Amoreira_Floor1/scripts.pory"
-PlayerMoveNearGrandma2:
 # 298 "data/maps/Amoreira_Floor1/scripts.pory"
+PlayerMoveNearGrandma2:
+# 299 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
-# 299 "data/maps/Amoreira_Floor1/scripts.pory"
+# 300 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 299 "data/maps/Amoreira_Floor1/scripts.pory"
+# 300 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
-# 302 "data/maps/Amoreira_Floor1/scripts.pory"
+# 303 "data/maps/Amoreira_Floor1/scripts.pory"
 PlayerMoveNearGrandma3:
-# 303 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_down
-# 303 "data/maps/Amoreira_Floor1/scripts.pory"
+# 304 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 # 304 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 304 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_down
+# 305 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
 # 305 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 306 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
-# 308 "data/maps/Amoreira_Floor1/scripts.pory"
+# 309 "data/maps/Amoreira_Floor1/scripts.pory"
 PlayerMoveRivalBattle1:
-# 309 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 309 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 309 "data/maps/Amoreira_Floor1/scripts.pory"
+# 310 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
 # 310 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 310 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 311 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 310 "data/maps/Amoreira_Floor1/scripts.pory"
+# 311 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
-# 312 "data/maps/Amoreira_Floor1/scripts.pory"
+# 313 "data/maps/Amoreira_Floor1/scripts.pory"
 PlayerMoveRivalBattle2:
-# 313 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 313 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 313 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 313 "data/maps/Amoreira_Floor1/scripts.pory"
+# 314 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
 # 314 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 314 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 314 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 315 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
-# 316 "data/maps/Amoreira_Floor1/scripts.pory"
+# 317 "data/maps/Amoreira_Floor1/scripts.pory"
 PlayerMoveRivalBattle3:
-# 317 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 317 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 317 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 317 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 317 "data/maps/Amoreira_Floor1/scripts.pory"
+# 318 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
 # 318 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 318 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 318 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 318 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 319 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 318 "data/maps/Amoreira_Floor1/scripts.pory"
+# 319 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
-# 320 "data/maps/Amoreira_Floor1/scripts.pory"
+# 321 "data/maps/Amoreira_Floor1/scripts.pory"
 PlayerMoveRivalBattle4:
-# 321 "data/maps/Amoreira_Floor1/scripts.pory"
+# 322 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 321 "data/maps/Amoreira_Floor1/scripts.pory"
+# 322 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 321 "data/maps/Amoreira_Floor1/scripts.pory"
+# 322 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
-# 323 "data/maps/Amoreira_Floor1/scripts.pory"
-PlayerMoveRivalBattle5:
 # 324 "data/maps/Amoreira_Floor1/scripts.pory"
+PlayerMoveRivalBattle5:
+# 325 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
-# 325 "data/maps/Amoreira_Floor1/scripts.pory"
+# 326 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 325 "data/maps/Amoreira_Floor1/scripts.pory"
+# 326 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 325 "data/maps/Amoreira_Floor1/scripts.pory"
+# 326 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
-# 327 "data/maps/Amoreira_Floor1/scripts.pory"
+# 328 "data/maps/Amoreira_Floor1/scripts.pory"
 PlayerMoveRivalBattle6:
-# 328 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 328 "data/maps/Amoreira_Floor1/scripts.pory"
+# 329 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
 # 329 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 330 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 329 "data/maps/Amoreira_Floor1/scripts.pory"
+# 330 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
-# 329 "data/maps/Amoreira_Floor1/scripts.pory"
+# 330 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_down
 	step_end
 
-# 332 "data/maps/Amoreira_Floor1/scripts.pory"
-AndrewMoveBattle:
 # 333 "data/maps/Amoreira_Floor1/scripts.pory"
+AndrewMoveBattle:
+# 334 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_up
-# 334 "data/maps/Amoreira_Floor1/scripts.pory"
+# 335 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
-# 334 "data/maps/Amoreira_Floor1/scripts.pory"
+# 335 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
-# 334 "data/maps/Amoreira_Floor1/scripts.pory"
+# 335 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
-# 334 "data/maps/Amoreira_Floor1/scripts.pory"
+# 335 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
 	step_end
 
-# 336 "data/maps/Amoreira_Floor1/scripts.pory"
-AdrianMoveBattle:
 # 337 "data/maps/Amoreira_Floor1/scripts.pory"
+AdrianMoveBattle:
+# 338 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
-# 338 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_up
-# 338 "data/maps/Amoreira_Floor1/scripts.pory"
+# 339 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_up
 # 339 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_up
+# 340 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
-# 339 "data/maps/Amoreira_Floor1/scripts.pory"
+# 340 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
-# 339 "data/maps/Amoreira_Floor1/scripts.pory"
+# 340 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
-# 339 "data/maps/Amoreira_Floor1/scripts.pory"
+# 340 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
-# 339 "data/maps/Amoreira_Floor1/scripts.pory"
+# 340 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
 	step_end
 
-# 342 "data/maps/Amoreira_Floor1/scripts.pory"
+# 343 "data/maps/Amoreira_Floor1/scripts.pory"
 AndrewLeave:
-# 343 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 343 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 343 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 343 "data/maps/Amoreira_Floor1/scripts.pory"
+# 344 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
 # 344 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_down
+	walk_left
+# 344 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 344 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
 # 345 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_down
+# 346 "data/maps/Amoreira_Floor1/scripts.pory"
 	face_right
 	step_end
 
-# 348 "data/maps/Amoreira_Floor1/scripts.pory"
+# 349 "data/maps/Amoreira_Floor1/scripts.pory"
 GrandmaMoveHeal:
-# 349 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_right
-# 349 "data/maps/Amoreira_Floor1/scripts.pory"
+# 350 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_right
 # 350 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_right
+# 351 "data/maps/Amoreira_Floor1/scripts.pory"
 	face_up
 	step_end
 
-# 353 "data/maps/Amoreira_Floor1/scripts.pory"
+# 354 "data/maps/Amoreira_Floor1/scripts.pory"
 GrandmaReturnAfterHeal:
-# 354 "data/maps/Amoreira_Floor1/scripts.pory"
-	walk_left
-# 354 "data/maps/Amoreira_Floor1/scripts.pory"
+# 355 "data/maps/Amoreira_Floor1/scripts.pory"
 	walk_left
 # 355 "data/maps/Amoreira_Floor1/scripts.pory"
+	walk_left
+# 356 "data/maps/Amoreira_Floor1/scripts.pory"
 	face_right
 	step_end
 
@@ -703,7 +705,7 @@ Amoreira_Floor1_Grandma_HealSpot_Text_0:
 	.string "{PLAYER} received the POKéDEX!$"
 
 FirstBattleOver::
-# 362 "data/maps/Amoreira_Floor1/scripts.pory"
+# 363 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} And the winner of the first\n"
 	.string "round is {PLAYER}!\p"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} What are you, a sports\n"
@@ -715,7 +717,7 @@ FirstBattleOver::
 	.string "the fight was still cool, I guess.\n$"
 
 SecondBattleSetUp::
-# 374 "data/maps/Amoreira_Floor1/scripts.pory"
+# 375 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} You are too nonchalant\n"
 	.string "sometimes Andrew. Where is your fiery\l"
 	.string "spirit?\p"
@@ -723,7 +725,7 @@ SecondBattleSetUp::
 	.string "pokemon.\n$"
 
 StartSceneText1::
-# 382 "data/maps/Amoreira_Floor1/scripts.pory"
+# 383 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Ah, there you are {PLAYER}!\p"
 	.string "About time you crawl out of bed,\n"
 	.string "you lazy bum.\p"
@@ -750,7 +752,7 @@ StartSceneText1::
 	.string "get more claustrophobic in here.\n$"
 
 StartSceneText2::
-# 409 "data/maps/Amoreira_Floor1/scripts.pory"
+# 410 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Yes boys, make fun of your\n"
 	.string "hoarding Grandma.\p"
 	.string "If there ever is a fire in your house,\n"
@@ -768,7 +770,7 @@ StartSceneText2::
 	.string "little omelet for lunch today.\n$"
 
 StartSceneText3::
-# 427 "data/maps/Amoreira_Floor1/scripts.pory"
+# 428 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER}, I want you to\n"
 	.string "investigate and chase off any egg-eating\l"
 	.string "Pokemon off my darling eggs.\p"
@@ -779,13 +781,13 @@ StartSceneText3::
 	.string "{PLAYER}. The stakes are very high.\n$"
 
 GrandmaSpeechText::
-# 438 "data/maps/Amoreira_Floor1/scripts.pory"
+# 439 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} The backyard is through the door\n"
 	.string "on the right, but it’s not like you need\l"
 	.string "directions in your own home, right?\n$"
 
 AndrewSpeechText::
-# 444 "data/maps/Amoreira_Floor1/scripts.pory"
+# 445 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Our Mom sent us on a weird\n"
 	.string "errand this morning as well.\p"
 	.string "I wonder if it’s related to your own\n"
@@ -793,36 +795,36 @@ AndrewSpeechText::
 	.string "suspiciously.\n$"
 
 AdrianSpeechText::
-# 452 "data/maps/Amoreira_Floor1/scripts.pory"
+# 453 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Andrew and I got our own POKEMON\n"
 	.string "this morning.\n$"
 
 CantLeaveText::
-# 457 "data/maps/Amoreira_Floor1/scripts.pory"
+# 458 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER}, are you still asleep,\n"
 	.string "dummy? The backyard door is on the\l"
 	.string "right.\n$"
 
 GrandmaStarterSpeechFroakie::
-# 463 "data/maps/Amoreira_Floor1/scripts.pory"
+# 464 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Froakie?\n"
 	.string "Of course you did! A grandchild of mine\l"
 	.string "could only have good taste.\n$"
 
 GrandmaStarterSpeechRowlet::
-# 469 "data/maps/Amoreira_Floor1/scripts.pory"
+# 470 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Rowlet?\n"
 	.string "Of course you did! A grandchild of mine\l"
 	.string "could only have good taste.\n$"
 
 GrandmaStarterSpeechTorchic::
-# 475 "data/maps/Amoreira_Floor1/scripts.pory"
+# 476 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So you chose Torchic?\n"
 	.string "Of course you did! A grandchild of mine\l"
 	.string "could only have good taste.\n$"
 
 RivalBattleSpeechText::
-# 481 "data/maps/Amoreira_Floor1/scripts.pory"
+# 482 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Except you don’t have good taste.\n"
 	.string "You go shopping at the junkyard.\p"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Zip it now, other grandchild!\n"
@@ -836,17 +838,17 @@ RivalBattleSpeechText::
 	.string "slice of carrot cake.\n$"
 
 Andrew_Intro::
-# 495 "data/maps/Amoreira_Floor1/scripts.pory"
+# 496 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Well, you heard the old lady.\n"
 	.string "I’m first!\n$"
 
 Andrew_Outro::
-# 500 "data/maps/Amoreira_Floor1/scripts.pory"
+# 501 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "Like they say, hard situations aren’t\n"
 	.string "easy.\n$"
 
 Adrian_Intro::
-# 505 "data/maps/Amoreira_Floor1/scripts.pory"
+# 506 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Speaking of cake, battling\n"
 	.string "against a type you are strong against is\l"
 	.string "a cakewalk.\p"
@@ -854,11 +856,11 @@ Adrian_Intro::
 	.string "I won’t hold back.\n$"
 
 Adrian_Outro::
-# 513 "data/maps/Amoreira_Floor1/scripts.pory"
+# 514 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "Didn't see this coming...$"
 
 RivalBattlesOver::
-# 517 "data/maps/Amoreira_Floor1/scripts.pory"
+# 518 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Power to the new gen of Pokemon\n"
 	.string "trainers!\p"
 	.string "Seems like your little cousin has won by\n"
@@ -869,22 +871,22 @@ RivalBattlesOver::
 	.string "To the first champion of Mulbery Town!\n$"
 
 Grandma_GiveGateau::
-# 528 "data/maps/Amoreira_Floor1/scripts.pory"
+# 529 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} What is that look? I didn’t lie,\n"
 	.string "it IS carrot cake. It’s just a bit old,\l"
 	.string "is all. Don’t be petty.\n$"
 
 GrandmaHealSpotText::
-# 534 "data/maps/Amoreira_Floor1/scripts.pory"
+# 535 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Grandma is rooting for you!\n$"
 
 Grandma_GivePokeBalls::
-# 538 "data/maps/Amoreira_Floor1/scripts.pory"
+# 539 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} And here is the rest of your\n"
 	.string "prize.\n$"
 
 Grandma_ExplainPokeBalls::
-# 543 "data/maps/Amoreira_Floor1/scripts.pory"
+# 544 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Anyhow, your new partner can\n"
 	.string "help you find who has been intruding in\l"
 	.string "my garden.\p"
@@ -900,19 +902,19 @@ Grandma_ExplainPokeBalls::
 	.string "of my will.\n$"
 
 AndrewSpeechAfterBattleText::
-# 559 "data/maps/Amoreira_Floor1/scripts.pory"
+# 560 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Andrew:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Grandma is being unfair.\n"
 	.string "We don’t JUST play mobile games.\l"
 	.string "We also play on PC!\n$"
 
 AdrianSpeechAfterBattleText::
-# 565 "data/maps/Amoreira_Floor1/scripts.pory"
+# 566 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Why do I get the sneaking\n"
 	.string "suspicion there’s more to these errands\l"
 	.string "than meets the eye.\n$"
 
 GrandmaDefeatedZoruaText::
-# 571 "data/maps/Amoreira_Floor1/scripts.pory"
+# 572 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Grandma:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Here is my little hero!\n"
 	.string "Your cousins already left.\p"
 	.string "My Torchic and eggs thank you, hon.\n"
@@ -930,6 +932,6 @@ GrandmaDefeatedZoruaText::
 	.string "Take this with you.\n$"
 
 GrandmaDefeatedZoruaText2::
-# 589 "data/maps/Amoreira_Floor1/scripts.pory"
+# 590 "data/maps/Amoreira_Floor1/scripts.pory"
 	.string "RAMTO needs you youngsters. Make this\n"
 	.string "old lady proud!\n$"
