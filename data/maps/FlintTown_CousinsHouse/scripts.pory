@@ -89,7 +89,7 @@ text FlintTown_CousinsHouse_MadeleineAfterBattleText2 {
 }
 text FlintTown_CousinsHouse_MadeleineDefaultText {
     "{COLOR RED}{SHADOW LIGHT_RED}Madeleine:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} The League challenge isn’t\n"
-    "for me. I prefer painting Pokemon over battling! 
+    "for me. I prefer painting Pokemon!\n"
 }
 
 
