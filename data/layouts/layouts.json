@@ -4600,6 +4600,16 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/CousinsHouse/border.bin",
       "blockdata_filepath": "data/layouts/CousinsHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLINT_TOWN_COUSINS_HOUSE",
+      "name": "FlintTown_CousinsHouse_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FlintTown_CousinsHouse/border.bin",
+      "blockdata_filepath": "data/layouts/FlintTown_CousinsHouse/map.bin"
     }
   ]
 }
