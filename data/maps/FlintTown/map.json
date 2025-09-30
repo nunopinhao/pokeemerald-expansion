@@ -22,6 +22,11 @@
       "map": "MAP_COUSINS_HOUSE",
       "offset": -22,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE04",
+      "offset": 18,
+      "direction": "right"
     }
   ],
   "object_events": [

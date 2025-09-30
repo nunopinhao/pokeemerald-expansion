@@ -4534,7 +4534,7 @@
     {
       "id": "LAYOUT_FLINT_TOWN",
       "name": "FlintTown_Layout",
-      "width": 30,
+      "width": 40,
       "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
@@ -4610,6 +4610,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/FlintTown_CousinsHouse/border.bin",
       "blockdata_filepath": "data/layouts/FlintTown_CousinsHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE04",
+      "name": "Route04_Layout",
+      "width": 80,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route04/border.bin",
+      "blockdata_filepath": "data/layouts/Route04/map.bin"
     }
   ]
 }

@@ -1,0 +1,16 @@
+mapscripts CousinsHouse_MapScripts{}
+
+
+script CousinsHouse_EventScript_Uncle{
+    lock
+    faceplayer
+    msgbox(CousinsHouse_UncleText)
+    waitmessage
+    release
+    end
+}
+text CousinsHouse_UncleText{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Uncle:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Hi, {PLAYER}, I’m fixing the\n"
+    "fence. Your aunt is inside. Be careful\l"
+    "out there!\n"
+}
