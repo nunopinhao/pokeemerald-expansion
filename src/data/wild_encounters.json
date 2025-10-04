@@ -11717,13 +11717,13 @@
               },
               {
                 "min_level": 5,
-                "max_level": 6,
+                "max_level": 5,
                 "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 5,
-                "max_level": 6,
-                "species": "SPECIES_SHINX"
+                "max_level": 5,
+                "species": "SPECIES_TIMBURR"
               },
               {
                 "min_level": 5,
@@ -11736,9 +11736,9 @@
                 "species": "SPECIES_CYCLIZAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_TIMBURR"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 6,

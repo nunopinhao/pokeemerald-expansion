@@ -4534,7 +4534,7 @@
     {
       "id": "LAYOUT_FLINT_TOWN",
       "name": "FlintTown_Layout",
-      "width": 40,
+      "width": 46,
       "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
@@ -4614,12 +4614,22 @@
     {
       "id": "LAYOUT_ROUTE04",
       "name": "Route04_Layout",
-      "width": 80,
-      "height": 16,
+      "width": 100,
+      "height": 18,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route04/border.bin",
       "blockdata_filepath": "data/layouts/Route04/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE05",
+      "name": "Route05_Layout",
+      "width": 26,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route05/border.bin",
+      "blockdata_filepath": "data/layouts/Route05/map.bin"
     }
   ]
 }

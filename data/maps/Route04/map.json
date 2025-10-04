@@ -15,15 +15,20 @@
   "connections": [
     {
       "map": "MAP_FLINT_TOWN",
-      "offset": -18,
+      "offset": -16,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE05",
+      "offset": 2,
+      "direction": "right"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
       "x": 8,
-      "y": 6,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -36,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
       "x": 9,
-      "y": 6,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -49,7 +54,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
       "x": 13,
-      "y": 10,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -62,7 +67,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MANIAC",
       "x": 18,
-      "y": 6,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -75,7 +80,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 23,
-      "y": 10,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -88,20 +93,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 28,
-      "y": 6,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 33,
-      "y": 14,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -114,7 +106,20 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
       "x": 34,
-      "y": 14,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TRUCK",
+      "x": 36,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 0,
@@ -126,8 +131,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 32,
-      "y": 14,
+      "x": 33,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 0,
