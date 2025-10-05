@@ -75,3 +75,18 @@ text FlintTown_LassText{
     "But I gotta convince my folks to let me.\p"
     "Oh, what to do…\n"
 }
+
+script FlintTown_EventScript_BlackBelt{
+    lock
+    faceplayer
+    msgbox(FlintTown_BlackBeltText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_BlackBeltText{
+    "We're taking these supplies to the new\n"
+    "Gym. Come back later.\n"
+}
+

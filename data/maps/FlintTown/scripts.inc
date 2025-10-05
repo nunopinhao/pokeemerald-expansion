@@ -72,6 +72,20 @@ FlintTown_EventScript_Lass::
 	end
 
 
+FlintTown_EventScript_BlackBelt::
+# 80 "data/maps/FlintTown/scripts.pory"
+	lock
+# 81 "data/maps/FlintTown/scripts.pory"
+	faceplayer
+# 82 "data/maps/FlintTown/scripts.pory"
+	msgbox FlintTown_BlackBeltText
+# 83 "data/maps/FlintTown/scripts.pory"
+	waitmessage
+# 84 "data/maps/FlintTown/scripts.pory"
+	release
+	end
+
+
 FlintTown_GymGuardText::
 # 12 "data/maps/FlintTown/scripts.pory"
 	.string "Sorry, the Gym is closed for an auction\n"
@@ -99,6 +113,11 @@ FlintTown_WomanText::
 
 FlintTown_LassText::
 # 73 "data/maps/FlintTown/scripts.pory"
-	.string "I would love to challenge the Gyms. But\n"
-	.string "I gotta convince my folks to let me\l"
-	.string "first. Oh, what to do…\n$"
+	.string "I would love to challenge the Gyms.\n"
+	.string "But I gotta convince my folks to let me.\p"
+	.string "Oh, what to do…\n$"
+
+FlintTown_BlackBeltText::
+# 88 "data/maps/FlintTown/scripts.pory"
+	.string "We're taking these supplies to the new\n"
+	.string "Gym. Come back later.\n$"

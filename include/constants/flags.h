@@ -60,7 +60,7 @@
 #define FLAG_FLINT_TOWN_GYM_GUARD    0x2E // Unused Flag
 #define FLAG_FLINT_COMMUNITY_CENTER_SPEECH_OVER    0x2F // Unused Flag
 #define FLAG_FLINT_COMMUNITY_CENTER_QUICK_CLAW_GIVEN    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
+#define FLAG_ROUTE5_LOCK     0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag

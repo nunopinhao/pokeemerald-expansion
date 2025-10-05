@@ -1,0 +1,30 @@
+mapscripts Route04_MapScripts {}
+
+
+script Route04_EventScript_CarrieAndAnnabelle{
+	trainerbattle_double(TRAINER_CARI_AND_BEL, CarrieAndAnnabelleIntro, CarrieAndAnnabelleOutro, CarrieAndAnnabelleNotEnoughMons)
+    msgbox(CarrieAndAnnabellePostBattle, MSGBOX_DEFAULT)
+    release 
+    end
+}
+
+text CarrieAndAnnabelleIntro{
+	"We were supposed to be triplets, but we\n"
+    "ate our sibling in the womb…\p"
+    "Wanna be our friend? {FONT_SMALL_NARROW}evil giggle\n"
+}
+
+text CarrieAndAnnabelleOutro{
+	"We will find you one day, and kill you…\n"
+}
+
+text CarrieAndAnnabellePostBattle{
+	"Our parents were scared of us, so we set\n"
+    "the house on fire. Now they smell like\l"
+    "burned popcorn! {FONT_SMALL_NARROW}evil giggle\n"
+}
+
+text CarrieAndAnnabelleNotEnoughMons{
+	"Aww, you only have one Pokemon?\n"
+    "We can’t play together then…\n"
+}
