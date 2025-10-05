@@ -207,7 +207,7 @@
     {
       "id": "HEAL_LOCATION_FLINT",
       "map": "MAP_FLINT_TOWN",
-      "x": 15,
+      "x": 21,
       "y": 9,
       "respawn_map": "MAP_FLINT_TOWN_POKE_CENTER",
       "respawn_npc": "LOCALID_FLINT_NURSE"

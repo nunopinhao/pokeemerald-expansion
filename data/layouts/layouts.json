@@ -4535,7 +4535,7 @@
       "id": "LAYOUT_FLINT_TOWN",
       "name": "FlintTown_Layout",
       "width": 46,
-      "height": 28,
+      "height": 32,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/FlintTown/border.bin",

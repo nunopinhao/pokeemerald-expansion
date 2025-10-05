@@ -30,3 +30,48 @@ text FlintTown_BoyText{
     "darn Gym is closed for an auction!\n"
 }
 
+script FlintTown_EventScript_Boy2{
+    lock
+    faceplayer
+    msgbox(FlintTown_Boy2Text)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_Boy2Text{
+    "Heatran is a Legendary Pokemon that\n"
+    "controls fire and lava. People are very\l"
+    "afraid of it.\p"
+    "I think it’s just a myth to scare kids.\n"
+}
+
+script FlintTown_EventScript_Woman{
+    lock
+    faceplayer
+    msgbox(FlintTown_WomanText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_WomanText{
+    "All surrounding villages meet up in\n"
+    "Flint Town’s Community Centre for events.\p"
+    "It makes us feel quite important!\n"
+}
+
+script FlintTown_EventScript_Lass{
+    lock
+    faceplayer
+    msgbox(FlintTown_LassText)
+    waitmessage
+    release
+    end
+}
+
+text FlintTown_LassText{
+    "I would love to challenge the Gyms.\n"
+    "But I gotta convince my folks to let me.\p"
+    "Oh, what to do…\n"
+}

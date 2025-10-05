@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_FLINT_TOWN",
-      "offset": -10,
+      "offset": -8,
       "direction": "up"
     }
   ],

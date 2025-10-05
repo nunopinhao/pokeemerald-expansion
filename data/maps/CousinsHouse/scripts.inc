@@ -19,5 +19,4 @@ CousinsHouse_EventScript_Uncle::
 CousinsHouse_UncleText::
 # 12 "data/maps/CousinsHouse/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Uncle:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Hi, {PLAYER}, I’m fixing the\n"
-	.string "fence. Your aunt is inside. Be careful\l"
-	.string "out there!\n$"
+	.string "fence. Your aunt is inside.\n$"
