@@ -72,6 +72,9 @@ script FlintTown_CommunityCenter_EventScript_Speech{
     fadedefaultbgm
     setvar(VAR_FLINT_COMMUNITY_CENTER_SCENE, 1)
     setflag(FLAG_FLINT_COMMUNITY_CENTER_SPEECH_OVER)
+    if(flag(FLAG_RECEIVED_POKENAV)){
+        setflag(FLAG_ROUTE5_LOCK)
+    }
     removeobject(1)
     removeobject(2)
     removeobject(3)

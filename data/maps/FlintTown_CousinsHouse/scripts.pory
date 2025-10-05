@@ -16,6 +16,9 @@ script FlintTown_CousinsHouse_EventScript_Aunt{
 	waitfanfare
 	setflag(FLAG_SYS_POKENAV_GET)
 	setflag(FLAG_RECEIVED_POKENAV)
+    if(flag(FLAG_FLINT_COMMUNITY_CENTER_SPEECH_OVER)){
+        setflag(FLAG_ROUTE5_LOCK)
+    }
     release
     end
 }

@@ -24,6 +24,9 @@ FlintTown_CousinsHouse_EventScript_Aunt::
 # 18 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	setflag FLAG_RECEIVED_POKENAV
 # 19 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	goto_if_set FLAG_FLINT_COMMUNITY_CENTER_SPEECH_OVER, FlintTown_CousinsHouse_EventScript_Aunt_5
+FlintTown_CousinsHouse_EventScript_Aunt_4:
+# 22 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	release
 	end
 
@@ -34,82 +37,87 @@ FlintTown_CousinsHouse_EventScript_Aunt_2:
 	release
 	end
 
+FlintTown_CousinsHouse_EventScript_Aunt_5:
+# 20 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	setflag FLAG_ROUTE5_LOCK
+	goto FlintTown_CousinsHouse_EventScript_Aunt_4
+
 
 FlintTown_CousinsHouse_EventScript_Madeleine::
-# 42 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	lock
-# 43 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	faceplayer
-# 44 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	switch VAR_MADELEINE_READY_FOR_BATTLE
 # 45 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	case 0, FlintTown_CousinsHouse_EventScript_Madeleine_3
+	lock
+# 46 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	faceplayer
+# 47 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	switch VAR_MADELEINE_READY_FOR_BATTLE
 # 48 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	case 0, FlintTown_CousinsHouse_EventScript_Madeleine_3
+# 51 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	case 1, FlintTown_CousinsHouse_EventScript_Madeleine_4
-# 60 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 63 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	msgbox FlintTown_CousinsHouse_MadeleineDefaultText
 FlintTown_CousinsHouse_EventScript_Madeleine_1:
-# 63 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 66 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	release
 	end
 
 FlintTown_CousinsHouse_EventScript_Madeleine_3:
-# 46 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 49 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	msgbox FlintTown_CousinsHouse_MadeleineDefaultText
 	goto FlintTown_CousinsHouse_EventScript_Madeleine_1
 
 FlintTown_CousinsHouse_EventScript_Madeleine_4:
-# 49 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	msgbox FlintTown_CousinsHouse_MadeleineText
-# 50 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	waitmessage
-# 51 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	trainerbattle_no_intro TRAINER_MADELEINE_COUSINSHOUSE, Madeleine_OutroText
 # 52 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	msgbox FlintTown_CousinsHouse_MadeleineAfterBattleText
+	msgbox FlintTown_CousinsHouse_MadeleineText
 # 53 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	waitmessage
 # 54 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	giveitem ITEM_ORAN_BERRY, 3
+	trainerbattle_no_intro TRAINER_MADELEINE_COUSINSHOUSE, Madeleine_OutroText
 # 55 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	msgbox FlintTown_CousinsHouse_MadeleineAfterBattleText2
+	msgbox FlintTown_CousinsHouse_MadeleineAfterBattleText
 # 56 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	waitmessage
 # 57 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	giveitem ITEM_ORAN_BERRY, 3
+# 58 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	msgbox FlintTown_CousinsHouse_MadeleineAfterBattleText2
+# 59 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	waitmessage
+# 60 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	setvar VAR_MADELEINE_READY_FOR_BATTLE, 0
 	goto FlintTown_CousinsHouse_EventScript_Madeleine_1
 
 
 FlintTown_CousinsHouse_EventScript_Meowth::
-# 100 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	lock
-# 101 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	faceplayer
-# 102 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	msgbox FlintTown_CousinsHouse_MeowthText
 # 103 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	waitmessage
+	lock
 # 104 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	faceplayer
+# 105 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	msgbox FlintTown_CousinsHouse_MeowthText
+# 106 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	waitmessage
+# 107 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	release
 	end
 
 
 FlintTown_CousinsHouse_EventScript_Skitty::
-# 114 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	lock
-# 115 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	faceplayer
-# 116 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	msgbox FlintTown_CousinsHouse_SkittyText
 # 117 "data/maps/FlintTown_CousinsHouse/scripts.pory"
-	waitmessage
+	lock
 # 118 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	faceplayer
+# 119 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	msgbox FlintTown_CousinsHouse_SkittyText
+# 120 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+	waitmessage
+# 121 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	release
 	end
 
 
 FlintTown_CousinsHouse_AuntText::
-# 22 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 25 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Aunt:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Oh, hi, {PLAYER}! Are you looking\n"
 	.string "for your cousins? They left to look for\l"
 	.string "the First Gym on their bikes\p"
@@ -117,16 +125,16 @@ FlintTown_CousinsHouse_AuntText::
 	.string "it may come in handy.\n$"
 
 FlintTown_CousinsHouse_ReceivePokenavText::
-# 29 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 32 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "{PLAYER} received a POKéNAV.\n$"
 
 FlintTown_CousinsHouse_AuntText2::
-# 32 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 35 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Aunt:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Enjoy your journey! Me? I am\n"
 	.string "enjoying my soap operas! AH-AH-AH!\n$"
 
 FlintTown_CousinsHouse_MadeleineText::
-# 66 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 69 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Madeleine:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} What do you mean, you don’t\n"
 	.string "know who I am? Very funny, {PLAYER}.\p"
 	.string "You know very well I am Adrian’s\n"
@@ -135,33 +143,33 @@ FlintTown_CousinsHouse_MadeleineText::
 	.string "Wanna battle? It will help you train!\n$"
 
 Madeleine_OutroText::
-# 75 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 78 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "Impressive! You are as strong as your\n"
 	.string "cousins!$"
 
 FlintTown_CousinsHouse_MadeleineAfterBattleText::
-# 80 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 83 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "You just started your journey, and I can\n"
 	.string "tell you’ll go far!\p"
 	.string "Take this, it’s a gift from me.\n$"
 
 FlintTown_CousinsHouse_MadeleineAfterBattleText2::
-# 86 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 89 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Madeleine:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Pokemon can hold items and\n"
 	.string "use them in battle!\n$"
 
 FlintTown_CousinsHouse_MadeleineDefaultText::
-# 90 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 93 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Madeleine:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} The League challenge isn’t\n"
 	.string "for me.\p"
 	.string "I prefer painting Pokemon over battling!\n$"
 
 FlintTown_CousinsHouse_MeowthText::
-# 108 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 111 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "Meowwwww…\p"
 	.string "{FONT_NARROW}Old Meowth looks grumpy, or is it just hungry?\n$"
 
 FlintTown_CousinsHouse_SkittyText::
-# 122 "data/maps/FlintTown_CousinsHouse/scripts.pory"
+# 125 "data/maps/FlintTown_CousinsHouse/scripts.pory"
 	.string "Nyaaaa! Nyaaaa!\p"
 	.string "{FONT_NARROW}Skitty headbutts your hand as you pet it.\n$"

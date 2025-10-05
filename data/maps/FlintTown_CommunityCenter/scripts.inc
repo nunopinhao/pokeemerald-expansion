@@ -130,258 +130,264 @@ FlintTown_CommunityCenter_EventScript_Speech::
 # 74 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	setflag FLAG_FLINT_COMMUNITY_CENTER_SPEECH_OVER
 # 75 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 1
-# 76 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 2
-# 77 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 3
+	goto_if_set FLAG_RECEIVED_POKENAV, FlintTown_CommunityCenter_EventScript_Speech_2
+FlintTown_CommunityCenter_EventScript_Speech_1:
 # 78 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 4
+	removeobject 2
 # 79 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 6
+	removeobject 3
 # 80 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 7
+	removeobject 4
 # 81 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 8
+	removeobject 6
 # 82 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 10
+	removeobject 7
 # 83 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 12
+	removeobject 8
 # 84 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	removeobject 13
+	removeobject 10
 # 85 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	removeobject 12
+# 86 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	removeobject 13
+# 87 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	return
 
+FlintTown_CommunityCenter_EventScript_Speech_2:
+# 76 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	setflag FLAG_ROUTE5_LOCK
+	goto FlintTown_CommunityCenter_EventScript_Speech_1
 
-# 89 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+
+# 91 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 PlayerMoveNearAuction1:
-# 90 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 92 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 90 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 92 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 90 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 92 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 90 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 92 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 90 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 92 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 90 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 92 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 90 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 92 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 91 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 93 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 91 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 93 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 91 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 93 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 91 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 93 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 91 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 93 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
 	step_end
 
-# 94 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 96 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 PlayerMoveNearAuction2:
-# 95 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 97 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 95 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 97 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 95 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 97 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 95 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 97 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 95 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 97 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 95 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 97 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 95 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 97 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 95 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 97 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 96 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 98 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 96 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 98 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 96 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 98 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 96 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 98 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 96 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 98 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
 	step_end
 
-# 99 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 101 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 PlayerMoveNearAuction3:
-# 100 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 102 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 100 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 102 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 100 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 102 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 100 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 102 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 100 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 102 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 100 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 102 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 101 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 103 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 101 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 103 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 101 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 103 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 101 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 103 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 101 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 103 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 101 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 103 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
 	step_end
 
-# 104 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 106 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 PlayerMoveNearAuction4:
-# 105 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 107 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 105 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 107 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 105 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 107 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 105 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 107 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 105 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 107 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 105 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 107 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 105 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 107 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 105 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 107 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 105 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 107 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_left
-# 106 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 108 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 106 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 108 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 106 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 108 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 106 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 108 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 106 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 108 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
-# 106 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 108 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	walk_up
 	step_end
 
 FlintTown_CommunityCenter_EventScript_Boy::
-# 156 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	lock
-# 157 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	faceplayer
 # 158 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	msgbox FlintTown_CommunityCenter_BoyText
+	lock
 # 159 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	waitmessage
+	faceplayer
 # 160 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	msgbox FlintTown_CommunityCenter_BoyText
+# 161 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	waitmessage
+# 162 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	release
 	end
 
 
 FlintTown_CommunityCenter_EventScript_OldMan::
-# 172 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	lock
-# 173 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	faceplayer
 # 174 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	msgbox FlintTown_CommunityCenter_OldManText
+	lock
 # 175 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	waitmessage
+	faceplayer
 # 176 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	msgbox FlintTown_CommunityCenter_OldManText
+# 177 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	waitmessage
+# 178 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	release
 	end
 
 
 FlintTown_CommunityCenter_EventScript_Woman::
-# 188 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	lock
-# 189 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	faceplayer
 # 190 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	msgbox FlintTown_CommunityCenter_WomanText
+	lock
 # 191 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	waitmessage
+	faceplayer
 # 192 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	msgbox FlintTown_CommunityCenter_WomanText
+# 193 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	waitmessage
+# 194 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	release
 	end
 
 
 FlintTown_CommunityCenter_EventScript_Man::
-# 202 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	lock
-# 203 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	faceplayer
 # 204 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	msgbox FlintTown_CommunityCenter_ManText
+	lock
 # 205 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	waitmessage
+	faceplayer
 # 206 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	msgbox FlintTown_CommunityCenter_ManText
+# 207 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	waitmessage
+# 208 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	release
 	end
 
 
 FlintTown_CommunityCenter_EventScript_Girl::
-# 216 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	lock
-# 217 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	faceplayer
 # 218 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	lock
+# 219 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	faceplayer
+# 220 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	goto_if_set FLAG_FLINT_COMMUNITY_CENTER_QUICK_CLAW_GIVEN, FlintTown_CommunityCenter_EventScript_Girl_2
-# 224 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	msgbox FlintTown_CommunityCenter_GirlText1
-# 225 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	waitmessage
 # 226 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	giveitem ITEM_QUICK_CLAW
+	msgbox FlintTown_CommunityCenter_GirlText1
 # 227 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	setflag FLAG_FLINT_COMMUNITY_CENTER_QUICK_CLAW_GIVEN
+	waitmessage
 # 228 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	giveitem ITEM_QUICK_CLAW
+# 229 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	setflag FLAG_FLINT_COMMUNITY_CENTER_QUICK_CLAW_GIVEN
+# 230 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	release
 	end
 
 FlintTown_CommunityCenter_EventScript_Girl_2:
-# 219 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	msgbox FlintTown_CommunityCenter_GirlText2
-# 220 "data/maps/FlintTown_CommunityCenter/scripts.pory"
-	waitmessage
 # 221 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	msgbox FlintTown_CommunityCenter_GirlText2
+# 222 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+	waitmessage
+# 223 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	release
 	end
 
 
 FlintTown_CommunityCenter_SpeechText1::
-# 109 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 111 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Old Yeller:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Attention, people!\n$"
 
 FlintTown_CommunityCenter_SpeechText2::
-# 113 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 115 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "As you know, a Gym was built next to the\n"
 	.string "Community Centre.\n$"
 
 FlintTown_CommunityCenter_SpeechText3::
-# 118 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 120 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "It’s true that centuries ago, after the\n"
 	.string "first League was established, Heatran\l"
 	.string "went berserk and set fire to the region.\n$"
 
 FlintTown_CommunityCenter_SpeechText4::
-# 124 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 126 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "But there was never proof these events\n"
 	.string "were connected. We need the League back\l"
 	.string "for protection.\n$"
 
 FlintTown_CommunityCenter_SpeechText5::
-# 130 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 132 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Random Woman:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Oh dear, this is a\n"
 	.string "terrible idea.\p"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Old lady:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} There was a reason the League\n"
@@ -392,7 +398,7 @@ FlintTown_CommunityCenter_SpeechText5::
 	.string "force that will doom us all!\n$"
 
 FlintTown_CommunityCenter_SpeechText6::
-# 140 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 142 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Old Yeller:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Good grief, you people are\n"
 	.string "too superstitious. Do ya also think salt\l"
 	.string "scares Ghost-type Pokemon?\p"
@@ -407,35 +413,35 @@ FlintTown_CommunityCenter_SpeechText6::
 	.string "hope to count on your support.\n$"
 
 FlintTown_CommunityCenter_BoyText::
-# 164 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 166 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "RAMTO is full of backwards geezers.\n"
 	.string "All the other regions have Gyms!\l"
 	.string "Why should we be the exception?\n$"
 
 FlintTown_CommunityCenter_OldManText::
-# 180 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 182 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "Heatran grew jealous of the League’s\n"
 	.string "reverence for Zacian and Zamazenta\l"
 	.string "and engulfed our region in flames.\p"
 	.string "This cannot happen again!\n$"
 
 FlintTown_CommunityCenter_WomanText::
-# 196 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 198 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "Maybe this is a good thing? RAMTO has\n"
 	.string "been stuck in the past for too long.\n$"
 
 FlintTown_CommunityCenter_ManText::
-# 210 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 212 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "No child of mine is participating in\n"
 	.string "this Gym Leader challenge nonsense!\n$"
 
 FlintTown_CommunityCenter_GirlText1::
-# 232 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 234 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "You agree this is good news, right?\p"
 	.string "Cool! Take this as a gesture of goodwill\n"
 	.string "from me.\n$"
 
 FlintTown_CommunityCenter_GirlText2::
-# 238 "data/maps/FlintTown_CommunityCenter/scripts.pory"
+# 240 "data/maps/FlintTown_CommunityCenter/scripts.pory"
 	.string "When activated, Quick Claw makes your\n"
 	.string "Pokemon go first, but only sometimes.\n$"
