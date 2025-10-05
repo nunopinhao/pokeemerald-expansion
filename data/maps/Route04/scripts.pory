@@ -28,3 +28,97 @@ text CarrieAndAnnabelleNotEnoughMons{
 	"Aww, you only have one Pokemon?\n"
     "We can’t play together then…\n"
 }
+
+script Route04_EventScript_MargaritaBattle{
+	trainerbattle_single(TRAINER_MARGARITA, Margarita_Intro, Margarita_Outro)
+    msgbox(Margarita_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+
+text Margarita_Intro{
+	"Those two little girls are messed up.\n"
+    "They even speak at the same time!\p"
+    "I bet it’s from all the brain-rot\n"
+    "kids watch these days!\n"
+
+}
+
+text Margarita_Outro{
+	"You’re a scary one, too.\n"
+}
+
+text Margarita_PostBattle{
+	"I want to call the police on those two\n"
+    "evil spawns, but what if they come\l"
+    "after me?!\p"
+    "… No, I’m not scared of them! SHUT UP!\n"
+}
+
+script Route04_EventScript_PedroBattle{
+	trainerbattle_single(TRAINER_PEDRO, Pedro_Intro, Pedro_Outro)
+    msgbox(Pedro_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+    
+text Pedro_Intro{
+	"I sold all my Pokemon cards to afford\n"
+    "Poke Balls. I got a perfect team.\l"
+    "Behold!\n"
+
+}
+
+text Pedro_Outro{
+	"So that was a bad investment."
+}
+
+text Pedro_PostBattle{
+	"I’m going to stick to collecting Pokemon\n"
+    "cards. Screw battling!\n"
+}
+
+script Route04_EventScript_TeresaBattle{
+	trainerbattle_single(TRAINER_TERESA, Teresa_Intro, Teresa_Outro)
+    msgbox(Teresa_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+    
+text Teresa_Intro{
+	"Team Blaze stole one of my Pokemon,\n"
+    "spat on my face, and took my money.\n"
+
+}
+
+text Teresa_Outro{
+	"And now you’ll take my money too…"
+}
+
+text Teresa_PostBattle{
+	"I’m one bad day away from alcoholism.\n"
+}
+
+script Route04_EventScript_FrancisBattle{
+	trainerbattle_single(TRAINER_FRANCIS, Francis_Intro, Francis_Outro)
+    msgbox(Francis_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+    
+text Francis_Intro{
+	"There hasn’t been a new Champion in\n"
+    "centuries because it was prohibited.\p"
+    "I will be the new first Champion!\n"
+
+}
+
+text Francis_Outro{
+	"Arceus damn it!\n"
+}
+
+text Francis_PostBattle{
+	"This is not the end for me.\n"
+    "Back to training!\n"
+}
+
