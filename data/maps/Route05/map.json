@@ -34,7 +34,36 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_THICKET_WOODS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_THICKET_WOODS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_THICKET_WOODS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 13,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_THICKET_WOODS",
+      "dest_warp_id": "3"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

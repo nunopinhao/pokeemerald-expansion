@@ -4650,6 +4650,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Route04_LeenaHouse/border.bin",
       "blockdata_filepath": "data/layouts/Route04_LeenaHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_THICKET_WOODS",
+      "name": "Thicket_Woods_Layout",
+      "width": 50,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Thicket_Woods/border.bin",
+      "blockdata_filepath": "data/layouts/Thicket_Woods/map.bin"
     }
   ]
 }
