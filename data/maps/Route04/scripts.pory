@@ -122,3 +122,13 @@ text Francis_PostBattle{
     "Back to training!\n"
 }
 
+script Route04_EventScript_Sign{
+    msgbox(Route04_Text_Sign, MSGBOX_SIGN)
+    end
+}
+
+text Route04_Text_Sign{
+    "{UP_ARROW} BIGTHORN VILLAGE\n"
+    "{RIGHT_ARROW} NEWVILLA TOWN\p"
+    "{LEFT_ARROW} FLINT TOWN\n"
+}

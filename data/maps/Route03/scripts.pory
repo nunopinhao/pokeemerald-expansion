@@ -86,3 +86,22 @@ text Boy_Text{
 }
 
 
+script Route03_EventScript_Sign1{
+    msgbox(Route03_Text_Sign1, MSGBOX_SIGN)
+    end
+}
+
+text Route03_Text_Sign1{
+    "ROUTE 03\n"
+    "{UP_ARROW} FLINT TOWN\n"
+}
+
+script Route03_EventScript_Sign2{
+    msgbox(Route03_Text_Sign2, MSGBOX_SIGN)
+    end
+}
+
+text Route03_Text_Sign2{
+    "ROUTE 03\n"
+    "{DOWN_ARROW} MULBERY VILLAGE\n"
+}

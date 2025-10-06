@@ -86,6 +86,18 @@ FlintTown_EventScript_BlackBelt::
 	end
 
 
+FlintTown_EventScript_Sign1::
+# 94 "data/maps/FlintTown/scripts.pory"
+	msgbox FlintTown_Text_Sign1, MSGBOX_SIGN
+	end
+
+
+FlintTown_EventScript_Sign2::
+# 105 "data/maps/FlintTown/scripts.pory"
+	msgbox FlintTown_Text_Sign2, MSGBOX_SIGN
+	end
+
+
 FlintTown_GymGuardText::
 # 12 "data/maps/FlintTown/scripts.pory"
 	.string "Sorry, the Gym is closed for an auction\n"
@@ -121,3 +133,13 @@ FlintTown_BlackBeltText::
 # 88 "data/maps/FlintTown/scripts.pory"
 	.string "We're taking these supplies to the new\n"
 	.string "Gym. Come back later.\n$"
+
+FlintTown_Text_Sign1::
+# 98 "data/maps/FlintTown/scripts.pory"
+	.string "FLINT TOWN\n"
+	.string "{RIGHT_ARROW} ROUTE 4\p"
+	.string "{LEFT_ARROW} ROUTE 9\n$"
+
+FlintTown_Text_Sign2::
+# 109 "data/maps/FlintTown/scripts.pory"
+	.string "FLINT TOWN COMMUNITY CENTER\n$"

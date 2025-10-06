@@ -90,3 +90,22 @@ text FlintTown_BlackBeltText{
     "Gym. Come back later.\n"
 }
 
+script FlintTown_EventScript_Sign1{
+    msgbox(FlintTown_Text_Sign1, MSGBOX_SIGN)
+    end
+}
+
+text FlintTown_Text_Sign1{
+    "FLINT TOWN\n"
+    "{RIGHT_ARROW} ROUTE 4\p"
+    "{LEFT_ARROW} ROUTE 9\n"
+}
+
+script FlintTown_EventScript_Sign2{
+    msgbox(FlintTown_Text_Sign2, MSGBOX_SIGN)
+    end
+}
+
+text FlintTown_Text_Sign2{
+    "FLINT TOWN COMMUNITY CENTER\n"
+}

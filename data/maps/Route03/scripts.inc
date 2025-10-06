@@ -46,6 +46,18 @@ Route03_EventScript_Boy::
 	end
 
 
+Route03_EventScript_Sign1::
+# 90 "data/maps/Route03/scripts.pory"
+	msgbox Route03_Text_Sign1, MSGBOX_SIGN
+	end
+
+
+Route03_EventScript_Sign2::
+# 100 "data/maps/Route03/scripts.pory"
+	msgbox Route03_Text_Sign2, MSGBOX_SIGN
+	end
+
+
 Ruy_Intro::
 # 10 "data/maps/Route03/scripts.pory"
 	.string "I like to stand here all day and wait\n"
@@ -106,3 +118,13 @@ Boy_Text::
 	.string "No, please don’t take my money!\p"
 	.string "Oh sorry, I mistook you for one of those\n"
 	.string "Team Blaze bozos.\n$"
+
+Route03_Text_Sign1::
+# 94 "data/maps/Route03/scripts.pory"
+	.string "ROUTE 03\n"
+	.string "{UP_ARROW} FLINT TOWN\n$"
+
+Route03_Text_Sign2::
+# 104 "data/maps/Route03/scripts.pory"
+	.string "ROUTE 03\n"
+	.string "{DOWN_ARROW} MULBERY VILLAGE\n$"

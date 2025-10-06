@@ -44,6 +44,12 @@ Route04_EventScript_FrancisBattle::
 	end
 
 
+Route04_EventScript_Sign::
+# 126 "data/maps/Route04/scripts.pory"
+	msgbox Route04_Text_Sign, MSGBOX_SIGN
+	end
+
+
 CarrieAndAnnabelleIntro::
 # 11 "data/maps/Route04/scripts.pory"
 	.string "We were supposed to be triplets, but we\n"
@@ -125,3 +131,9 @@ Francis_PostBattle::
 # 120 "data/maps/Route04/scripts.pory"
 	.string "This is not the end for me.\n"
 	.string "Back to training!\n$"
+
+Route04_Text_Sign::
+# 130 "data/maps/Route04/scripts.pory"
+	.string "{UP_ARROW} BIGTHORN VILLAGE\n"
+	.string "{RIGHT_ARROW} NEWVILLA TOWN\p"
+	.string "{LEFT_ARROW} FLINT TOWN\n$"
