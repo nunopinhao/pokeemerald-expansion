@@ -4630,6 +4630,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route05/border.bin",
       "blockdata_filepath": "data/layouts/Route05/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE04_MR_DIAMOND_HOUSE",
+      "name": "Route04_MrDiamondHouse_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route04_MrDiamondHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route04_MrDiamondHouse/map.bin"
     }
   ]
 }

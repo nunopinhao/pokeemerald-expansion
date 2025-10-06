@@ -36,7 +36,8 @@
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorAmoreira",
     "gMapGroup_IndoorAlqueidaozinho",
-    "gMapGroup_IndoorFlintTown"
+    "gMapGroup_IndoorFlintTown",
+    "gMapGroup_IndoorRoute4"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -651,5 +652,8 @@
     "FlintTown_House2",
     "FlintTown_CommunityCenter",
     "FlintTown_CousinsHouse"
+  ],
+  "gMapGroup_IndoorRoute4": [
+    "Route04_MrDiamondHouse"
   ]
 }

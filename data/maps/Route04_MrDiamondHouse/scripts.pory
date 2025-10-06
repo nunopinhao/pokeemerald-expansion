@@ -1,0 +1,19 @@
+mapscripts Route04_MrDiamondHouse_MapScripts{}
+
+script Route04_MrDiamondHouse_EventScript_MrDiamond{
+    lock
+    faceplayer
+    msgbox(Route04_MrDiamondHouse_MrDiamondText)
+    waitmessage
+    release
+    end
+}
+
+text Route04_MrDiamondHouse_MrDiamondText{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE} Mr Diamond: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}BURP\n"
+    "Scuse me, just started my day drinking.\p"
+    "Hm? I’ll fix your grandpa’s truck when\n"
+    "I feel like it. If you don’t like it,\l"
+    "you can kiss my ass.\n"
+
+}
