@@ -132,3 +132,72 @@ text Route04_Text_Sign{
     "{RIGHT_ARROW} NEWVILLA TOWN\p"
     "{LEFT_ARROW} FLINT TOWN\n"
 }
+
+script Route04_EventScript_LeenaScene1{
+    lock
+    applymovement(11, LeenaMoveNearPlayer1)
+    waitmovement(0)
+    msgbox(Leena_Text)
+    waitmessage
+    setvar(VAR_ROUTE4_LEENA, 1)
+    setflag(FLAG_THICKET_FOREST_BLAISE_FIGHT)
+    release
+    end
+}
+movement LeenaMoveNearPlayer1{
+    walk_down
+    walk_left 
+
+}
+script Route04_EventScript_LeenaScene2{
+    lock
+    applymovement(11, LeenaMoveNearPlayer2)
+    waitmovement(0)
+    msgbox(Leena_Text)
+    waitmessage
+    setvar(VAR_ROUTE4_LEENA, 1)
+    setflag(FLAG_THICKET_FOREST_BLAISE_FIGHT)
+    release
+    end
+}
+movement LeenaMoveNearPlayer2{
+    walk_down *2
+    walk_left 
+}
+script Route04_EventScript_LeenaScene3{
+    lock
+    applymovement(11, LeenaMoveNearPlayer3)
+    waitmovement(0)
+    msgbox(Leena_Text)
+    waitmessage
+    setvar(VAR_ROUTE4_LEENA, 1)
+    setflag(FLAG_THICKET_FOREST_BLAISE_FIGHT)
+    release
+    end
+}
+movement LeenaMoveNearPlayer3{
+    walk_down *3
+    walk_left 
+}
+text Leena_Text{
+    "{COLOR RED}{SHADOW LIGHT_RED}Leena: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Oh, {PLAYER}!\n"
+    "Thank goodness you came! Some Team Blaze\l"
+    "bozos stole my little darlings!\p"
+    "Can you please help?\n"
+    "They ran into the woods {FONT_SMALL_NARROWER}sniff sniff\n"
+}
+
+
+script Route04_EventScript_LeenaAfterScene{
+    lock
+    msgbox(LeenaAfterScene_Text)
+    waitmessage
+    release
+    end
+}   
+
+text LeenaAfterScene_Text{
+    "{COLOR RED}{SHADOW LIGHT_RED}Leena: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}I saw them heading for the\n"
+    "Thicket Woods! Those dirty criminals!\l"
+    "{FONT_SMALL_NARROWER}sniff sniff\n"
+}

@@ -1,0 +1,99 @@
+mapscripts Route04_LeenaHouse_MapScripts {}
+
+script Route04_LeenaHouse_EventScript_Charles{
+    lock
+    faceplayer
+    if(flag(FLAG_THICKET_FOREST_BLAISE_FIGHT)){
+        msgbox(Charles_Text, MSGBOX_NPC)
+    }
+    else{
+        msgbox(Charles_Text2, MSGBOX_NPC)
+    }
+    waitmessage
+    release
+    end
+}
+
+text Charles_Text{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Charles the Fifth:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} I tried to punch one\n"
+    "of those Team Blaze bastards and cracked\l"
+    "my hip.\p"
+    "If you find them, beat them up for me!\n"
+    "Leena is freaking out.\n"
+}
+
+text Charles_Text2{
+    "Nurse Joy has a nice rack…\p"
+    "Eh, I was daydreaming again.\n"
+    "Don’t tell Leena I said that!\n"
+}
+
+
+script Route04_LeenaHouse_EventScript_Leena{
+    lock
+    faceplayer
+    msgbox(LeenaHouse_Leena_Text, MSGBOX_NPC)
+    waitmessage
+    release
+    end
+}
+
+text LeenaHouse_Leena_Text{
+    "{COLOR RED}{SHADOW LIGHT_RED}Leena: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}I live for my little darlings!\n"
+    "I could never use them for battle.\n" 
+}
+
+
+script Route04_LeenaHouse_EventScript_Rudolph{
+    lock
+    faceplayer
+    msgbox(LeenaHouse_Rudolph_Text)
+    waitmessage
+    release
+    end
+}
+
+text LeenaHouse_Rudolph_Text{
+    "…Mrrrreow.\n"
+    "{NARROW_FONT}(Despite its name, this Rudolph’s nose\n"
+    "{NARROW_FONT}isn’t red!)\n"
+}
+
+script Route04_LeenaHouse_EventScript_Johnny{
+    lock
+    faceplayer
+    msgbox(LeenaHouse_Johnny_Text)
+    waitmessage
+    release
+    end
+}
+
+text LeenaHouse_Johnny_Text{
+    "Meow? Meow, meow! Purr?\n"
+    "{NARROW_FONT}(Johnny has a lot to say, but you don’t\n"
+    "{NARROW_FONT}understand anything.)\n"
+}
+
+script Route04_LeenaHouse_EventScript_Floki{
+    lock
+    faceplayer
+    if(flag(FLAG_LEENAHOUSE_FLOKI_FLING)){
+        msgbox(LeenaHouse_Floki_Text2)
+    }
+    else{
+        msgbox(LeenaHouse_Floki_Text1)
+        giveitem(ITEM_TM43)
+        setflag(FLAG_LEENAHOUSE_FLOKI_FLING)
+    }
+    waitmessage
+    release
+    end
+}
+
+text LeenaHouse_Floki_Text1{
+    "Woof, woof!\n"
+}
+text LeenaHouse_Floki_Text2{
+    "{NARROW_FONT}(Floki wants to play fetch!)\n"
+
+}

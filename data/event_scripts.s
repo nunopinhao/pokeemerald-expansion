@@ -1204,3 +1204,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route05/scripts.inc"
 
 	.include "data/maps/Route04_MrDiamondHouse/scripts.inc"
+
+	.include "data/maps/Route04_LeenaHouse/scripts.inc"

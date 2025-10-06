@@ -61,8 +61,8 @@
 #define FLAG_FLINT_COMMUNITY_CENTER_SPEECH_OVER    0x2F // Unused Flag
 #define FLAG_FLINT_COMMUNITY_CENTER_QUICK_CLAW_GIVEN    0x30 // Unused Flag
 #define FLAG_ROUTE5_LOCK     0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
+#define FLAG_ROUTE4_LEENA    0x32 // Unused Flag
+#define FLAG_THICKET_FOREST_BLAISE_FIGHT    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag

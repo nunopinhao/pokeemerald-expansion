@@ -50,6 +50,108 @@ Route04_EventScript_Sign::
 	end
 
 
+Route04_EventScript_LeenaScene1::
+# 137 "data/maps/Route04/scripts.pory"
+	lock
+# 138 "data/maps/Route04/scripts.pory"
+	applymovement 11, LeenaMoveNearPlayer1
+# 139 "data/maps/Route04/scripts.pory"
+	waitmovement 0
+# 140 "data/maps/Route04/scripts.pory"
+	msgbox Leena_Text
+# 141 "data/maps/Route04/scripts.pory"
+	waitmessage
+# 142 "data/maps/Route04/scripts.pory"
+	setvar VAR_ROUTE4_LEENA, 1
+# 143 "data/maps/Route04/scripts.pory"
+	setflag FLAG_THICKET_FOREST_BLAISE_FIGHT
+# 144 "data/maps/Route04/scripts.pory"
+	release
+	end
+
+
+# 147 "data/maps/Route04/scripts.pory"
+LeenaMoveNearPlayer1:
+# 148 "data/maps/Route04/scripts.pory"
+	walk_down
+# 149 "data/maps/Route04/scripts.pory"
+	walk_left
+	step_end
+
+Route04_EventScript_LeenaScene2::
+# 153 "data/maps/Route04/scripts.pory"
+	lock
+# 154 "data/maps/Route04/scripts.pory"
+	applymovement 11, LeenaMoveNearPlayer2
+# 155 "data/maps/Route04/scripts.pory"
+	waitmovement 0
+# 156 "data/maps/Route04/scripts.pory"
+	msgbox Leena_Text
+# 157 "data/maps/Route04/scripts.pory"
+	waitmessage
+# 158 "data/maps/Route04/scripts.pory"
+	setvar VAR_ROUTE4_LEENA, 1
+# 159 "data/maps/Route04/scripts.pory"
+	setflag FLAG_THICKET_FOREST_BLAISE_FIGHT
+# 160 "data/maps/Route04/scripts.pory"
+	release
+	end
+
+
+# 163 "data/maps/Route04/scripts.pory"
+LeenaMoveNearPlayer2:
+# 164 "data/maps/Route04/scripts.pory"
+	walk_down
+# 164 "data/maps/Route04/scripts.pory"
+	walk_down
+# 165 "data/maps/Route04/scripts.pory"
+	walk_left
+	step_end
+
+Route04_EventScript_LeenaScene3::
+# 168 "data/maps/Route04/scripts.pory"
+	lock
+# 169 "data/maps/Route04/scripts.pory"
+	applymovement 11, LeenaMoveNearPlayer3
+# 170 "data/maps/Route04/scripts.pory"
+	waitmovement 0
+# 171 "data/maps/Route04/scripts.pory"
+	msgbox Leena_Text
+# 172 "data/maps/Route04/scripts.pory"
+	waitmessage
+# 173 "data/maps/Route04/scripts.pory"
+	setvar VAR_ROUTE4_LEENA, 1
+# 174 "data/maps/Route04/scripts.pory"
+	setflag FLAG_THICKET_FOREST_BLAISE_FIGHT
+# 175 "data/maps/Route04/scripts.pory"
+	release
+	end
+
+
+# 178 "data/maps/Route04/scripts.pory"
+LeenaMoveNearPlayer3:
+# 179 "data/maps/Route04/scripts.pory"
+	walk_down
+# 179 "data/maps/Route04/scripts.pory"
+	walk_down
+# 179 "data/maps/Route04/scripts.pory"
+	walk_down
+# 180 "data/maps/Route04/scripts.pory"
+	walk_left
+	step_end
+
+Route04_EventScript_LeenaAfterScene::
+# 192 "data/maps/Route04/scripts.pory"
+	lock
+# 193 "data/maps/Route04/scripts.pory"
+	msgbox LeenaAfterScene_Text
+# 194 "data/maps/Route04/scripts.pory"
+	waitmessage
+# 195 "data/maps/Route04/scripts.pory"
+	release
+	end
+
+
 CarrieAndAnnabelleIntro::
 # 11 "data/maps/Route04/scripts.pory"
 	.string "We were supposed to be triplets, but we\n"
@@ -137,3 +239,17 @@ Route04_Text_Sign::
 	.string "{UP_ARROW} BIGTHORN VILLAGE\n"
 	.string "{RIGHT_ARROW} NEWVILLA TOWN\p"
 	.string "{LEFT_ARROW} FLINT TOWN\n$"
+
+Leena_Text::
+# 182 "data/maps/Route04/scripts.pory"
+	.string "{COLOR RED}{SHADOW LIGHT_RED}Leena: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Oh, {PLAYER}!\n"
+	.string "Thank goodness you came! Some Team Blaze\l"
+	.string "bozos stole my little darlings!\p"
+	.string "Can you please help?\n"
+	.string "They ran into the woods {FONT_SMALL_NARROWER}sniff sniff\n$"
+
+LeenaAfterScene_Text::
+# 199 "data/maps/Route04/scripts.pory"
+	.string "{COLOR RED}{SHADOW LIGHT_RED}Leena: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}I saw them heading for the\n"
+	.string "Thicket Woods! Those dirty criminals!\l"
+	.string "{FONT_SMALL_NARROWER}sniff sniff\n$"

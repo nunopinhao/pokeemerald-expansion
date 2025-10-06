@@ -654,6 +654,7 @@
     "FlintTown_CousinsHouse"
   ],
   "gMapGroup_IndoorRoute4": [
-    "Route04_MrDiamondHouse"
+    "Route04_MrDiamondHouse",
+    "Route04_LeenaHouse"
   ]
 }

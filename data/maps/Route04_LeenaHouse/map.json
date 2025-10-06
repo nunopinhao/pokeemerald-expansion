@@ -1,0 +1,101 @@
+{
+  "id": "MAP_ROUTE04_LEENA_HOUSE",
+  "name": "Route04_LeenaHouse",
+  "layout": "LAYOUT_ROUTE04_LEENA_HOUSE",
+  "music": "MUS_ROUTE104",
+  "region_map_section": "MAPSEC_ROUTE_4",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "x": 10,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route04_LeenaHouse_EventScript_Charles",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GLACIA",
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route04_LeenaHouse_EventScript_Leena",
+      "flag": "FLAG_THICKET_FOREST_BLAISE_FIGHT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES_SHINY(MEOWSTIC)",
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route04_LeenaHouse_EventScript_Rudolph",
+      "flag": "FLAG_THICKET_FOREST_BLAISE_FIGHT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWSTIC)",
+      "x": 8,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route04_LeenaHouse_EventScript_Johnny",
+      "flag": "FLAG_THICKET_FOREST_BLAISE_FIGHT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DACHSBUN)",
+      "x": 12,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route04_LeenaHouse_EventScript_Floki",
+      "flag": "FLAG_THICKET_FOREST_BLAISE_FIGHT"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE04",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE04",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}
