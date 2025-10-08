@@ -55,8 +55,8 @@ script Route04_LeenaHouse_EventScript_Rudolph{
 
 text LeenaHouse_Rudolph_Text{
     "…Mrrrreow.\n"
-    "{NARROW_FONT}(Despite its name, this Rudolph’s nose\n"
-    "{NARROW_FONT}isn’t red!)\n"
+    "{FONT_NARROW}(Despite its name, this Rudolph’s nose\n"
+    "{FONT_NARROW}isn’t red!)\n"
 }
 
 script Route04_LeenaHouse_EventScript_Johnny{
@@ -70,8 +70,8 @@ script Route04_LeenaHouse_EventScript_Johnny{
 
 text LeenaHouse_Johnny_Text{
     "Meow? Meow, meow! Purr?\n"
-    "{NARROW_FONT}(Johnny has a lot to say, but you don’t\n"
-    "{NARROW_FONT}understand anything.)\n"
+    "{FONT_NARROW}(Johnny has a lot to say, but you don’t\n"
+    "{FONT_NARROW}understand anything.)\n"
 }
 
 script Route04_LeenaHouse_EventScript_Floki{
@@ -94,6 +94,6 @@ text LeenaHouse_Floki_Text1{
     "Woof, woof!\n"
 }
 text LeenaHouse_Floki_Text2{
-    "{NARROW_FONT}(Floki wants to play fetch!)\n"
+    "{FONT_NARROW}(Floki wants to play fetch!)\n"
 
 }

@@ -1,0 +1,137 @@
+mapscripts Route05_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Route05_OnTransition
+}
+
+script Route05_OnTransition {
+    setflag(FLAG_HIDE_ADRIAN_2ND_RIVAL_BATTLE)
+    end
+}
+script Route05_EventScript_Adrian_Rival_BattleEnd{
+    msgbox(Adrian_Text)
+    waitmessage
+    switch (var(VAR_STARTER_MON)) {
+        case 0:
+            trainerbattle_no_intro(TRAINER_ADRIAN_ROUTE5_TORCHIC, Adrian_Route5_Outro) 
+        case 1:
+            trainerbattle_no_intro(TRAINER_ADRIAN_ROUTE5_FROAKIE, Adrian_Route5_Outro)
+        case 2:
+            trainerbattle_no_intro(TRAINER_ADRIAN_ROUTE5_ROWLET, Adrian_Route5_Outro)    
+    }
+    msgbox(Adrian_Route5_AfterBattle)
+    waitmessage
+    setvar(VAR_ADRIAN_2ND_RIVAL_BATTLE, 1)
+    applymovement(2, Route5_AdrianLeave)
+    waitmovement(0)
+    removeobject(2)
+    releaseall
+    end
+}
+
+text Adrian_Route5_Outro{
+    "Impossible!"
+}
+text Adrian_Route5_AfterBattle{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}You won, but don’t get all smug.\n"
+    "I wasn’t the one wetting the bed until\l"
+    "I was nine.\p"
+    "Look, Team Blaze might be minor thugs,\n"
+    "but organized crime is still crime.\p"
+    "Don’t come crying to me if they steal\n"
+    "your life savings or worse, your Pokemon.\p"
+    "I’m off now, get stronger!\n"
+    "Keep an eye out for Andrew.\n"
+}
+script Route05_EventScript_Adrian_Rival_Battle1{
+    lockall
+    addobject(2)
+    applymovement(2, Route05_AdrianMove1)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    call(Route05_EventScript_Adrian_Rival_BattleEnd)
+}
+
+script Route05_EventScript_Adrian_Rival_Battle2{
+    lockall
+    addobject(2)
+    applymovement(2, Route05_AdrianMove2)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    call(Route05_EventScript_Adrian_Rival_BattleEnd)
+}
+
+script Route05_EventScript_Adrian_Rival_Battle3{
+    lockall
+    addobject(2)
+    applymovement(2, Route05_AdrianMove3)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+    waitmovement(0)
+    call(Route05_EventScript_Adrian_Rival_BattleEnd)
+}
+
+
+script Route05_EventScript_Adrian_Rival_Battle4{
+    lockall
+    addobject(2)
+    applymovement(2, Route05_AdrianMove4)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    call(Route05_EventScript_Adrian_Rival_BattleEnd)
+}
+
+script Route05_EventScript_Adrian_Rival_Battle5{
+    lockall
+    addobject(2)
+    applymovement(2, Route05_AdrianMove5)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    call(Route05_EventScript_Adrian_Rival_BattleEnd)
+}
+
+movement Route5_AdrianLeave{
+    walk_up *7
+}
+
+movement Route05_AdrianMove1{
+    walk_up *4
+    walk_left 
+}
+movement Route05_AdrianMove2{
+    walk_up *5
+    face_left 
+}
+movement Route05_AdrianMove3{
+    walk_up *4
+}
+movement Route05_AdrianMove4{
+    walk_up *5
+    face_right
+}
+movement Route05_AdrianMove5{
+    walk_up *4
+    walk_right
+}
+
+text Adrian_Text{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Adrian: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Hey, {PLAYER}!\n"
+    "We biked all the way to Newvilla’s Gym.\p"
+    "I lost sight of Andrew, though.\n"
+    "He’s probably goofing off somewhere,\l"
+    "the idiot.\p"
+    "..What? Cousin Leena’s Pokemon got stolen\n"
+    "by Team Blaze?\p"
+    "I heard of them. They claim to be a\n"
+    "non-profit religious organization.\p"
+    "Hard quotations on the non-profit thing.\n"
+    "They’re scammers making an “honest”\l"
+    "living, they might say.\p"
+    "Bet they have that written on their\n"
+    "business cards.\p"
+    "Are you going after them? I’ll test you\n"
+    "before you try to play hero!\n"
+}
+

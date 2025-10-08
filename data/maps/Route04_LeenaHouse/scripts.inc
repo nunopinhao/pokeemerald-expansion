@@ -114,14 +114,14 @@ LeenaHouse_Leena_Text::
 LeenaHouse_Rudolph_Text::
 # 56 "data/maps/Route04_LeenaHouse/scripts.pory"
 	.string "…Mrrrreow.\n"
-	.string "{NARROW_FONT}(Despite its name, this Rudolph’s nose\n"
-	.string "{NARROW_FONT}isn’t red!)\n$"
+	.string "{FONT_NARROW}(Despite its name, this Rudolph’s nose\n"
+	.string "{FONT_NARROW}isn’t red!)\n$"
 
 LeenaHouse_Johnny_Text::
 # 71 "data/maps/Route04_LeenaHouse/scripts.pory"
 	.string "Meow? Meow, meow! Purr?\n"
-	.string "{NARROW_FONT}(Johnny has a lot to say, but you don’t\n"
-	.string "{NARROW_FONT}understand anything.)\n$"
+	.string "{FONT_NARROW}(Johnny has a lot to say, but you don’t\n"
+	.string "{FONT_NARROW}understand anything.)\n$"
 
 LeenaHouse_Floki_Text1::
 # 93 "data/maps/Route04_LeenaHouse/scripts.pory"
@@ -129,4 +129,4 @@ LeenaHouse_Floki_Text1::
 
 LeenaHouse_Floki_Text2::
 # 96 "data/maps/Route04_LeenaHouse/scripts.pory"
-	.string "{NARROW_FONT}(Floki wants to play fetch!)\n$"
+	.string "{FONT_NARROW}(Floki wants to play fetch!)\n$"

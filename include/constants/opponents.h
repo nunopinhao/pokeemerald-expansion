@@ -847,9 +847,9 @@
 #define TRAINER_GABRIELLE_3                 841
 #define TRAINER_GABRIELLE_4                 842
 #define TRAINER_GABRIELLE_5                 843
-#define TRAINER_THALIA_2                    844
-#define TRAINER_THALIA_3                    845
-#define TRAINER_THALIA_4                    846
+#define TRAINER_ADRIAN_ROUTE5_TORCHIC                    844
+#define TRAINER_ADRIAN_ROUTE5_FROAKIE                    845
+#define TRAINER_ADRIAN_ROUTE5_ROWLET                    846
 #define TRAINER_FRANCIS                     847
 #define TRAINER_TERESA                      848
 #define TRAINER_PEDRO                       849
