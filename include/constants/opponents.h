@@ -15,7 +15,7 @@
 #define TRAINER_GABRIELLE_1                   9
 #define TRAINER_GRUNT_PETALBURG_WOODS        10
 #define TRAINER_MARCEL                       11
-#define TRAINER_ALBERTO                      12
+#define TRAINER_ALBERTO2                      12
 #define TRAINER_ED                           13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
 #define TRAINER_DECLAN                       15
@@ -134,11 +134,11 @@
 #define TRAINER_CONNIE                      128
 #define TRAINER_BRIDGET                     129
 #define TRAINER_OLIVIA                      130
-#define TRAINER_TIFFANY                     131
-#define TRAINER_JESSICA_2                   132
-#define TRAINER_JESSICA_3                   133
-#define TRAINER_JESSICA_4                   134
-#define TRAINER_JESSICA_5                   135
+#define TRAINER_TULIPA                   131
+#define TRAINER_ANTONIO                   132
+#define TRAINER_ALBERTO                   133
+#define TRAINER_MAURO                   134
+#define TRAINER_JESSICA                  135
 #define TRAINER_WINSTON_1                   136
 #define TRAINER_MOLLIE                      137
 #define TRAINER_GARRET                      138
@@ -831,8 +831,8 @@
 #define TRAINER_KOJI_3                      825
 #define TRAINER_KOJI_4                      826
 #define TRAINER_KOJI_5                      827
-#define TRAINER_CRISTIN_2                   828
-#define TRAINER_CRISTIN_3                   829
+#define TRAINER_RO                   828
+#define TRAINER_MILDA                   829
 #define TRAINER_CRISTIN_4                   830
 #define TRAINER_CRISTIN_5                   831
 #define TRAINER_FERNANDO_2                  832

@@ -1,0 +1,138 @@
+mapscripts Thicket_Woods_MapScripts {}
+
+script ThicketWoods_EventScript_TulipaBattle{
+	trainerbattle_single(TRAINER_TULIPA, ThicketWoods_Tulipa_Intro, ThicketWoods_Tulipa_Outro)
+    msgbox(ThicketWoods_Tulipa_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+text ThicketWoods_Tulipa_Intro{
+	"I dated a guy who said he liked\n"
+    "Grass-types, like me.\p"
+    "Turns out he meant smoking Oddish leaves.\n"
+    "Why do I always fall for losers?\n"
+}
+text ThicketWoods_Tulipa_Outro{
+	"You smell like a try-hard.\n"
+}
+text ThicketWoods_Tulipa_PostBattle{
+	"Grass-type Pokemon smell the nicest!\n"
+    "I like Fairy-types too.\n"
+}
+
+script ThicketWoods_EventScript_AntonioBattle{
+	trainerbattle_single(TRAINER_ANTONIO, ThicketWoods_Antonio_Intro, ThicketWoods_Antonio_Outro)
+    msgbox(ThicketWoods_Antonio_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+text ThicketWoods_Antonio_Intro{
+	"My brother and I are rivals!\n"
+    "Bugs vs Birds, the ultimate debate!\n"
+}
+text ThicketWoods_Antonio_Outro{
+	" Bug types still rule!\n"
+}
+text ThicketWoods_Antonio_PostBattle{
+	"I must train to surpass my brother.\n"
+    "Bug types are SUPREME!\n"
+}
+
+script ThicketWoods_EventScript_AlbertoBattle{
+	trainerbattle_single(TRAINER_ALBERTO, ThicketWoods_Alberto_Intro, ThicketWoods_Alberto_Outro)
+    msgbox(ThicketWoods_Alberto_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+text ThicketWoods_Alberto_Intro{
+	"My brother insists we’re rivals,\n"
+    "but I’m playing along because the dude\l"
+    "has no friends.\n"
+}
+text ThicketWoods_Alberto_Outro{
+	"I’m having a good time. NOT!\n"
+}
+text ThicketWoods_Alberto_PostBattle{
+	"I asked my mom if I could go on a\n"
+    "journey, and she said:\p"
+    "{FONT_SHORT_NARROW}yeah sure but take your brother with you.\n"
+    "{FONT_NORMAL}Sigh…\n"
+}
+
+script ThicketWoods_EventScript_JessicaBattle{
+	trainerbattle_single(TRAINER_JESSICA, ThicketWoods_Jessica_Intro, ThicketWoods_Jessica_Outro)
+    msgbox(ThicketWoods_Jessica_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+text ThicketWoods_Jessica_Intro{
+	"This forest is shaped like that cat\n"
+    "Pokemon! I don’t know the name.\l"
+    "It’s the green one, I think?\n"
+}
+text ThicketWoods_Jessica_Outro{
+	"I just wanted to share a fact,\n"
+    "not fight!\n"
+}
+text ThicketWoods_Jessica_PostBattle{
+	"You like picking on girls? I was just\n"
+    "being nice and making conversation!\n"
+}
+
+script ThicketWoods_EventScript_MauroBattle{
+	trainerbattle_single(TRAINER_MAURO, ThicketWoods_Mauro_Intro, ThicketWoods_Mauro_Outro)
+    msgbox(ThicketWoods_Mauro_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+text ThicketWoods_Mauro_Intro{
+	"I hear voices! No, I’m not schizophrenic\n"
+    "I mean ACTUAL real voices.\p"
+    "Are there people hiding somewhere in the\n"
+    "forest?\n"
+}
+text ThicketWoods_Mauro_Outro{
+	"At least you don’t seem suspicious.\n"
+}
+text ThicketWoods_Mauro_PostBattle{
+	"Are these woods haunted like\n"
+    "Almond Forest is?\n"
+}
+
+script ThicketWoods_EventScript_RoBattle{
+	trainerbattle_single(TRAINER_RO, ThicketWoods_Ro_Intro, ThicketWoods_Ro_Outro)
+    msgbox(ThicketWoods_Ro_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+text ThicketWoods_Ro_Intro{
+	"We are the Psychic sisters!\n"
+    "Want a tarot reading?\n"
+}
+text ThicketWoods_Ro_Outro{
+	"We predicted this loss.\n"
+}
+text ThicketWoods_Ro_PostBattle{
+	"Want another reading? The Fool will meet\n"
+    "the Devil, and through Judgement reveal\l"
+    "its true light to the World.\n"
+}
+
+script ThicketWoods_EventScript_MildaBattle{
+	trainerbattle_single(TRAINER_MILDA, ThicketWoods_Milda_Intro, ThicketWoods_Milda_Outro)
+    msgbox(ThicketWoods_Milda_PostBattle, MSGBOX_AUTOCLOSE) 
+    end
+ 
+}
+text ThicketWoods_Milda_Intro{
+	"The Fool Arcana card is revealed. A hero\n"
+    "has a long mission ahead of them!\n"
+}
+text ThicketWoods_Milda_Outro{
+	"But it still tastes bitter.\n"
+}
+text ThicketWoods_Milda_PostBattle{
+	"We predict the exit of this forest is\n"
+    "nearby. You may only exit if the two\l"
+    "evildoers were brought to justice.\n"
+}

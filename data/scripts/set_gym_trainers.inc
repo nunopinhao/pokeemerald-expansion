@@ -85,7 +85,7 @@ SootopolisCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_CONNIE
 	settrainerflag TRAINER_BRIDGET
 	settrainerflag TRAINER_OLIVIA
-	settrainerflag TRAINER_TIFFANY
+	settrainerflag TRAINER_TULIPA
 	settrainerflag TRAINER_BETHANY
 	settrainerflag TRAINER_ANNIKA
 	settrainerflag TRAINER_DAPHNE
