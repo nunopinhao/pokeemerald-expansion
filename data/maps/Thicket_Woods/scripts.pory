@@ -1,4 +1,11 @@
-mapscripts Thicket_Woods_MapScripts {}
+mapscripts Thicket_Woods_MapScripts {    
+    MAP_SCRIPT_ON_TRANSITION: ThicketWoods_OnTransition
+}
+ 
+script ThicketWoods_OnTransition {
+    setflag(FLAG_LEENA_THICKETWOODS)
+    end
+}
 
 script ThicketWoods_EventScript_TulipaBattle{
 	trainerbattle_single(TRAINER_TULIPA, ThicketWoods_Tulipa_Intro, ThicketWoods_Tulipa_Outro)
@@ -135,4 +142,215 @@ text ThicketWoods_Milda_PostBattle{
 	"We predict the exit of this forest is\n"
     "nearby. You may only exit if the two\l"
     "evildoers were brought to justice.\n"
+}
+
+script ThicketWoods_EventScript_BlazeTrigger1{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDown)
+    call(ThicketWoods_EventScript_BlazeScene)
+}
+script ThicketWoods_EventScript_BlazeTrigger2{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkLeft)
+    call(ThicketWoods_EventScript_BlazeScene)
+}
+script ThicketWoods_EventScript_BlazeScene{
+    applyMovement(5, Common_Movement_WalkInPlaceFasterLeft)
+    waitmovement(0)
+    msgbox(ThicketWoods_BlazeSceneText)
+    waitmessage
+    applymovement(5, Common_Movement_FaceRight)
+    waitmovement(0)
+    applymovement(5, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    msgbox(ThicketWoods_BlazeSceneText2)
+    waitmessage
+    applymovement(4, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox(ThicketWoods_BlazeSceneText3)
+    waitmessage
+    trainerbattle_two_trainers(TRAINER_TICKETWOODS_TEAMBLAZE_GRUNT_F, ThicketWoods_BlazeGruntF_Outro, TRAINER_TICKETWOODS_TEAMBLAZE_GRUNT_M, ThicketWoods_BlazeGruntM_Outro)
+    msgbox(ThicketWoods_BlazeSceneTextAfterBattle1)
+    waitmessage
+    applymovement(4, Common_Movement_FaceDown)
+    waitmovement(0)
+    applymovement(5, Common_Movement_FaceUp)
+    waitmovement(0)
+    msgbox(ThicketWoods_BlazeSceneTextAfterBattle2)
+    waitmessage
+    applymovement(4, Common_Movement_FaceRight)
+    waitmovement(0)
+    applymovement(5, Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox(ThicketWoods_BlazeSceneTextAfterBattle3)
+    waitmessage
+    applymovement(4, ThicketWoods_BlazeMLeaves)
+    applymovement(5, ThicketWoods_BlazeFLeaves)
+    waitmovement(0)
+    delay(30)
+    addobject(18)
+    applymovement(18, ThicketWoods_LeenaMove)
+    waitmovement(0)
+    msgbox(ThicketWoods_LeenaText)
+    waitmessage
+    giveitem(ITEM_EXP_SHARE)
+    applymovement(18, Thicket_Woods_LeenaMovePets)
+    waitmovement(0)
+    msgbox(ThicketWoods_LeenaText2)
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    setvar(VAR_THICKETWOODS_BLAZE_FIGHT, 1)
+    clearflag(FLAG_THICKET_FOREST_BLAISE_FIGHT)
+    setflag(FLAG_ROUTE4_LEENA)
+    fadescreen(FADE_FROM_BLACK)
+    releaseall
+    end
+}
+
+text ThicketWoods_LeenaText2{
+    "{COLOR RED}{SHADOW LIGHT_RED}Leena:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} My poor babies, here, Leena will\n"
+    "take you back home.\n"
+} 
+
+movement Thicket_Woods_LeenaMovePets{
+    walk_down 
+    walk_left 
+} 
+
+text ThicketWoods_LeenaText{
+    "{COLOR RED}{SHADOW LIGHT_RED}Leena:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER}, you did it!\n"
+    "My darlings are safe! I can’t thank you\l"
+    "enough.\p"
+    "Tell you what, feel free to use my\n"
+    "vacation house next summer. My treat!\p"
+    "But for now, take this!\n"
+}
+
+movement ThicketWoods_LeenaMove{
+    walk_down *2
+    walk_left *2
+    walk_down *3
+    walk_left *2
+    walk_down
+    face_right
+}
+
+movement ThicketWoods_BlazeMLeaves{
+    walk_faster_up *2
+    walk_faster_right *3
+    walk_faster_up *3
+    walk_faster_right *2
+    walk_faster_up *2
+}
+movement ThicketWoods_BlazeFLeaves{
+    walk_faster_up *3
+    walk_faster_right *3
+    walk_faster_up *3
+    walk_faster_right *2
+    walk_faster_up *2
+}
+text ThicketWoods_BlazeSceneTextAfterBattle3{
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} You there! You’ll\n"
+    "curse the day you pissed off Team Blaze.\p"
+    "We are the huh. Children of fire,\n"
+    "followers of the Magma Guy!\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} It’s O’Magma One,\n"
+    "dude. You really need to read the script.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Whatever!\n"
+}
+
+text ThicketWoods_BlazeSceneTextAfterBattle2{
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} There goes our\n"
+    "yearly bonus. What now?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Do you really want\n"
+    "to tell Solana we lost to a teenage\l"
+    "punk?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} No, I would rather\n"
+    "have a Taurus stomp on my balls.\n"
+}
+
+text ThicketWoods_BlazeSceneTextAfterBattle1{
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} What, you don’t have\n"
+    "a girlfriend or boyfriend to keep you\l"
+    "busy?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Yeah lol, must be a\n"
+    "social justice warrior or something.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Have at it! Take the\n"
+    "stolen Pokemon.\p"
+    "They’re weak as a Magikarp anyway.\n"
+}
+text ThicketWoods_BlazeSceneText{
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} These Pokemon we\n"
+    "stole aren’t good for battle.\p"
+    "They’re just pets! Solana will blow a\n"
+    "fuse. Literally!\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} …Damn, I need to put\n"
+    "out my cigarette.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} So what? Throw it on\n"
+    "the ground.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} What if it starts a\n"
+    "fire?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Who cares? Isn’t Team\n"
+    "Blaze supposed to worship fire, or\l"
+    "whatever?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} The dispatch team\n"
+    "is taking forever!\p"
+    "We have to ship back to HQ and start\n"
+    "distributing the stolen cargo. Team\l"
+    "Blaze needs Pokemon.\n"
+    
+}
+
+text ThicketWoods_BlazeSceneText2{
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Crap! There’s a\n"
+    "rando watching us!\n"
+}
+text ThicketWoods_BlazeSceneText3{
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Don’t freak out, man.\n"
+    "Follow the script!\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} We are the children\n"
+    "of flames… Huh, we’re here to.. Huh?\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Follow the word of\n"
+    "our God, O’Magma One! We gathered\n"
+    "sacrifices to offer to the flames.\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Huh… Yeah, what he\n"
+    "said!\p"
+    "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} But alas, a witness\n"
+    "to our Crimson Mission! He Who Shall\l"
+    "Be Silenced!\n"
+    
+}
+
+text ThicketWoods_BlazeGruntF_Outro{
+    "We are so screwed…"
+}
+text ThicketWoods_BlazeGruntM_Outro{
+    "This is humiliating."
+}
+
+
+
+script Thicket_Woods_EventScript_PoliceGuard{
+    lock
+    msgbox(ThicketWoods_PoliceGuardText)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    release
+    end
+}
+
+text ThicketWoods_PoliceGuardText{
+    "{COLOR BLUE}{SHADOW LIGHT_BLUE}Policeman:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} We closed off the forest\n"
+    "while we look for two suspicious\l"
+    "individuals. Please wait.\n"
+}
+
+script Thicket_Woods_EventScript_PoliceGuardTalk{
+    lock
+    faceplayer
+    msgbox(ThicketWoods_PoliceGuardText)
+    waitmessage
+    release
+    end
 }

@@ -396,7 +396,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -2138,7 +2138,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_2 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -2509,7 +2509,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_1 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
@@ -10344,7 +10344,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_GRUNT_UNUSED ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
@@ -10378,7 +10378,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_JAGGED_PASS ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10513,7 +10513,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_2 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10604,7 +10604,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
@@ -10621,7 +10621,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_4 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10634,7 +10634,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_5 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10647,7 +10647,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_6 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10660,7 +10660,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_7 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13111,7 +13111,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13124,7 +13124,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13137,7 +13137,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_3 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13150,7 +13150,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13167,7 +13167,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13184,7 +13184,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13197,7 +13197,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13210,7 +13210,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13223,7 +13223,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13236,7 +13236,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13249,7 +13249,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13262,7 +13262,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13275,7 +13275,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13288,7 +13288,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
@@ -13301,7 +13301,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
@@ -13314,7 +13314,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Blaze
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
@@ -16398,71 +16398,55 @@ Taillow
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_GABRIELLE_4 ===
-Name: GABRIELLE
-Class: Pkmn Breeder
-Pic: Pokemon Breeder F
-Gender: Female
-Music: Female
+=== TRAINER_TICKETWOODS_TEAMBLAZE_GRUNT_M ===
+Name: Grunt M
+Class: Team Blaze
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Delcatty
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ekans @ Poison Barb
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Poison Sting
+- Glare
+- Bite
+- Mud Slap
 
-Mightyena
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Houndour @ Fire Gem
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ember
+- Smog
+- Fire Spin
+- Bite
 
-Linoone
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Lombre
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Nuzleaf
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Swellow
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_GABRIELLE_5 ===
-Name: GABRIELLE
-Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+=== TRAINER_TICKETWOODS_TEAMBLAZE_GRUNT_F ===
+Name: Grunt F
+Class: Team Blaze
+Pic: Magma Grunt F
 Gender: Female
-Music: Female
+Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Delcatty
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Zubat @ Wide Lens
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Supersonic
+- Astonish
+- Aerial Ace
+- Poison Sting
 
-Mightyena
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Linoone
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Ludicolo
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Shiftry
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Swellow
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Fletchling @ Flying Gem
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ember
+- Growl
+- Quick Attack
+- Peck
 
 === TRAINER_ANDREW_AMOREIRA_FLOOR1_ROWLET ===
 Name: Andrew
@@ -16716,6 +16700,7 @@ Class: Rival
 Pic: Red
 Gender: Male
 Music: Male
+Items: Potion
 Double Battle: No
 AI: Check Bad Move
 
@@ -16737,6 +16722,7 @@ Class: Rival
 Pic: Red
 Gender: Male
 Music: Male
+Items: Potion
 Double Battle: No
 AI: Check Bad Move
 
@@ -16758,6 +16744,7 @@ Class: Rival
 Pic: Red
 Gender: Male
 Music: Male
+Items: Potion
 Double Battle: No
 AI: Check Bad Move
 

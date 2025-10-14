@@ -65,7 +65,7 @@
 #define FLAG_THICKET_FOREST_BLAISE_FIGHT    0x33 // Unused Flag
 #define FLAG_LEENAHOUSE_FLOKI_FLING    0x34 // Unused Flag
 #define FLAG_HIDE_ADRIAN_2ND_RIVAL_BATTLE    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
+#define FLAG_LEENA_THICKETWOODS    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
@@ -1224,7 +1224,7 @@
 
 #define FLAG_ITEM_ROUTE_102_TM10                                    0x493 // Unused Flag
 #define FLAG_ITEM_THICKET_FOREST_LEAF_STONE                         0x494 // Unused Flag
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
+#define FLAG_ITEM_THICKET_FOREST_MIRACLE_SEED                       0x495 // Unused Flag
 #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
 #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag

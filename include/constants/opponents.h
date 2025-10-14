@@ -845,8 +845,8 @@
 #define TRAINER_SAWYER_5                    839
 #define TRAINER_GABRIELLE_2                 840
 #define TRAINER_GABRIELLE_3                 841
-#define TRAINER_GABRIELLE_4                 842
-#define TRAINER_GABRIELLE_5                 843
+#define TRAINER_TICKETWOODS_TEAMBLAZE_GRUNT_M                 842
+#define TRAINER_TICKETWOODS_TEAMBLAZE_GRUNT_F                 843
 #define TRAINER_ADRIAN_ROUTE5_TORCHIC                    844
 #define TRAINER_ADRIAN_ROUTE5_FROAKIE                    845
 #define TRAINER_ADRIAN_ROUTE5_ROWLET                    846
