@@ -187,7 +187,9 @@ script ThicketWoods_EventScript_BlazeScene{
     applymovement(4, ThicketWoods_BlazeMLeaves)
     applymovement(5, ThicketWoods_BlazeFLeaves)
     waitmovement(0)
-    delay(30)
+    removeobject(4)
+    removeobject(5)
+    delay(60)
     addobject(18)
     applymovement(18, ThicketWoods_LeenaMove)
     waitmovement(0)
@@ -202,6 +204,11 @@ script ThicketWoods_EventScript_BlazeScene{
     setvar(VAR_THICKETWOODS_BLAZE_FIGHT, 1)
     clearflag(FLAG_THICKET_FOREST_BLAISE_FIGHT)
     setflag(FLAG_ROUTE4_LEENA)
+    removeobject(18)
+    removeobject(7)
+    removeobject(6)
+    removeobject(8)
+    removeobject(24)
     fadescreen(FADE_FROM_BLACK)
     releaseall
     end

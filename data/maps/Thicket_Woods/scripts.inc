@@ -182,130 +182,140 @@ ThicketWoods_EventScript_BlazeScene::
 # 204 "data/maps/Thicket_Woods/scripts.pory"
 	setflag FLAG_ROUTE4_LEENA
 # 205 "data/maps/Thicket_Woods/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	removeobject 18
 # 206 "data/maps/Thicket_Woods/scripts.pory"
+	removeobject 7
+# 207 "data/maps/Thicket_Woods/scripts.pory"
+	removeobject 6
+# 208 "data/maps/Thicket_Woods/scripts.pory"
+	removeobject 8
+# 209 "data/maps/Thicket_Woods/scripts.pory"
+	removeobject 24
+# 210 "data/maps/Thicket_Woods/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 211 "data/maps/Thicket_Woods/scripts.pory"
 	releaseall
 	end
 
 
-# 215 "data/maps/Thicket_Woods/scripts.pory"
+# 220 "data/maps/Thicket_Woods/scripts.pory"
 Thicket_Woods_LeenaMovePets:
-# 216 "data/maps/Thicket_Woods/scripts.pory"
+# 221 "data/maps/Thicket_Woods/scripts.pory"
 	walk_down
-# 217 "data/maps/Thicket_Woods/scripts.pory"
+# 222 "data/maps/Thicket_Woods/scripts.pory"
 	walk_left
 	step_end
 
-# 229 "data/maps/Thicket_Woods/scripts.pory"
-ThicketWoods_LeenaMove:
-# 230 "data/maps/Thicket_Woods/scripts.pory"
-	walk_down
-# 230 "data/maps/Thicket_Woods/scripts.pory"
-	walk_down
-# 231 "data/maps/Thicket_Woods/scripts.pory"
-	walk_left
-# 231 "data/maps/Thicket_Woods/scripts.pory"
-	walk_left
-# 232 "data/maps/Thicket_Woods/scripts.pory"
-	walk_down
-# 232 "data/maps/Thicket_Woods/scripts.pory"
-	walk_down
-# 232 "data/maps/Thicket_Woods/scripts.pory"
-	walk_down
-# 233 "data/maps/Thicket_Woods/scripts.pory"
-	walk_left
-# 233 "data/maps/Thicket_Woods/scripts.pory"
-	walk_left
 # 234 "data/maps/Thicket_Woods/scripts.pory"
+ThicketWoods_LeenaMove:
+# 235 "data/maps/Thicket_Woods/scripts.pory"
 	walk_down
 # 235 "data/maps/Thicket_Woods/scripts.pory"
+	walk_down
+# 236 "data/maps/Thicket_Woods/scripts.pory"
+	walk_left
+# 236 "data/maps/Thicket_Woods/scripts.pory"
+	walk_left
+# 237 "data/maps/Thicket_Woods/scripts.pory"
+	walk_down
+# 237 "data/maps/Thicket_Woods/scripts.pory"
+	walk_down
+# 237 "data/maps/Thicket_Woods/scripts.pory"
+	walk_down
+# 238 "data/maps/Thicket_Woods/scripts.pory"
+	walk_left
+# 238 "data/maps/Thicket_Woods/scripts.pory"
+	walk_left
+# 239 "data/maps/Thicket_Woods/scripts.pory"
+	walk_down
+# 240 "data/maps/Thicket_Woods/scripts.pory"
 	face_right
 	step_end
 
-# 238 "data/maps/Thicket_Woods/scripts.pory"
+# 243 "data/maps/Thicket_Woods/scripts.pory"
 ThicketWoods_BlazeMLeaves:
-# 239 "data/maps/Thicket_Woods/scripts.pory"
+# 244 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 239 "data/maps/Thicket_Woods/scripts.pory"
+# 244 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 240 "data/maps/Thicket_Woods/scripts.pory"
+# 245 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 240 "data/maps/Thicket_Woods/scripts.pory"
+# 245 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 240 "data/maps/Thicket_Woods/scripts.pory"
+# 245 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 241 "data/maps/Thicket_Woods/scripts.pory"
+# 246 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 241 "data/maps/Thicket_Woods/scripts.pory"
+# 246 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 241 "data/maps/Thicket_Woods/scripts.pory"
+# 246 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 242 "data/maps/Thicket_Woods/scripts.pory"
+# 247 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 242 "data/maps/Thicket_Woods/scripts.pory"
+# 247 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 243 "data/maps/Thicket_Woods/scripts.pory"
+# 248 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 243 "data/maps/Thicket_Woods/scripts.pory"
+# 248 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
 	step_end
 
-# 245 "data/maps/Thicket_Woods/scripts.pory"
+# 250 "data/maps/Thicket_Woods/scripts.pory"
 ThicketWoods_BlazeFLeaves:
-# 246 "data/maps/Thicket_Woods/scripts.pory"
+# 251 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 246 "data/maps/Thicket_Woods/scripts.pory"
+# 251 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 246 "data/maps/Thicket_Woods/scripts.pory"
+# 251 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 247 "data/maps/Thicket_Woods/scripts.pory"
+# 252 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 247 "data/maps/Thicket_Woods/scripts.pory"
+# 252 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 247 "data/maps/Thicket_Woods/scripts.pory"
+# 252 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 248 "data/maps/Thicket_Woods/scripts.pory"
+# 253 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 248 "data/maps/Thicket_Woods/scripts.pory"
+# 253 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 248 "data/maps/Thicket_Woods/scripts.pory"
+# 253 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 249 "data/maps/Thicket_Woods/scripts.pory"
+# 254 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 249 "data/maps/Thicket_Woods/scripts.pory"
+# 254 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_right
-# 250 "data/maps/Thicket_Woods/scripts.pory"
+# 255 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
-# 250 "data/maps/Thicket_Woods/scripts.pory"
+# 255 "data/maps/Thicket_Woods/scripts.pory"
 	walk_faster_up
 	step_end
 
 Thicket_Woods_EventScript_PoliceGuard::
-# 334 "data/maps/Thicket_Woods/scripts.pory"
-	lock
-# 335 "data/maps/Thicket_Woods/scripts.pory"
-	msgbox ThicketWoods_PoliceGuardText
-# 336 "data/maps/Thicket_Woods/scripts.pory"
-	waitmessage
-# 337 "data/maps/Thicket_Woods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
-# 338 "data/maps/Thicket_Woods/scripts.pory"
-	waitmovement 0
 # 339 "data/maps/Thicket_Woods/scripts.pory"
+	lock
+# 340 "data/maps/Thicket_Woods/scripts.pory"
+	msgbox ThicketWoods_PoliceGuardText
+# 341 "data/maps/Thicket_Woods/scripts.pory"
+	waitmessage
+# 342 "data/maps/Thicket_Woods/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
+# 343 "data/maps/Thicket_Woods/scripts.pory"
+	waitmovement 0
+# 344 "data/maps/Thicket_Woods/scripts.pory"
 	release
 	end
 
 
 Thicket_Woods_EventScript_PoliceGuardTalk::
-# 350 "data/maps/Thicket_Woods/scripts.pory"
+# 355 "data/maps/Thicket_Woods/scripts.pory"
 	lock
-# 351 "data/maps/Thicket_Woods/scripts.pory"
+# 356 "data/maps/Thicket_Woods/scripts.pory"
 	faceplayer
-# 352 "data/maps/Thicket_Woods/scripts.pory"
+# 357 "data/maps/Thicket_Woods/scripts.pory"
 	msgbox ThicketWoods_PoliceGuardText
-# 353 "data/maps/Thicket_Woods/scripts.pory"
+# 358 "data/maps/Thicket_Woods/scripts.pory"
 	waitmessage
-# 354 "data/maps/Thicket_Woods/scripts.pory"
+# 359 "data/maps/Thicket_Woods/scripts.pory"
 	release
 	end
 
@@ -420,12 +430,12 @@ ThicketWoods_Milda_PostBattle::
 	.string "evildoers were brought to justice.\n$"
 
 ThicketWoods_LeenaText2::
-# 210 "data/maps/Thicket_Woods/scripts.pory"
+# 215 "data/maps/Thicket_Woods/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Leena:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} My poor babies, here, Leena will\n"
 	.string "take you back home.\n$"
 
 ThicketWoods_LeenaText::
-# 220 "data/maps/Thicket_Woods/scripts.pory"
+# 225 "data/maps/Thicket_Woods/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Leena:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} {PLAYER}, you did it!\n"
 	.string "My darlings are safe! I can’t thank you\l"
 	.string "enough.\p"
@@ -434,7 +444,7 @@ ThicketWoods_LeenaText::
 	.string "But for now, take this!\n$"
 
 ThicketWoods_BlazeSceneTextAfterBattle3::
-# 252 "data/maps/Thicket_Woods/scripts.pory"
+# 257 "data/maps/Thicket_Woods/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} You there! You’ll\n"
 	.string "curse the day you pissed off Team Blaze.\p"
 	.string "We are the huh. Children of fire,\n"
@@ -444,7 +454,7 @@ ThicketWoods_BlazeSceneTextAfterBattle3::
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Whatever!\n$"
 
 ThicketWoods_BlazeSceneTextAfterBattle2::
-# 262 "data/maps/Thicket_Woods/scripts.pory"
+# 267 "data/maps/Thicket_Woods/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} There goes our\n"
 	.string "yearly bonus. What now?\p"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Do you really want\n"
@@ -454,7 +464,7 @@ ThicketWoods_BlazeSceneTextAfterBattle2::
 	.string "have a Taurus stomp on my balls.\n$"
 
 ThicketWoods_BlazeSceneTextAfterBattle1::
-# 272 "data/maps/Thicket_Woods/scripts.pory"
+# 277 "data/maps/Thicket_Woods/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} What, you don’t have\n"
 	.string "a girlfriend or boyfriend to keep you\l"
 	.string "busy?\p"
@@ -465,7 +475,7 @@ ThicketWoods_BlazeSceneTextAfterBattle1::
 	.string "They’re weak as a Magikarp anyway.\n$"
 
 ThicketWoods_BlazeSceneText::
-# 282 "data/maps/Thicket_Woods/scripts.pory"
+# 287 "data/maps/Thicket_Woods/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} These Pokemon we\n"
 	.string "stole aren’t good for battle.\p"
 	.string "They’re just pets! Solana will blow a\n"
@@ -486,12 +496,12 @@ ThicketWoods_BlazeSceneText::
 	.string "Blaze needs Pokemon.\n$"
 
 ThicketWoods_BlazeSceneText2::
-# 304 "data/maps/Thicket_Woods/scripts.pory"
+# 309 "data/maps/Thicket_Woods/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Crap! There’s a\n"
 	.string "rando watching us!\n$"
 
 ThicketWoods_BlazeSceneText3::
-# 308 "data/maps/Thicket_Woods/scripts.pory"
+# 313 "data/maps/Thicket_Woods/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 2:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Don’t freak out, man.\n"
 	.string "Follow the script!\p"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Team Blaze Grunt 1:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} We are the children\n"
@@ -506,15 +516,15 @@ ThicketWoods_BlazeSceneText3::
 	.string "Be Silenced!\n$"
 
 ThicketWoods_BlazeGruntF_Outro::
-# 324 "data/maps/Thicket_Woods/scripts.pory"
+# 329 "data/maps/Thicket_Woods/scripts.pory"
 	.string "We are so screwed…$"
 
 ThicketWoods_BlazeGruntM_Outro::
-# 327 "data/maps/Thicket_Woods/scripts.pory"
+# 332 "data/maps/Thicket_Woods/scripts.pory"
 	.string "This is humiliating.$"
 
 ThicketWoods_PoliceGuardText::
-# 343 "data/maps/Thicket_Woods/scripts.pory"
+# 348 "data/maps/Thicket_Woods/scripts.pory"
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Policeman:{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} We closed off the forest\n"
 	.string "while we look for two suspicious\l"
 	.string "individuals. Please wait.\n$"

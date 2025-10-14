@@ -113,13 +113,13 @@ LeenaHouse_Leena_Text::
 
 LeenaHouse_Rudolph_Text::
 # 56 "data/maps/Route04_LeenaHouse/scripts.pory"
-	.string "…Mrrrreow.\n"
+	.string "…Mrrrreow.\p"
 	.string "{FONT_NARROW}(Despite its name, this Rudolph’s nose\n"
 	.string "{FONT_NARROW}isn’t red!)\n$"
 
 LeenaHouse_Johnny_Text::
 # 71 "data/maps/Route04_LeenaHouse/scripts.pory"
-	.string "Meow? Meow, meow! Purr?\n"
+	.string "Meow? Meow, meow! Purr?\p"
 	.string "{FONT_NARROW}(Johnny has a lot to say, but you don’t\n"
 	.string "{FONT_NARROW}understand anything.)\n$"
 

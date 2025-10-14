@@ -1,7 +1,7 @@
 mapscripts Route05_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Route05_OnTransition
 }
-
+ 
 script Route05_OnTransition {
     setflag(FLAG_HIDE_ADRIAN_2ND_RIVAL_BATTLE)
     end
